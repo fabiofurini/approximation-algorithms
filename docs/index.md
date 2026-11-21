@@ -213,6 +213,10 @@ Ten courses built the same way: lecture notes online and in PDF, exercises with 
 
     knapsack, bin packing, coloring, TSP, scheduling and lot sizing, solved in every way
 
+-   :material-map-marker-path: **[Heuristic Algorithms](https://fabiofurini.github.io/heuristic-algorithms/)**
+
+    constructive heuristics, local search, metaheuristics and MIP heuristics for combinatorial optimization problems
+
 -   :material-approximately-equal: **Approximation Algorithms** · *this course*
 
     performance guarantees, approximation schemes and limits of approximation for combinatorial problems
@@ -227,6 +231,8 @@ Ten courses built the same way: lecture notes online and in PDF, exercises with 
 
 </div>
 <!-- /collana -->
+
+---
 
 Teaching material by **[Fabio Furini](https://fabiofurini.github.io/)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
