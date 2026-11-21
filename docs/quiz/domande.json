@@ -6030,6 +6030,4686 @@
     ],
     "spiegazione": "Every edge weighs at least $a$ and only those from the center equal $a$: the MST is the star. The preorder is $(1,2,\\dots,n)$ and consecutive indices are never consecutive on $P$: $a+(n-2)2a+a$. The optimum is $(n+2)(n-1)$."
    }
+  },
+  {
+   "id": "aa-f-202",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-2-def-pratio",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-2-def-pratio"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Problema di minimo: l'ottimo vale $60$ e l'euristica trova $72$. Che rapporto di prestazione ottiene?",
+    "opzioni": [
+     "$\\frac56$",
+     "$12$",
+     "$\\frac15$",
+     "$\\frac65$"
+    ],
+    "spiegazione": "Per un problema di minimo il rapporto è $\\mathscr{A}(I)/z(I)=72/60=\\frac65$: è sempre almeno $1$."
+   },
+   "en": {
+    "testo": "Minimization problem: the optimum is $60$ and the heuristic finds $72$. Which performance ratio does it achieve?",
+    "opzioni": [
+     "$\\frac56$",
+     "$12$",
+     "$\\frac15$",
+     "$\\frac65$"
+    ],
+    "spiegazione": "For a minimization problem the ratio is $\\mathscr{A}(I)/z(I)=72/60=\\frac65$: it is always at least $1$."
+   }
+  },
+  {
+   "id": "aa-f-203",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-2-def-pratio",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-2-def-pratio"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Un problema di massimo ha $z(I)=30$ e un algoritmo $\\mathscr{A}$ restituisce $\\mathscr{A}(I)=20$. Quanto vale il rapporto di prestazione su $I$?",
+    "opzioni": [
+     "$10$",
+     "$\\frac13$",
+     "$\\frac32$",
+     "$\\frac23$"
+    ],
+    "spiegazione": "Per un problema di massimo il rapporto è $z(I)/\\mathscr{A}(I)=30/20=\\frac32$, scritto con l'ottimo al numeratore perché sia almeno $1$."
+   },
+   "en": {
+    "testo": "A maximization problem has $z(I)=30$ and an algorithm $\\mathscr{A}$ returns $\\mathscr{A}(I)=20$. What is the performance ratio on $I$?",
+    "opzioni": [
+     "$10$",
+     "$\\frac13$",
+     "$\\frac32$",
+     "$\\frac23$"
+    ],
+    "spiegazione": "For a maximization problem the ratio is $z(I)/\\mathscr{A}(I)=30/20=\\frac32$, written with the optimum in the numerator so that it is at least $1$."
+   }
+  },
+  {
+   "id": "aa-f-204",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-2-def-pratio",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-2-def-pratio"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Se un algoritmo $\\mathscr{A}$ restituisce sempre una soluzione ammissibile, che cosa si può dire del suo rapporto di prestazione su ogni istanza?",
+    "opzioni": [
+     "Può essere negativo",
+     "È almeno $1$",
+     "È al più $1$",
+     "È sempre esattamente $1$"
+    ],
+    "spiegazione": "Una soluzione ammissibile non è mai migliore dell'ottimo: il rapporto (definito per avere l'ottimo «dalla parte giusta») è $\\ge1$, con l'uguaglianza solo all'ottimo."
+   },
+   "en": {
+    "testo": "If an algorithm $\\mathscr{A}$ always returns a feasible solution, what can be said of its performance ratio on every instance?",
+    "opzioni": [
+     "It can be negative",
+     "It is at least $1$",
+     "It is at most $1$",
+     "It is always exactly $1$"
+    ],
+    "spiegazione": "A feasible solution is never better than the optimum: the ratio (defined with the optimum «on the right side») is $\\ge1$, with equality only at the optimum."
+   }
+  },
+  {
+   "id": "aa-f-205",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Un algoritmo per un problema di minimo ha $\\mathscr{A}(I)\\le 2z(I)$ su ogni istanza. Che cosa si può concludere?",
+    "opzioni": [
+     "È un algoritmo di $2$-approssimazione",
+     "È un algoritmo $2$-additivo",
+     "Ha errore relativo al più $\\frac12$",
+     "È uno schema di approssimazione"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)/z(I)\\le2$ per ogni $I$ è proprio la definizione di $\\alpha$-approssimazione con $\\alpha=2$; l'errore relativo è al più $1$."
+   },
+   "en": {
+    "testo": "An algorithm for a minimization problem has $\\mathscr{A}(I)\\le 2z(I)$ on every instance. What can be concluded?",
+    "opzioni": [
+     "It is a $2$-approximation algorithm",
+     "It is a $2$-additive algorithm",
+     "Its relative error is at most $\\frac12$",
+     "It is an approximation scheme"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)/z(I)\\le2$ for every $I$ is exactly the definition of an $\\alpha$-approximation with $\\alpha=2$; the relative error is at most $1$."
+   }
+  },
+  {
+   "id": "aa-f-206",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un algoritmo per un problema di massimo ha $\\mathscr{A}(I)\\ge\\frac12 z(I)$ su ogni istanza. Di quale $\\alpha$-approssimazione si tratta?",
+    "opzioni": [
+     "$\\alpha=\\frac12$",
+     "$\\alpha=\\frac32$",
+     "Nessuna: per i problemi di massimo $\\alpha$ è minore di $1$",
+     "$\\alpha=2$"
+    ],
+    "spiegazione": "Per un problema di massimo si richiede $z(I)/\\mathscr{A}(I)\\le\\alpha$: da $\\mathscr{A}(I)\\ge\\frac12z(I)$ segue $z(I)/\\mathscr{A}(I)\\le2$. Nel corso $\\alpha\\ge1$ sempre."
+   },
+   "en": {
+    "testo": "An algorithm for a maximization problem has $\\mathscr{A}(I)\\ge\\frac12 z(I)$ on every instance. Which $\\alpha$-approximation is it?",
+    "opzioni": [
+     "$\\alpha=\\frac12$",
+     "$\\alpha=\\frac32$",
+     "None: for maximization problems $\\alpha$ is less than $1$",
+     "$\\alpha=2$"
+    ],
+    "spiegazione": "For a maximization problem one requires $z(I)/\\mathscr{A}(I)\\le\\alpha$: from $\\mathscr{A}(I)\\ge\\frac12z(I)$ we get $z(I)/\\mathscr{A}(I)\\le2$. In the course $\\alpha\\ge1$ always."
+   }
+  },
+  {
+   "id": "aa-f-207",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella definizione di algoritmo di $\\alpha$-approssimazione, che cosa deve valere per la costante $\\alpha$?",
+    "opzioni": [
+     "$0<\\alpha<1$",
+     "$\\alpha$ è il rapporto di prestazione su una sola istanza",
+     "$\\alpha\\ge1$ e non dipende dall'istanza",
+     "$\\alpha$ può dipendere dall'istanza"
+    ],
+    "spiegazione": "$\\alpha\\in[1,+\\infty)$ è una costante: la stessa disuguaglianza deve valere per tutte le istanze."
+   },
+   "en": {
+    "testo": "In the definition of an $\\alpha$-approximation algorithm, what must hold for the constant $\\alpha$?",
+    "opzioni": [
+     "$0<\\alpha<1$, for every instance",
+     "$\\alpha$ is the ratio on one single instance",
+     "$\\alpha\\ge1$ and it does not depend on the instance",
+     "$\\alpha$ may depend on the instance $I$"
+    ],
+    "spiegazione": "$\\alpha\\in[1,+\\infty)$ is a constant: the same inequality must hold for all instances."
+   }
+  },
+  {
+   "id": "aa-f-208",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-4-def-wcr",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-4-def-wcr"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa rappresenta il rapporto di prestazione nel caso peggiore $r(\\mathscr{A})$?",
+    "opzioni": [
+     "Il minimo del rapporto di prestazione sulle istanze",
+     "L'estremo superiore del rapporto di prestazione su tutte le istanze",
+     "Il rapporto di prestazione sull'istanza più grande",
+     "La media dei rapporti di prestazione sulle istanze"
+    ],
+    "spiegazione": "$r(\\mathscr{A})=\\sup_I$ del rapporto: è la più piccola costante $\\alpha$ per cui $\\mathscr{A}$ è una $\\alpha$-approssimazione."
+   },
+   "en": {
+    "testo": "What does the worst-case performance ratio $r(\\mathscr{A})$ represent?",
+    "opzioni": [
+     "The minimum of the performance ratio over instances",
+     "The supremum of the performance ratio over all instances",
+     "The performance ratio on the largest instance",
+     "The average of the performance ratios"
+    ],
+    "spiegazione": "$r(\\mathscr{A})=\\sup_I$ of the ratio: it is the smallest constant $\\alpha$ for which $\\mathscr{A}$ is an $\\alpha$-approximation."
+   }
+  },
+  {
+   "id": "aa-f-209",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#111-garanzia-di-prestazione-relativa",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#111-relative-performance-guarantee"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Si dimostra che un algoritmo è una $\\frac32$-approssimazione e si trova una famiglia di istanze su cui il rapporto tende a $\\frac32$. Che cosa si è mostrato in più?",
+    "opzioni": [
+     "Che la garanzia $\\frac32$ è tight",
+     "Che l'algoritmo è ottimo",
+     "Che il problema non ha uno schema di approssimazione",
+     "Che $r(\\mathscr{A})<\\frac32$"
+    ],
+    "spiegazione": "Una famiglia di istanze con rapporto che tende ad $\\alpha$ impedisce ogni $\\alpha'<\\alpha$: la garanzia è stretta e $r(\\mathscr{A})=\\frac32$."
+   },
+   "en": {
+    "testo": "An algorithm is proved to be a $\\frac32$-approximation and a family of instances is found on which the ratio tends to $\\frac32$. What has additionally been shown?",
+    "opzioni": [
+     "That the guarantee $\\frac32$ is tight",
+     "That the algorithm is optimal",
+     "That the problem has no approximation scheme",
+     "That $r(\\mathscr{A})<\\frac32$"
+    ],
+    "spiegazione": "A family of instances whose ratio tends to $\\alpha$ rules out every $\\alpha'<\\alpha$: the guarantee is tight and $r(\\mathscr{A})=\\frac32$."
+   }
+  },
+  {
+   "id": "aa-f-210",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-5-def-beta-add",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-5-def-beta-add"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Se il valore euristico supera l'ottimo al più di un'unità, su ogni istanza di un problema di minimo, che tipo di algoritmo è?",
+    "opzioni": [
+     "Un algoritmo di $1$-approssimazione relativa",
+     "Un algoritmo esatto per ogni istanza",
+     "Un algoritmo di $2$-approssimazione relativa",
+     "Un algoritmo di approssimazione $1$-additivo"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)-z(I)\\le\\beta$ con $\\beta=1$ per ogni istanza è la garanzia additiva; non è esatto, perché può sbagliare di uno."
+   },
+   "en": {
+    "testo": "If the heuristic value exceeds the optimum by at most one unit, on every instance of a minimization problem, which kind of algorithm is it?",
+    "opzioni": [
+     "A relative $1$-approximation algorithm",
+     "An exact algorithm on every instance",
+     "A relative $2$-approximation algorithm",
+     "A $1$-additive approximation algorithm"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)-z(I)\\le\\beta$ with $\\beta=1$ on every instance is the additive guarantee; it is not exact, since it may miss by one."
+   }
+  },
+  {
+   "id": "aa-f-211",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-5-def-beta-add",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-5-def-beta-add"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Un problema di massimo ha $z(I)=17$; un algoritmo $2$-additivo può restituire, su questa istanza, quali valori?",
+    "opzioni": [
+     "Solo $15$",
+     "Ogni valore fra $\\frac{17}{2}$ e $17$",
+     "Ogni valore fra $15$ e $17$",
+     "Ogni valore fra $17$ e $19$"
+    ],
+    "spiegazione": "Per un problema di massimo la garanzia additiva è $z(I)-\\mathscr{A}(I)\\le2$, e $\\mathscr{A}(I)\\le z(I)$: quindi $15\\le\\mathscr{A}(I)\\le17$."
+   },
+   "en": {
+    "testo": "A maximization problem has $z(I)=17$; which values can a $2$-additive algorithm return on this instance?",
+    "opzioni": [
+     "Only $15$",
+     "Any value between $\\frac{17}{2}$ and $17$",
+     "Any value between $15$ and $17$",
+     "Any value between $17$ and $19$"
+    ],
+    "spiegazione": "For a maximization problem the additive guarantee is $z(I)-\\mathscr{A}(I)\\le2$, and $\\mathscr{A}(I)\\le z(I)$: hence $15\\le\\mathscr{A}(I)\\le17$."
+   }
+  },
+  {
+   "id": "aa-f-212",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-6-def-wcae",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-6-def-wcae"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa è l'errore additivo nel caso peggiore $e(\\mathscr{A})$ di un algoritmo per un problema di minimo?",
+    "opzioni": [
+     "$\\sup_I\\,(z(I)-\\mathscr{A}(I))$",
+     "$\\sup_I\\,(\\mathscr{A}(I)-z(I))$",
+     "$\\max_I\\,\\mathscr{A}(I)/z(I)$",
+     "$\\inf_I\\,(\\mathscr{A}(I)-z(I))$"
+    ],
+    "spiegazione": "È l'estremo superiore della differenza fra valore euristico e ottimo; per un problema di massimo si scambiano i due termini."
+   },
+   "en": {
+    "testo": "What is the worst-case additive error $e(\\mathscr{A})$ of an algorithm for a minimization problem?",
+    "opzioni": [
+     "$\\sup_I\\,(z(I)-\\mathscr{A}(I))$",
+     "$\\sup_I\\,(\\mathscr{A}(I)-z(I))$",
+     "$\\max_I\\,\\mathscr{A}(I)/z(I)$",
+     "$\\inf_I\\,(\\mathscr{A}(I)-z(I))$"
+    ],
+    "spiegazione": "It is the supremum of the difference between heuristic value and optimum; for a maximization problem the two terms are swapped."
+   }
+  },
+  {
+   "id": "aa-f-213",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#112-garanzia-di-prestazione-additiva",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#112-additive-performance-guarantee"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Per un problema di minimo, $z(I)=8$ e $\\mathscr{A}(I)=10$. Quanto valgono l'errore additivo e l'errore relativo?",
+    "opzioni": [
+     "$2$ e $\\frac14$",
+     "$2$ e $\\frac15$",
+     "$\\frac54$ e $\\frac14$",
+     "$\\frac14$ e $2$"
+    ],
+    "spiegazione": "Errore additivo $\\mathscr{A}(I)-z(I)=2$; errore relativo $(\\mathscr{A}(I)-z(I))/z(I)=2/8=\\frac14$ (si divide per l'ottimo)."
+   },
+   "en": {
+    "testo": "For a minimization problem, $z(I)=8$ and $\\mathscr{A}(I)=10$. What are the additive error and the relative error?",
+    "opzioni": [
+     "$2$ and $\\frac14$",
+     "$2$ and $\\frac15$",
+     "$\\frac54$ and $\\frac14$",
+     "$\\frac14$ and $2$"
+    ],
+    "spiegazione": "Additive error $\\mathscr{A}(I)-z(I)=2$; relative error $(\\mathscr{A}(I)-z(I))/z(I)=2/8=\\frac14$ (one divides by the optimum)."
+   }
+  },
+  {
+   "id": "aa-f-214",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#112-garanzia-di-prestazione-additiva",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#112-additive-performance-guarantee"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Per un problema di massimo, $z(I)=50$ e $\\mathscr{A}(I)=40$. Quanto vale l'errore relativo?",
+    "opzioni": [
+     "$\\frac14$",
+     "$\\frac54$",
+     "$10$",
+     "$\\frac15$"
+    ],
+    "spiegazione": "L'errore relativo divide sempre per l'ottimo: $(z(I)-\\mathscr{A}(I))/z(I)=10/50=\\frac15$."
+   },
+   "en": {
+    "testo": "For a maximization problem, $z(I)=50$ and $\\mathscr{A}(I)=40$. What is the relative error?",
+    "opzioni": [
+     "$\\frac14$",
+     "$\\frac54$",
+     "$10$",
+     "$\\frac15$"
+    ],
+    "spiegazione": "The relative error always divides by the optimum: $(z(I)-\\mathscr{A}(I))/z(I)=10/50=\\frac15$."
+   }
+  },
+  {
+   "id": "aa-f-215",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-7-def-as",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-7-def-as"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che cosa è uno schema di approssimazione per un problema $\\mathscr{P}$?",
+    "opzioni": [
+     "Un algoritmo esatto pseudo-polinomiale",
+     "Una famiglia di istanze su cui una garanzia è stretta",
+     "Una famiglia di algoritmi $\\mathscr{A}_\\varepsilon$",
+     "Un solo algoritmo con errore relativo al più $\\frac12$"
+    ],
+    "spiegazione": "Lo schema permette di scegliere la precisione: per ogni $\\varepsilon$ c'è un algoritmo con errore relativo $\\le\\varepsilon$ su tutte le istanze."
+   },
+   "en": {
+    "testo": "What is an approximation scheme for a problem $\\mathscr{P}$?",
+    "opzioni": [
+     "A pseudo-polynomial exact algorithm",
+     "A family of instances on which a guarantee is tight",
+     "A family of algorithms $\\mathscr{A}_\\varepsilon$",
+     "A single algorithm with relative error at most $\\frac12$"
+    ],
+    "spiegazione": "The scheme lets one choose the precision: for every $\\varepsilon$ there is an algorithm with relative error $\\le\\varepsilon$ on all instances."
+   }
+  },
+  {
+   "id": "aa-f-216",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-8-def-ptas",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-8-def-ptas"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Uno schema ha tempo $O(n^{1/\\varepsilon})$. Di che cosa si tratta?",
+    "opzioni": [
+     "Un algoritmo esatto polinomiale",
+     "Un PTAS, ma non un FPTAS",
+     "Un FPTAS",
+     "Né un PTAS né un FPTAS"
+    ],
+    "spiegazione": "Per $\\varepsilon$ fisso il tempo è polinomiale in $n$ (PTAS), ma l'esponente cresce con $\\frac1\\varepsilon$: non è polinomiale in $\\frac1\\varepsilon$, quindi non è un FPTAS."
+   },
+   "en": {
+    "testo": "A scheme runs in time $O(n^{1/\\varepsilon})$. What is it?",
+    "opzioni": [
+     "A polynomial exact algorithm",
+     "A PTAS, but not an FPTAS",
+     "An FPTAS",
+     "Neither a PTAS nor an FPTAS"
+    ],
+    "spiegazione": "For fixed $\\varepsilon$ the time is polynomial in $n$ (PTAS), but the exponent grows with $\\frac1\\varepsilon$: it is not polynomial in $\\frac1\\varepsilon$, hence not an FPTAS."
+   }
+  },
+  {
+   "id": "aa-f-217",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-9-def-fptas",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-9-def-fptas"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "A quale classe appartiene uno schema di approssimazione il cui algoritmo $\\mathscr{A}_\\varepsilon$ richiede $O(n^3/\\varepsilon)$ operazioni?",
+    "opzioni": [
+     "Un FPTAS (e quindi anche un PTAS)",
+     "Un PTAS ma non un FPTAS",
+     "Un algoritmo esponenziale",
+     "Un algoritmo $\\frac1\\varepsilon$-additivo"
+    ],
+    "spiegazione": "Il tempo è polinomiale sia nella taglia $n$ sia nell'accuratezza $\\frac1\\varepsilon$: è un FPTAS; ogni FPTAS è anche un PTAS."
+   },
+   "en": {
+    "testo": "To which class does an approximation scheme belong whose algorithm $\\mathscr{A}_\\varepsilon$ takes $O(n^3/\\varepsilon)$ operations?",
+    "opzioni": [
+     "An FPTAS (and hence also a PTAS)",
+     "A PTAS but not an FPTAS",
+     "An exponential algorithm",
+     "A $\\frac1\\varepsilon$-additive algorithm"
+    ],
+    "spiegazione": "The time is polynomial both in the size $n$ and in the accuracy $\\frac1\\varepsilon$: it is an FPTAS; every FPTAS is also a PTAS."
+   }
+  },
+  {
+   "id": "aa-f-218",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#12-schemi-di-approssimazione",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#12-approximation-schemes"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa si chiama «accuratezza» di uno schema di approssimazione?",
+    "opzioni": [
+     "L'errore relativo $\\varepsilon$",
+     "Il rapporto $1+\\varepsilon$",
+     "Il tempo di calcolo",
+     "La quantità $\\frac1\\varepsilon$"
+    ],
+    "spiegazione": "Più piccolo è $\\varepsilon$, più grande è $\\frac1\\varepsilon$ e più precisa è la soluzione: per questo $\\frac1\\varepsilon$ si chiama accuratezza."
+   },
+   "en": {
+    "testo": "What is called the «accuracy» of an approximation scheme?",
+    "opzioni": [
+     "The relative error $\\varepsilon$",
+     "The ratio $1+\\varepsilon$",
+     "The running time",
+     "The quantity $\\frac1\\varepsilon$"
+    ],
+    "spiegazione": "The smaller $\\varepsilon$, the larger $\\frac1\\varepsilon$ and the more precise the solution: this is why $\\frac1\\varepsilon$ is called the accuracy."
+   }
+  },
+  {
+   "id": "aa-f-219",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#13-errori-tipici",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#13-typical-mistakes"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Uno schema per un problema di massimo ha errore relativo $\\varepsilon=\\frac14$. Che garanzia di approssimazione dà?",
+    "opzioni": [
+     "$\\varepsilon=\\frac14$, cioè $\\frac14$",
+     "$1-\\varepsilon=\\frac34$",
+     "$\\frac{1}{1-\\varepsilon}=\\frac43$",
+     "$1+\\varepsilon=\\frac54$"
+    ],
+    "spiegazione": "Per un problema di massimo $\\mathscr{A}_\\varepsilon(I)\\ge(1-\\varepsilon)z(I)$, quindi $z(I)/\\mathscr{A}_\\varepsilon(I)\\le\\frac{1}{1-\\varepsilon}$; $1+\\varepsilon$ vale per i problemi di minimo."
+   },
+   "en": {
+    "testo": "A scheme for a maximization problem has relative error $\\varepsilon=\\frac14$. Which approximation guarantee does it give?",
+    "opzioni": [
+     "$\\varepsilon=\\frac14$, i.e. $\\frac14$",
+     "$1-\\varepsilon=\\frac34$",
+     "$\\frac{1}{1-\\varepsilon}=\\frac43$",
+     "$1+\\varepsilon=\\frac54$"
+    ],
+    "spiegazione": "For a maximization problem $\\mathscr{A}_\\varepsilon(I)\\ge(1-\\varepsilon)z(I)$, hence $z(I)/\\mathscr{A}_\\varepsilon(I)\\le\\frac{1}{1-\\varepsilon}$; $1+\\varepsilon$ holds for minimization problems."
+   }
+  },
+  {
+   "id": "aa-f-220",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-4-def-wcr",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-4-def-wcr"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quale relazione lega il rapporto nel caso peggiore $r(\\mathscr{A})$ alle garanzie relative di $\\mathscr{A}$?",
+    "opzioni": [
+     "$r(\\mathscr{A})=1$ per ogni algoritmo ammissibile, qualunque sia la garanzia $\\alpha$",
+     "È la più piccola garanzia $\\alpha$, cioè quella tight",
+     "Ogni garanzia $\\alpha$ di $\\mathscr{A}$ è strettamente minore di $r(\\mathscr{A})$, e nessuna garanzia è tight",
+     "$r(\\mathscr{A})$ è sempre finito, e ogni garanzia $\\alpha\\ge1$ è tight per $\\mathscr{A}$"
+    ],
+    "spiegazione": "Ogni garanzia è $\\ge r(\\mathscr{A})$ e $r(\\mathscr{A})$ stesso è una garanzia (se finito): è la più piccola, cioè quella tight."
+   },
+   "en": {
+    "testo": "Which relation links the worst-case ratio $r(\\mathscr{A})$ to the relative guarantees of $\\mathscr{A}$?",
+    "opzioni": [
+     "$r(\\mathscr{A})=1$ for every feasible algorithm, whatever the guarantee $\\alpha$",
+     "It is the smallest guarantee $\\alpha$, i.e. the tight one",
+     "Every guarantee $\\alpha$ of $\\mathscr{A}$ is strictly smaller than $r(\\mathscr{A})$, and no guarantee is tight",
+     "$r(\\mathscr{A})$ is always finite, and every guarantee $\\alpha\\ge1$ is tight for $\\mathscr{A}$"
+    ],
+    "spiegazione": "Every guarantee is $\\ge r(\\mathscr{A})$ and $r(\\mathscr{A})$ itself is a guarantee (if finite): it is the smallest one, i.e. the tight one."
+   }
+  },
+  {
+   "id": "aa-f-221",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#12-schemi-di-approssimazione",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#12-approximation-schemes"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Uno schema di approssimazione per un problema di minimo con errore relativo $\\varepsilon$: che cosa garantisce ogni $\\mathscr{A}_\\varepsilon$?",
+    "opzioni": [
+     "$\\mathscr{A}_\\varepsilon(I)\\le(1+\\varepsilon)z(I)$ su ogni istanza",
+     "$\\mathscr{A}_\\varepsilon(I)\\le z(I)+\\varepsilon$",
+     "$\\mathscr{A}_\\varepsilon(I)\\ge(1-\\varepsilon)z(I)$",
+     "$\\mathscr{A}_\\varepsilon(I)=z(I)$ per $\\varepsilon$ abbastanza piccolo"
+    ],
+    "spiegazione": "Da $(\\mathscr{A}_\\varepsilon(I)-z(I))/z(I)\\le\\varepsilon$ segue $\\mathscr{A}_\\varepsilon(I)\\le(1+\\varepsilon)z(I)$: la garanzia è relativa, non additiva."
+   },
+   "en": {
+    "testo": "An approximation scheme for a minimization problem with relative error $\\varepsilon$: what does every $\\mathscr{A}_\\varepsilon$ guarantee?",
+    "opzioni": [
+     "$\\mathscr{A}_\\varepsilon(I)\\le(1+\\varepsilon)z(I)$ on every instance",
+     "$\\mathscr{A}_\\varepsilon(I)\\le z(I)+\\varepsilon$",
+     "$\\mathscr{A}_\\varepsilon(I)\\ge(1-\\varepsilon)z(I)$",
+     "$\\mathscr{A}_\\varepsilon(I)=z(I)$ for $\\varepsilon$ small enough"
+    ],
+    "spiegazione": "From $(\\mathscr{A}_\\varepsilon(I)-z(I))/z(I)\\le\\varepsilon$ we get $\\mathscr{A}_\\varepsilon(I)\\le(1+\\varepsilon)z(I)$: the guarantee is relative, not additive."
+   }
+  },
+  {
+   "id": "aa-f-222",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-6-def-wcae",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-6-def-wcae"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa significa $e(\\mathscr{A})=\\infty$ per un algoritmo $\\mathscr{A}$?",
+    "opzioni": [
+     "$\\mathscr{A}$ non ha alcuna garanzia relativa finita",
+     "$\\mathscr{A}$ non termina",
+     "$\\mathscr{A}$ restituisce soluzioni inammissibili",
+     "$\\mathscr{A}$ non ha alcuna garanzia additiva finita"
+    ],
+    "spiegazione": "$e(\\mathscr{A})$ è la più piccola garanzia additiva: se è infinito, la differenza dall'ottimo non è limitata da nessuna costante. Una garanzia relativa può comunque esistere."
+   },
+   "en": {
+    "testo": "What does $e(\\mathscr{A})=\\infty$ mean for an algorithm $\\mathscr{A}$?",
+    "opzioni": [
+     "$\\mathscr{A}$ has no finite relative guarantee",
+     "$\\mathscr{A}$ does not terminate",
+     "$\\mathscr{A}$ returns infeasible solutions",
+     "$\\mathscr{A}$ has no finite additive guarantee"
+    ],
+    "spiegazione": "$e(\\mathscr{A})$ is the smallest additive guarantee: if it is infinite, the difference from the optimum is bounded by no constant. A relative guarantee may still exist."
+   }
+  },
+  {
+   "id": "aa-f-223",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-9-def-fptas",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-9-def-fptas"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale relazione vale fra le classi di schemi di approssimazione?",
+    "opzioni": [
+     "PTAS e FPTAS sono la stessa cosa",
+     "Un FPTAS non è uno schema di approssimazione",
+     "Ogni FPTAS è un PTAS, non viceversa",
+     "Ogni PTAS è un FPTAS"
+    ],
+    "spiegazione": "Un tempo polinomiale in $n$ e in $\\frac1\\varepsilon$ è in particolare polinomiale in $n$ per $\\varepsilon$ fisso; $O(n^{1/\\varepsilon})$ mostra che il contrario è falso."
+   },
+   "en": {
+    "testo": "Which relation holds between the classes of approximation schemes?",
+    "opzioni": [
+     "PTAS and FPTAS are the same thing",
+     "An FPTAS is not an approximation scheme",
+     "Every FPTAS is a PTAS, not conversely",
+     "Every PTAS is an FPTAS"
+    ],
+    "spiegazione": "A time polynomial in $n$ and in $\\frac1\\varepsilon$ is in particular polynomial in $n$ for fixed $\\varepsilon$; $O(n^{1/\\varepsilon})$ shows that the converse is false."
+   }
+  },
+  {
+   "id": "aa-f-224",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-1-def-heurvalue",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-1-def-heurvalue"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Le garanzie di approssimazione del capitolo usano $\\mathscr{A}(I)\\ge z(I)$ (minimo) o $\\mathscr{A}(I)\\le z(I)$ (massimo). Quale ipotesi su $\\mathscr{A}$ serve?",
+    "opzioni": [
+     "Che l'istanza abbia un'unica soluzione ottima",
+     "Che restituisca sempre una soluzione ammissibile",
+     "Che $\\mathscr{A}$ sia un algoritmo polinomiale",
+     "Che $\\mathscr{A}$ sia un algoritmo greedy"
+    ],
+    "spiegazione": "Il confronto con l'ottimo vale perché la soluzione euristica è ammissibile: una soluzione inammissibile potrebbe valere più dell'ottimo."
+   },
+   "en": {
+    "testo": "The approximation guarantees of the chapter use $\\mathscr{A}(I)\\ge z(I)$ (minimization) or $\\mathscr{A}(I)\\le z(I)$ (maximization). Which assumption on $\\mathscr{A}$ is needed?",
+    "opzioni": [
+     "That the instance has a unique optimal solution",
+     "That it always returns a feasible solution",
+     "That $\\mathscr{A}$ is polynomial",
+     "That $\\mathscr{A}$ is a greedy algorithm"
+    ],
+    "spiegazione": "The comparison with the optimum holds because the heuristic solution is feasible: an infeasible solution could be worth more than the optimum."
+   }
+  },
+  {
+   "id": "aa-f-225",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-1-def-heurvalue",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-1-def-heurvalue"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Perché nel capitolo si suppone $z(I)>0$?",
+    "opzioni": [
+     "Perché i rapporti dividono per $z(I)$",
+     "Perché altrimenti il problema non ha soluzioni ammissibili",
+     "Perché gli algoritmi greedy richiedono pesi positivi",
+     "Per poter usare la garanzia additiva"
+    ],
+    "spiegazione": "Con $z(I)=0$ i rapporti non sono definiti e con valori di segno diverso non hanno senso; la garanzia additiva invece non richiede la positività."
+   },
+   "en": {
+    "testo": "Why does the chapter assume $z(I)>0$?",
+    "opzioni": [
+     "Because the ratios divide by $z(I)$",
+     "Because otherwise the problem has no feasible solutions",
+     "Because greedy algorithms require positive weights",
+     "In order to use the additive guarantee"
+    ],
+    "spiegazione": "With $z(I)=0$ the ratios are undefined and with values of different sign they make no sense; the additive guarantee instead does not need positivity."
+   }
+  },
+  {
+   "id": "aa-f-226",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un algoritmo ha $\\mathscr{A}(I)\\le 2z(I)$ su tutte le istanze tranne una famiglia infinita. È una $2$-approssimazione?",
+    "opzioni": [
+     "Sì, se la famiglia è infinita ma rara",
+     "Sì: basta che valga sulle istanze di riferimento",
+     "Sì, se $r(\\mathscr{A})<\\infty$ sulle altre istanze",
+     "No: deve valere per ogni istanza"
+    ],
+    "spiegazione": "La definizione richiede la disuguaglianza per ogni istanza $I$: anche una sola istanza con rapporto maggiore di $2$ fa cadere la garanzia $2$."
+   },
+   "en": {
+    "testo": "An algorithm has $\\mathscr{A}(I)\\le 2z(I)$ on all instances except an infinite family. Is it a $2$-approximation?",
+    "opzioni": [
+     "Yes, if the family is infinite but rare",
+     "Yes: it is enough that it holds on the reference instances",
+     "Yes, if $r(\\mathscr{A})<\\infty$ on the other instances",
+     "No: it must hold for every instance"
+    ],
+    "spiegazione": "The definition requires the inequality for every instance $I$: even a single instance with ratio larger than $2$ breaks the guarantee $2$."
+   }
+  },
+  {
+   "id": "aa-f-227",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-8-def-ptas",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-8-def-ptas"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nella definizione di PTAS il tempo di $\\mathscr{A}_\\varepsilon$ deve essere polinomiale nella taglia dell'istanza: per quali $\\varepsilon$?",
+    "opzioni": [
+     "Solo per $\\varepsilon=\\frac12$",
+     "Per nessun $\\varepsilon$: basta che sia pseudo-polinomiale",
+     "Per ogni $\\varepsilon\\in(0,1)$ fissato",
+     "Uniformemente in $\\varepsilon$, con lo stesso polinomio"
+    ],
+    "spiegazione": "Per un PTAS basta che ogni $\\mathscr{A}_\\varepsilon$, con $\\varepsilon$ fisso, sia polinomiale; se il tempo è polinomiale anche in $\\frac1\\varepsilon$ lo schema è un FPTAS."
+   },
+   "en": {
+    "testo": "In the definition of a PTAS the running time of $\\mathscr{A}_\\varepsilon$ must be polynomial in the instance size: for which $\\varepsilon$?",
+    "opzioni": [
+     "Only for $\\varepsilon=\\frac12$",
+     "For no $\\varepsilon$: pseudo-polynomial is enough",
+     "For every fixed $\\varepsilon\\in(0,1)$",
+     "Uniformly in $\\varepsilon$, with the same polynomial"
+    ],
+    "spiegazione": "For a PTAS it is enough that every $\\mathscr{A}_\\varepsilon$, with fixed $\\varepsilon$, is polynomial; if the time is polynomial also in $\\frac1\\varepsilon$ the scheme is an FPTAS."
+   }
+  },
+  {
+   "id": "aa-f-228",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#111-garanzia-di-prestazione-relativa",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#111-relative-performance-guarantee"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per dimostrare che una garanzia relativa $\\alpha$ è tight, che cosa basta esibire?",
+    "opzioni": [
+     "Un'istanza con rapporto maggiore di $\\alpha$",
+     "Un'istanza con rapporto esattamente $\\alpha$",
+     "Un'istanza su cui l'algoritmo è ottimo",
+     "Una dimostrazione che $\\mathscr{A}(I)\\le\\alpha z(I)$"
+    ],
+    "spiegazione": "La disuguaglianza $\\mathscr{A}(I)\\le\\alpha z(I)$ dimostra la garanzia; la tightness richiede istanze che la raggiungono o la avvicinano quanto si vuole. Un rapporto maggiore di $\\alpha$ smentirebbe la garanzia."
+   },
+   "en": {
+    "testo": "To prove that a relative guarantee $\\alpha$ is tight, what is it enough to exhibit?",
+    "opzioni": [
+     "An instance with ratio larger than $\\alpha$",
+     "An instance with ratio exactly $\\alpha$",
+     "An instance on which the algorithm is optimal",
+     "A proof that $\\mathscr{A}(I)\\le\\alpha z(I)$"
+    ],
+    "spiegazione": "The inequality $\\mathscr{A}(I)\\le\\alpha z(I)$ proves the guarantee; tightness requires instances that reach it or approach it arbitrarily closely. A ratio larger than $\\alpha$ would disprove the guarantee."
+   }
+  },
+  {
+   "id": "aa-f-229",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-5-def-beta-add",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-5-def-beta-add"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Nella definizione di algoritmo $\\beta$-additivo, che cosa si richiede a $\\beta$?",
+    "opzioni": [
+     "$\\beta\\ge0$ costante",
+     "$\\beta\\ge1$",
+     "$\\beta$ proporzionale a $z(I)$",
+     "$\\beta$ dipendente dalla taglia dell'istanza"
+    ],
+    "spiegazione": "$\\beta\\in[0,+\\infty)$ è una costante; se dipendesse da $z(I)$ o dalla taglia non sarebbe più una garanzia additiva."
+   },
+   "en": {
+    "testo": "In the definition of a $\\beta$-additive algorithm, what is required of $\\beta$?",
+    "opzioni": [
+     "$\\beta\\ge0$ constant",
+     "$\\beta\\ge1$",
+     "$\\beta$ proportional to $z(I)$",
+     "$\\beta$ depending on the instance size"
+    ],
+    "spiegazione": "$\\beta\\in[0,+\\infty)$ is a constant; if it depended on $z(I)$ or on the size it would no longer be an additive guarantee."
+   }
+  },
+  {
+   "id": "aa-f-230",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-1-vci-thm43",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-1-vci-thm43"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quale problema di decisione NP-completo si usa per dimostrare che nessun algoritmo polinomiale per il VCP ha rapporto sempre minore di $\\frac43$ (se $P\\neq NP$)?",
+    "opzioni": [
+     "Decidere se $\\chi(G)\\le3$",
+     "Decidere se $\\chi(G)\\le2$",
+     "Decidere se $G$ è planare",
+     "Decidere se $\\omega(G)\\le2$"
+    ],
+    "spiegazione": "Con rapporto $<\\frac43$, su un grafo con $\\chi(G)=3$ l'algoritmo userebbe al più $3$ colori e su $\\chi(G)\\ge4$ almeno $4$: deciderebbe la $3$-colorabilità."
+   },
+   "en": {
+    "testo": "Which NP-complete decision problem is used to prove that no polynomial algorithm for the VCP always has ratio below $\\frac43$ (if $P\\neq NP$)?",
+    "opzioni": [
+     "Deciding whether $\\chi(G)\\le3$",
+     "Deciding whether $\\chi(G)\\le2$",
+     "Deciding whether $G$ is planar",
+     "Deciding whether $\\omega(G)\\le2$"
+    ],
+    "spiegazione": "With ratio $<\\frac43$, on a graph with $\\chi(G)=3$ the algorithm would use at most $3$ colors and on $\\chi(G)\\ge4$ at least $4$: it would decide $3$-colorability."
+   }
+  },
+  {
+   "id": "aa-f-231",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-2-vci-thmZ",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-2-vci-thmZ"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il risultato di Zuckerman (2007) dice che, se $P\\neq NP$, per ogni $\\varepsilon>0$ nessun algoritmo polinomiale per il VCP ha sempre rapporto al più quale quantità?",
+    "opzioni": [
+     "$1+\\varepsilon$",
+     "$\\log n$",
+     "$\\frac43-\\varepsilon$",
+     "$n^{1-\\varepsilon}$"
+    ],
+    "spiegazione": "Il rapporto banale è $n$ (un colore per vertice); Zuckerman mostra che non si può fare molto meglio: neanche $n^{1-\\varepsilon}$."
+   },
+   "en": {
+    "testo": "Zuckerman's result (2007) states that, if $P\\neq NP$, for every $\\varepsilon>0$ no polynomial algorithm for the VCP always has ratio at most which quantity?",
+    "opzioni": [
+     "$1+\\varepsilon$",
+     "$\\log n$",
+     "$\\frac43-\\varepsilon$",
+     "$n^{1-\\varepsilon}$"
+    ],
+    "spiegazione": "The trivial ratio is $n$ (one color per vertex); Zuckerman shows that one cannot do much better: not even $n^{1-\\varepsilon}$."
+   }
+  },
+  {
+   "id": "aa-f-232",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-4-vci-defbip",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-4-vci-defbip"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quando un grafo $G=(V,E)$ si dice bipartito?",
+    "opzioni": [
+     "Se $\\omega(G)=2$",
+     "Se ogni vertice ha grado $2$",
+     "Se $\\chi(G)\\le2$",
+     "Se ha un numero pari di vertici"
+    ],
+    "spiegazione": "Bipartito vuol dire colorabile con due colori: le due classi di colore sono insiemi stabili."
+   },
+   "en": {
+    "testo": "When is a graph $G=(V,E)$ called bipartite?",
+    "opzioni": [
+     "If $\\omega(G)=2$, i.e. it has an edge",
+     "If every vertex has degree exactly $2$",
+     "If $\\chi(G)\\le2$",
+     "If it has an even number of vertices"
+    ],
+    "spiegazione": "Bipartite means colorable with two colors: the two color classes are stable sets."
+   }
+  },
+  {
+   "id": "aa-f-233",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-5-vci-propBFS",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-5-vci-propBFS"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Con quale complessità si decide se $\\chi(G)\\le2$ (e si trova una $2$-colorazione se esiste)?",
+    "opzioni": [
+     "Non si sa in tempo polinomiale",
+     "$O(n+m)$, con una visita in ampiezza",
+     "$O(2^n)$, provando tutte le partizioni",
+     "$O(n^3)$, con un modello PLI"
+    ],
+    "spiegazione": "La visita in ampiezza colora i livelli alternando i due colori; uno spigolo fra due vertici dello stesso colore prova che $G$ non è bipartito."
+   },
+   "en": {
+    "testo": "With which complexity can one decide whether $\\chi(G)\\le2$ (and find a $2$-coloring if it exists)?",
+    "opzioni": [
+     "It is not known in polynomial time",
+     "$O(n+m)$, with a breadth-first search",
+     "$O(2^n)$, trying all partitions",
+     "$O(n^3)$, with an ILP model"
+    ],
+    "spiegazione": "Breadth-first search colors the levels alternating the two colors; an edge between two vertices of the same color proves that $G$ is not bipartite."
+   }
+  },
+  {
+   "id": "aa-f-234",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-6-vci-propDelta",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-6-vci-propDelta"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Un grafo ha grado massimo $\\Delta(G)=5$. Quanti colori usa al più la colorazione greedy, con qualunque ordine dei vertici?",
+    "opzioni": [
+     "$6$",
+     "$5$",
+     "$10$",
+     "Dipende dall'ordine, senza limite"
+    ],
+    "spiegazione": "Quando il greedy colora un vertice, i suoi vicini già colorati sono al più $\\Delta(G)$: uno dei colori $1,\\dots,\\Delta(G)+1$ è libero."
+   },
+   "en": {
+    "testo": "A graph has maximum degree $\\Delta(G)=5$. At most how many colors does the greedy coloring use, with any order of the vertices?",
+    "opzioni": [
+     "$6$",
+     "$5$",
+     "$10$",
+     "It depends on the order, without bound"
+    ],
+    "spiegazione": "When greedy colors a vertex, its already colored neighbours are at most $\\Delta(G)$: one of the colors $1,\\dots,\\Delta(G)+1$ is free."
+   }
+  },
+  {
+   "id": "aa-f-235",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-7-vci-lemDeg5",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-7-vci-lemDeg5"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quanti spigoli può avere al più un grafo planare semplice con $n=10$ vertici?",
+    "opzioni": [
+     "$27$",
+     "$30$",
+     "$45$",
+     "$24$"
+    ],
+    "spiegazione": "Per $n\\ge3$ un grafo planare ha $m\\le3n-6=24$; $45=\\binom{10}{2}$ è il grafo completo, che non è planare."
+   },
+   "en": {
+    "testo": "At most how many edges can a simple planar graph with $n=10$ vertices have?",
+    "opzioni": [
+     "$27$",
+     "$30$",
+     "$45$",
+     "$24$"
+    ],
+    "spiegazione": "For $n\\ge3$ a planar graph has $m\\le3n-6=24$; $45=\\binom{10}{2}$ is the complete graph, which is not planar."
+   }
+  },
+  {
+   "id": "aa-f-236",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-7-vci-lemDeg5",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-7-vci-lemDeg5"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Perché ogni grafo planare ha un vertice di grado al più $5$?",
+    "opzioni": [
+     "Perché $\\omega(G)\\le4$ in ogni grafo planare",
+     "Perché ogni faccia del disegno è un triangolo",
+     "Perché $m\\le3n-6$: la somma dei gradi $2m$ è minore di $6n$",
+     "Perché i grafi planari sono sempre bipartiti"
+    ],
+    "spiegazione": "Se tutti i gradi fossero almeno $6$ si avrebbe $2m\\ge6n$, contro $2m\\le6n-12$."
+   },
+   "en": {
+    "testo": "Why does every planar graph have a vertex of degree at most $5$?",
+    "opzioni": [
+     "Because $\\omega(G)\\le4$",
+     "Because every face is a triangle",
+     "Because $m\\le3n-6$",
+     "Because planar graphs are bipartite"
+    ],
+    "spiegazione": "If all degrees were at least $6$ we would have $2m\\ge6n$, against $2m\\le6n-12$."
+   }
+  },
+  {
+   "id": "aa-f-237",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-8-vci-thm5",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-8-vci-thm5"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa afferma il teorema di Heawood (1890) sui grafi planari?",
+    "opzioni": [
+     "Ogni grafo planare è bipartito",
+     "Ogni grafo planare si colora con $5$ colori",
+     "Ogni grafo planare si colora con $3$ colori",
+     "Colorare un grafo planare con $5$ colori è NP-difficile"
+    ],
+    "spiegazione": "Il vertice di grado al più $5$ permette una dimostrazione per induzione che diventa un algoritmo polinomiale; decidere la $3$-colorabilità resta difficile."
+   },
+   "en": {
+    "testo": "What does Heawood's theorem (1890) state on planar graphs?",
+    "opzioni": [
+     "Every planar graph is bipartite",
+     "Every planar graph can be colored with $5$ colors",
+     "Every planar graph can be colored with $3$ colors",
+     "Coloring a planar graph with $5$ colors is NP-hard"
+    ],
+    "spiegazione": "The vertex of degree at most $5$ allows a proof by induction that becomes a polynomial algorithm; deciding $3$-colorability stays hard."
+   }
+  },
+  {
+   "id": "aa-f-238",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-9-vci-corPL",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-9-vci-corPL"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "L'algoritmo $PL$ sui grafi planari restituisce $4$ colori su un grafo con $\\chi(G)=3$. È coerente con la garanzia di $PL$?",
+    "opzioni": [
+     "Sì: l'errore $4-3=1$ è al più $2$",
+     "No: $PL$ è esatto sui grafi planari",
+     "No: $PL$ usa sempre $5$ colori",
+     "Sì, ma solo perché $\\chi(G)\\ge4$"
+    ],
+    "spiegazione": "$PL$ è $2$-additivo: $PL(I)-\\chi(G)\\le2$; con $\\chi(G)=3$ può restituire $3$, $4$ o $5$ colori."
+   },
+   "en": {
+    "testo": "The algorithm $PL$ on planar graphs returns $4$ colors on a graph with $\\chi(G)=3$. Is this consistent with the guarantee of $PL$?",
+    "opzioni": [
+     "Yes: the error $4-3=1$ is at most $2$",
+     "No: $PL$ is exact on planar graphs",
+     "No: $PL$ always uses $5$ colors",
+     "Yes, but only because $\\chi(G)\\ge4$"
+    ],
+    "spiegazione": "$PL$ is $2$-additive: $PL(I)-\\chi(G)\\le2$; with $\\chi(G)=3$ it may return $3$, $4$ or $5$ colors."
+   }
+  },
+  {
+   "id": "aa-f-239",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-10-vci-defint",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-10-vci-defint"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "In un grafo di intervalli, quando due vertici $u$ e $v$ sono adiacenti?",
+    "opzioni": [
+     "Quando $a_u=a_v$",
+     "Quando un intervallo contiene l'altro",
+     "Quando gli intervalli sono disgiunti",
+     "Quando gli intervalli si intersecano"
+    ],
+    "spiegazione": "La definizione associa a ogni vertice un intervallo chiuso; gli spigoli sono le coppie di intervalli con almeno un punto in comune."
+   },
+   "en": {
+    "testo": "In an interval graph, when are two vertices $u$ and $v$ adjacent?",
+    "opzioni": [
+     "When the left endpoints coincide, $a_u=a_v$",
+     "When one interval contains the other one",
+     "When the two intervals are disjoint",
+     "When the two intervals intersect"
+    ],
+    "spiegazione": "The definition associates a closed interval with every vertex; the edges are the pairs of intervals with at least one common point."
+   }
+  },
+  {
+   "id": "aa-f-240",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-11-vci-propInt",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-11-vci-propInt"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Su un grafo di intervalli, con quale ordine dei vertici la colorazione greedy è ottima?",
+    "opzioni": [
+     "Per grado decrescente dei vertici",
+     "Con qualunque ordine dei vertici",
+     "Per estremo sinistro $a_v$ non decrescente",
+     "Per estremo destro $b_v$ decrescente"
+    ],
+    "spiegazione": "Con l'ordine per $a_v$, quando si colora $v$ tutti i suoi vicini colorati contengono il punto $a_v$: con $v$ formano una clique, quindi bastano $\\omega(G)$ colori."
+   },
+   "en": {
+    "testo": "On an interval graph, with which order of the vertices is the greedy coloring optimal?",
+    "opzioni": [
+     "By decreasing degree of the vertices",
+     "With any order of the vertices",
+     "By non-decreasing left endpoint $a_v$",
+     "By decreasing right endpoint $b_v$"
+    ],
+    "spiegazione": "With the order by $a_v$, when $v$ is colored all its colored neighbours contain the point $a_v$: together with $v$ they form a clique, so $\\omega(G)$ colors suffice."
+   }
+  },
+  {
+   "id": "aa-f-241",
+   "livello": "facile",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#432-grafi-di-grado-massimo-limitato",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#432-graphs-of-bounded-maximum-degree"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Su un grafo con $\\Delta(G)=3$, il greedy usa al più $4$ colori. Quale rapporto garantisce rispetto a $\\chi(G)$, se $G$ ha almeno uno spigolo?",
+    "opzioni": [
+     "Il greedy è ottimo su questi grafi",
+     "Al più $2$, perché $\\chi(G)\\ge2$",
+     "Al più $\\frac43$, come per i planari",
+     "Al più $4$, e non meglio"
+    ],
+    "spiegazione": "Con uno spigolo $\\chi(G)\\ge2$, quindi $GC(I)/\\chi(G)\\le4/2=2$: in generale $\\frac{\\Delta(G)+1}{2}$."
+   },
+   "en": {
+    "testo": "On a graph with $\\Delta(G)=3$, greedy uses at most $4$ colors. Which ratio does it guarantee with respect to $\\chi(G)$, if $G$ has at least one edge?",
+    "opzioni": [
+     "Greedy is optimal on these graphs",
+     "At most $2$, because $\\chi(G)\\ge2$",
+     "At most $\\frac43$, as for planar graphs",
+     "At most $4$, and not better"
+    ],
+    "spiegazione": "With an edge $\\chi(G)\\ge2$, hence $GC(I)/\\chi(G)\\le4/2=2$: in general $\\frac{\\Delta(G)+1}{2}$."
+   }
+  },
+  {
+   "id": "aa-f-242",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-3-vci-corNoConst",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-3-vci-corNoConst"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quale conseguenza ha il risultato di Zuckerman per l'approssimazione del VCP (se $P\\neq NP$)?",
+    "opzioni": [
+     "Nessuna $\\alpha$-approssimazione costante",
+     "Il VCP ha un PTAS ma non un FPTAS",
+     "Il VCP ha una $\\frac43$-approssimazione polinomiale",
+     "Il VCP ha un algoritmo polinomiale $2$-additivo"
+    ],
+    "spiegazione": "Una costante $\\alpha$ sarebbe minore di $n^{1-\\varepsilon}$ per $n$ grande: niente rapporto costante, quindi niente schema di approssimazione."
+   },
+   "en": {
+    "testo": "Which consequence does Zuckerman's result have for the approximation of the VCP (if $P\\neq NP$)?",
+    "opzioni": [
+     "No constant $\\alpha$-approximation",
+     "The VCP has a PTAS but no FPTAS",
+     "The VCP has a polynomial $\\frac43$-approximation",
+     "The VCP has a polynomial $2$-additive algorithm"
+    ],
+    "spiegazione": "A constant $\\alpha$ would be smaller than $n^{1-\\varepsilon}$ for large $n$: no constant ratio, hence no approximation scheme."
+   }
+  },
+  {
+   "id": "aa-f-243",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-1-vci-thm43",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-1-vci-thm43"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa dice il teorema 4.1 per un algoritmo polinomiale $\\mathscr{A}$ per il VCP, se $P\\neq NP$?",
+    "opzioni": [
+     "Su ogni grafo $\\mathscr{A}(I)/\\chi(G)\\ge\\frac43$",
+     "Esiste un grafo con $\\mathscr{A}(I)-\\chi(G)\\ge\\frac43$",
+     "$\\mathscr{A}$ è una $\\frac43$-approssimazione",
+     "Esiste un grafo con $\\mathscr{A}(I)/\\chi(G)\\ge\\frac43$"
+    ],
+    "spiegazione": "È un risultato di caso peggiore: c'è almeno un grafo su cui il rapporto è almeno $\\frac43$, non su tutti."
+   },
+   "en": {
+    "testo": "What does Theorem 4.1 state for a polynomial algorithm $\\mathscr{A}$ for the VCP, if $P\\neq NP$?",
+    "opzioni": [
+     "On every graph $\\mathscr{A}(I)/\\chi(G)\\ge\\frac43$",
+     "There is a graph with $\\mathscr{A}(I)-\\chi(G)\\ge\\frac43$",
+     "$\\mathscr{A}$ is a $\\frac43$-approximation",
+     "There is a graph with $\\mathscr{A}(I)/\\chi(G)\\ge\\frac43$"
+    ],
+    "spiegazione": "It is a worst-case result: there is at least one graph on which the ratio is at least $\\frac43$, not on all of them."
+   }
+  },
+  {
+   "id": "aa-f-244",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-9-vci-corPL",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-9-vci-corPL"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale garanzia ha $PL$ sui grafi planari se l'algoritmo dei cinque colori si sostituisce con quello dei quattro colori?",
+    "opzioni": [
+     "Diventa esatto",
+     "Rapporto al più $\\frac43$, non additivo",
+     "Errore additivo al più $1$",
+     "Errore additivo al più $2$"
+    ],
+    "spiegazione": "Sui grafi non bipartiti $\\chi(G)\\ge3$ e si usano al più $4$ colori: errore $\\le1$. Resta non esatto perché decidere $\\chi(G)\\le3$ è difficile."
+   },
+   "en": {
+    "testo": "Which guarantee does $PL$ have on planar graphs if the five color algorithm is replaced by the four color one?",
+    "opzioni": [
+     "It becomes exact",
+     "Ratio at most $\\frac43$, not additive",
+     "Additive error at most $1$",
+     "Additive error at most $2$"
+    ],
+    "spiegazione": "On non-bipartite graphs $\\chi(G)\\ge3$ and at most $4$ colors are used: error $\\le1$. It is still not exact, since deciding $\\chi(G)\\le3$ is hard."
+   }
+  },
+  {
+   "id": "aa-f-245",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-6-vci-propDelta",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-6-vci-propDelta"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quale disuguaglianza vale, per ogni grafo $G$ e ogni ordine dei vertici, per la colorazione greedy $GC$?",
+    "opzioni": [
+     "$GC(I)\\le\\Delta(G)$",
+     "$GC(I)\\le\\Delta(G)+1$",
+     "$GC(I)\\le\\omega(G)$",
+     "$GC(I)\\le\\chi(G)+1$"
+    ],
+    "spiegazione": "Ogni vertice ha al più $\\Delta(G)$ vicini colorati prima di lui; $GC(I)\\le\\Delta(G)$ fallisce sul grafo completo $K_n$."
+   },
+   "en": {
+    "testo": "Which inequality holds, for every graph $G$ and every order of the vertices, for the greedy coloring $GC$?",
+    "opzioni": [
+     "$GC(I)\\le\\Delta(G)$",
+     "$GC(I)\\le\\Delta(G)+1$",
+     "$GC(I)\\le\\omega(G)$",
+     "$GC(I)\\le\\chi(G)+1$"
+    ],
+    "spiegazione": "Every vertex has at most $\\Delta(G)$ neighbours colored before it; $GC(I)\\le\\Delta(G)$ fails on the complete graph $K_n$."
+   }
+  },
+  {
+   "id": "aa-f-246",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-11-vci-propInt",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-11-vci-propInt"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Che cosa vale su un grafo di intervalli per la colorazione greedy con i vertici per $a_v$ non decrescente?",
+    "opzioni": [
+     "$GC(I)=\\omega(G)=\\chi(G)$",
+     "$GC(I)=\\Delta(G)+1$",
+     "$GC(I)\\le2\\chi(G)$",
+     "$GC(I)=\\chi(G)+1$"
+    ],
+    "spiegazione": "Il greedy usa $\\omega(G)$ colori e $\\omega(G)\\le\\chi(G)\\le GC(I)$: tutte uguali, la colorazione è ottima."
+   },
+   "en": {
+    "testo": "What holds on an interval graph for the greedy coloring with the vertices by non-decreasing $a_v$?",
+    "opzioni": [
+     "$GC(I)=\\omega(G)=\\chi(G)$",
+     "$GC(I)=\\Delta(G)+1$",
+     "$GC(I)\\le2\\chi(G)$",
+     "$GC(I)=\\chi(G)+1$"
+    ],
+    "spiegazione": "Greedy uses $\\omega(G)$ colors and $\\omega(G)\\le\\chi(G)\\le GC(I)$: all equal, the coloring is optimal."
+   }
+  },
+  {
+   "id": "aa-f-247",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-5-vci-propBFS",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-5-vci-propBFS"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa garantisce la visita in ampiezza sui grafi bipartiti?",
+    "opzioni": [
+     "Una colorazione con al più $3$ colori",
+     "Una $\\frac43$-approssimazione",
+     "Il numero di clique $\\omega(G)$",
+     "Una colorazione ottima"
+    ],
+    "spiegazione": "Sui bipartiti la visita trova una $2$-colorazione, ottima perché un grafo con uno spigolo richiede $2$ colori."
+   },
+   "en": {
+    "testo": "What does breadth-first search guarantee on bipartite graphs?",
+    "opzioni": [
+     "A coloring with at most $3$ colors",
+     "A $\\frac43$-approximation",
+     "The clique number $\\omega(G)$",
+     "An optimal coloring"
+    ],
+    "spiegazione": "On bipartite graphs the search finds a $2$-coloring, optimal because a graph with an edge needs $2$ colors."
+   }
+  },
+  {
+   "id": "aa-f-248",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-8-vci-thm5",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-8-vci-thm5"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Su quale proprietà dei grafi planari si basa l'algoritmo polinomiale dei cinque colori?",
+    "opzioni": [
+     "Ogni grafo planare ha $\\omega(G)\\le3$",
+     "Ogni grafo planare è un grafo di intervalli",
+     "Ogni grafo planare ha un vertice di grado al più $5$",
+     "Ogni grafo planare è un grafo bipartito"
+    ],
+    "spiegazione": "Si toglie un vertice di grado $\\le5$, si colora il resto e lo si reinserisce, ricolorando se i suoi vicini usano tutti e cinque i colori."
+   },
+   "en": {
+    "testo": "On which property of planar graphs is the polynomial five color algorithm based?",
+    "opzioni": [
+     "Every planar graph has $\\omega(G)\\le3$",
+     "Every planar graph is an interval graph",
+     "Every planar graph has a vertex of degree at most $5$",
+     "Every planar graph is a bipartite graph"
+    ],
+    "spiegazione": "One removes a vertex of degree $\\le5$, colors the rest and reinserts it, recoloring if its neighbours use all five colors."
+   }
+  },
+  {
+   "id": "aa-f-249",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-1-vci-thm43",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-1-vci-thm43"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Il teorema 4.1 (nessun rapporto sempre $<\\frac43$) richiede quale ipotesi?",
+    "opzioni": [
+     "Che $\\chi(G)\\ge4$",
+     "$P\\neq NP$",
+     "Che il grafo sia planare",
+     "Che l'algoritmo sia greedy"
+    ],
+    "spiegazione": "Se $P=NP$ la $3$-colorabilità sarebbe decidibile in tempo polinomiale e la dimostrazione cadrebbe."
+   },
+   "en": {
+    "testo": "Theorem 4.1 (no ratio always $<\\frac43$) requires which assumption?",
+    "opzioni": [
+     "That $\\chi(G)\\ge4$",
+     "$P\\neq NP$",
+     "That the graph is planar",
+     "That the algorithm is greedy"
+    ],
+    "spiegazione": "If $P=NP$, $3$-colorability would be decidable in polynomial time and the proof would collapse."
+   }
+  },
+  {
+   "id": "aa-f-250",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-1-vci-thm43",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-1-vci-thm43"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Il teorema 4.1 riguarda gli algoritmi per il VCP con quale proprietà?",
+    "opzioni": [
+     "Algoritmi polinomiali",
+     "Algoritmi esatti",
+     "Algoritmi con garanzia additiva",
+     "Algoritmi greedy"
+    ],
+    "spiegazione": "Un algoritmo esponenziale può trovare $\\chi(G)$ esattamente: il limite vale per gli algoritmi polinomiali."
+   },
+   "en": {
+    "testo": "Theorem 4.1 concerns the algorithms for the VCP with which property?",
+    "opzioni": [
+     "Polynomial algorithms",
+     "Exact algorithms",
+     "Algorithms with an additive guarantee",
+     "Greedy algorithms"
+    ],
+    "spiegazione": "An exponential algorithm can find $\\chi(G)$ exactly: the limit holds for polynomial algorithms."
+   }
+  },
+  {
+   "id": "aa-f-251",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-7-vci-lemDeg5",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-7-vci-lemDeg5"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il lemma $m\\le3n-6$ sui grafi planari vale sotto quale ipotesi sul numero di vertici?",
+    "opzioni": [
+     "$n\\ge1$",
+     "$n$ pari",
+     "$n\\ge6$",
+     "$n\\ge3$"
+    ],
+    "spiegazione": "Con $n=2$ e uno spigolo si avrebbe $1\\le0$: il lemma richiede almeno tre vertici."
+   },
+   "en": {
+    "testo": "The lemma $m\\le3n-6$ on planar graphs holds under which assumption on the number of vertices?",
+    "opzioni": [
+     "$n\\ge1$",
+     "$n$ even",
+     "$n\\ge6$",
+     "$n\\ge3$"
+    ],
+    "spiegazione": "With $n=2$ and one edge we would get $1\\le0$: the lemma requires at least three vertices."
+   }
+  },
+  {
+   "id": "aa-f-252",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-9-vci-corPL",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-9-vci-corPL"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "La garanzia $PL(I)-\\chi(G)\\le2$ vale per quali grafi?",
+    "opzioni": [
+     "Per i grafi con $\\Delta(G)\\le5$",
+     "Per i grafi di intervalli",
+     "Per i grafi planari",
+     "Per tutti i grafi"
+    ],
+    "spiegazione": "$PL$ usa l'algoritmo dei cinque colori, che funziona solo sui grafi planari; sui grafi generali nessuna garanzia costante."
+   },
+   "en": {
+    "testo": "For which graphs does the guarantee $PL(I)-\\chi(G)\\le2$ hold?",
+    "opzioni": [
+     "For graphs with $\\Delta(G)\\le5$",
+     "For interval graphs",
+     "For planar graphs",
+     "For all graphs"
+    ],
+    "spiegazione": "$PL$ uses the five color algorithm, which works only on planar graphs; on general graphs there is no constant guarantee."
+   }
+  },
+  {
+   "id": "aa-f-253",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-9-vci-corPL",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-9-vci-corPL"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nell'analisi di $PL$, perché sui grafi planari non bipartiti l'errore è al più $2$?",
+    "opzioni": [
+     "Perché i grafi planari hanno $\\omega(G)\\le2$ e $\\Delta(G)\\le5$",
+     "Perché $\\chi(G)\\ge3$ e $PL$ usa $\\le5$ colori",
+     "Perché i grafi planari hanno sempre $\\chi(G)\\le2$",
+     "Perché $PL$ colora ogni grafo con la visita in ampiezza"
+    ],
+    "spiegazione": "I grafi bipartiti si colorano all'ottimo; sugli altri $\\chi(G)\\ge3$ e i colori sono al più $5$: $5-3=2$."
+   },
+   "en": {
+    "testo": "In the analysis of $PL$, why is the error at most $2$ on non-bipartite planar graphs?",
+    "opzioni": [
+     "Because planar graphs have $\\omega(G)\\le2$ and $\\Delta(G)\\le5$",
+     "Because $\\chi(G)\\ge3$ and $PL$ uses $\\le5$ colors",
+     "Because planar graphs always have $\\chi(G)\\le2$",
+     "Because $PL$ colors every graph by breadth-first search"
+    ],
+    "spiegazione": "Bipartite graphs are colored optimally; on the others $\\chi(G)\\ge3$ and colors are at most $5$: $5-3=2$."
+   }
+  },
+  {
+   "id": "aa-f-254",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-11-vci-propInt",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-11-vci-propInt"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "La colorazione greedy è ottima sui grafi di intervalli: quale ipotesi sull'ordine dei vertici serve?",
+    "opzioni": [
+     "L'ordine per estremo sinistro non decrescente",
+     "Nessuna: ogni ordine dei vertici è ottimo",
+     "L'ordine per lunghezza dell'intervallo",
+     "L'ordine per grado crescente dei vertici"
+    ],
+    "spiegazione": "Con un ordine qualunque il greedy può usare più di $\\omega(G)$ colori anche su un grafo di intervalli."
+   },
+   "en": {
+    "testo": "Greedy coloring is optimal on interval graphs: which assumption on the order of the vertices is needed?",
+    "opzioni": [
+     "The order by non-decreasing left endpoint",
+     "None: every order of the vertices is optimal",
+     "The order by length of the interval",
+     "The order by increasing degree"
+    ],
+    "spiegazione": "With an arbitrary order greedy may use more than $\\omega(G)$ colors even on an interval graph."
+   }
+  },
+  {
+   "id": "aa-f-255",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-2-vci-thmZ",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-2-vci-thmZ"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il risultato di Zuckerman sul VCP vale per quali $\\varepsilon$?",
+    "opzioni": [
+     "Solo per $\\varepsilon\\ge\\frac12$",
+     "Solo per $\\varepsilon<\\frac13$",
+     "Per $\\varepsilon=0$",
+     "Per ogni $\\varepsilon>0$"
+    ],
+    "spiegazione": "Per ogni $\\varepsilon>0$, se $P\\neq NP$: con $\\varepsilon=0$ il rapporto $n$ è banalmente raggiungibile."
+   },
+   "en": {
+    "testo": "For which $\\varepsilon$ does Zuckerman's result on the VCP hold?",
+    "opzioni": [
+     "Only for $\\varepsilon\\ge\\frac12$",
+     "Only for $\\varepsilon<\\frac13$",
+     "For $\\varepsilon=0$",
+     "For every $\\varepsilon>0$"
+    ],
+    "spiegazione": "For every $\\varepsilon>0$, if $P\\neq NP$: with $\\varepsilon=0$ the ratio $n$ is trivially achievable."
+   }
+  },
+  {
+   "id": "aa-f-256",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-6-vci-propDelta",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-6-vci-propDelta"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Il bound $GC(I)\\le\\Delta(G)+1$ dipende dall'ordine in cui il greedy colora i vertici?",
+    "opzioni": [
+     "Sì: solo per l'ordine dei nomi",
+     "Sì: solo sui grafi planari",
+     "No: vale per ogni ordine",
+     "Sì: solo per grado decrescente"
+    ],
+    "spiegazione": "La dimostrazione usa solo che un vertice ha al più $\\Delta(G)$ vicini: vale qualunque sia l'ordine."
+   },
+   "en": {
+    "testo": "Does the bound $GC(I)\\le\\Delta(G)+1$ depend on the order in which greedy colors the vertices?",
+    "opzioni": [
+     "Yes: only for the order of the names",
+     "Yes: only on planar graphs",
+     "No: it holds for every order",
+     "Yes: only by decreasing degree"
+    ],
+    "spiegazione": "The proof only uses that a vertex has at most $\\Delta(G)$ neighbours: it holds whatever the order."
+   }
+  },
+  {
+   "id": "aa-f-257",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-1-cli-defprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-1-cli-defprod"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Nel prodotto forte $G\\boxtimes H$, quando due vertici distinti $(u,x)$ e $(v,y)$ sono adiacenti?",
+    "opzioni": [
+     "Se $\\{u,v\\}\\in E$ e anche $\\{x,y\\}\\in F$, senza altri casi",
+     "Se $u=v$ oppure $x=y$, qualunque siano gli spigoli",
+     "Se $\\{u,v\\}\\in E$ oppure $\\{x,y\\}\\in F$, anche da soli",
+     "Se $u=v$ o $\\{u,v\\}\\in E$, e $x=y$ o $\\{x,y\\}\\in F$"
+    ],
+    "spiegazione": "In ogni coordinata i due vertici devono coincidere o essere adiacenti; la seconda opzione è il prodotto tensoriale, che perde i lati «dritti»."
+   },
+   "en": {
+    "testo": "In the strong product $G\\boxtimes H$, when are two distinct vertices $(u,x)$ and $(v,y)$ adjacent?",
+    "opzioni": [
+     "If $\\{u,v\\}\\in E$ and also $\\{x,y\\}\\in F$, no other case",
+     "If $u=v$ or $x=y$, whatever the edges are",
+     "If $\\{u,v\\}\\in E$ or $\\{x,y\\}\\in F$, even alone",
+     "If $u=v$ or $\\{u,v\\}\\in E$, and $x=y$ or $\\{x,y\\}\\in F$"
+    ],
+    "spiegazione": "In each coordinate the two vertices must coincide or be adjacent; the second option is the tensor product, which loses the «straight» edges."
+   }
+  },
+  {
+   "id": "aa-f-258",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-1-cli-defprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-1-cli-defprod"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quanti vertici ha il prodotto forte di un grafo con $5$ vertici e di un grafo con $7$ vertici?",
+    "opzioni": [
+     "$5^7$",
+     "$70$",
+     "$35$",
+     "$12$"
+    ],
+    "spiegazione": "L'insieme dei vertici è il prodotto cartesiano $V\\times W$: $5\\cdot7=35$ vertici."
+   },
+   "en": {
+    "testo": "How many vertices does the strong product of a graph with $5$ vertices and a graph with $7$ vertices have?",
+    "opzioni": [
+     "$5^7$",
+     "$70$",
+     "$35$",
+     "$12$"
+    ],
+    "spiegazione": "The vertex set is the Cartesian product $V\\times W$: $5\\cdot7=35$ vertices."
+   }
+  },
+  {
+   "id": "aa-f-259",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-2-cli-propprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-2-cli-propprod"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Se $\\omega(G)=3$ e $\\omega(H)=4$, quanto vale $\\omega(G\\boxtimes H)$?",
+    "opzioni": [
+     "$81$",
+     "$12$",
+     "$7$",
+     "$4$"
+    ],
+    "spiegazione": "Per la proposizione 5.2 il numero di clique del prodotto forte è il prodotto dei numeri di clique: $3\\cdot4=12$."
+   },
+   "en": {
+    "testo": "If $\\omega(G)=3$ and $\\omega(H)=4$, what is $\\omega(G\\boxtimes H)$?",
+    "opzioni": [
+     "$81$",
+     "$12$",
+     "$7$",
+     "$4$"
+    ],
+    "spiegazione": "By Proposition 5.2 the clique number of the strong product is the product of the clique numbers: $3\\cdot4=12$."
+   }
+  },
+  {
+   "id": "aa-f-260",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-2-cli-propprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-2-cli-propprod"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Se $K$ è una clique di $G\\boxtimes H$, che cosa è la sua proiezione $p(K)$ sui vertici di $G$?",
+    "opzioni": [
+     "Una clique di $G$",
+     "Un insieme stabile di $G$",
+     "Una clique di $H$",
+     "Un insieme qualunque di vertici di $G$"
+    ],
+    "spiegazione": "Due elementi di $K$ con prime coordinate diverse hanno prime coordinate adiacenti in $G$: la proiezione è una clique."
+   },
+   "en": {
+    "testo": "If $K$ is a clique of $G\\boxtimes H$, what is its projection $p(K)$ on the vertices of $G$?",
+    "opzioni": [
+     "A clique of $G$",
+     "A stable set of $G$",
+     "A clique of $H$",
+     "An arbitrary set of vertices of $G$"
+    ],
+    "spiegazione": "Two elements of $K$ with different first coordinates have adjacent first coordinates in $G$: the projection is a clique."
+   }
+  },
+  {
+   "id": "aa-f-261",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#522-un-rapporto-costante-darebbe-ogni-rapporto-costante",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#522-a-constant-ratio-would-give-every-constant-ratio"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "La potenza forte $G^{\\boxtimes k}$ di un grafo con $n$ vertici: quanti vertici ha e quanto vale il suo numero di clique?",
+    "opzioni": [
+     "$kn$ vertici e $k\\,\\omega(G)$",
+     "$n^k$ vertici e $k\\,\\omega(G)$",
+     "$kn$ vertici e $\\omega(G)^k$",
+     "$n^k$ vertici e $\\omega(G)^k$"
+    ],
+    "spiegazione": "Applicando $k-1$ volte il prodotto forte: i vertici si moltiplicano e anche i numeri di clique. Per $k$ fisso la taglia resta polinomiale."
+   },
+   "en": {
+    "testo": "The strong power $G^{\\boxtimes k}$ of a graph with $n$ vertices: how many vertices does it have and what is its clique number?",
+    "opzioni": [
+     "$kn$ vertices and $k\\,\\omega(G)$",
+     "$n^k$ vertices and $k\\,\\omega(G)$",
+     "$kn$ vertices and $\\omega(G)^k$",
+     "$n^k$ vertices and $\\omega(G)^k$"
+    ],
+    "spiegazione": "Applying the strong product $k-1$ times: the vertices multiply and so do the clique numbers. For fixed $k$ the size stays polynomial."
+   }
+  },
+  {
+   "id": "aa-f-262",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-3-cli-thmamp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-3-cli-thmamp"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Un algoritmo con rapporto $\\alpha=4$ per l'MCP, applicato a $G^{\\boxtimes 2}$ e riportato su $G$, che rapporto garantisce su $G$?",
+    "opzioni": [
+     "$16$",
+     "$8$",
+     "$\\sqrt4=2$",
+     "$4$"
+    ],
+    "spiegazione": "Sul quadrato forte si trova una clique di taglia $\\ge\\omega(G)^2/4$, da cui una clique di $G$ di taglia $\\ge\\omega(G)/\\sqrt4$: il rapporto diventa $\\alpha^{1/k}$."
+   },
+   "en": {
+    "testo": "An algorithm with ratio $\\alpha=4$ for the MCP, applied to $G^{\\boxtimes 2}$ and brought back to $G$, which ratio does it guarantee on $G$?",
+    "opzioni": [
+     "$16$",
+     "$8$",
+     "$\\sqrt4=2$",
+     "$4$"
+    ],
+    "spiegazione": "On the strong square one finds a clique of size $\\ge\\omega(G)^2/4$, hence a clique of $G$ of size $\\ge\\omega(G)/\\sqrt4$: the ratio becomes $\\alpha^{1/k}$."
+   }
+  },
+  {
+   "id": "aa-f-263",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-4-cli-thmHZ",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-4-cli-thmHZ"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Il rapporto banale $n$ per l'MCP si ottiene restituendo che cosa?",
+    "opzioni": [
+     "Il vertice di grado minimo con i suoi vicini",
+     "Un solo vertice",
+     "Tutti i vertici",
+     "Un insieme stabile massimale"
+    ],
+    "spiegazione": "Un vertice è sempre una clique e $\\omega(G)\\le n$: rapporto al più $n$. Håstad e Zuckerman mostrano che $n^{1-\\varepsilon}$ non si raggiunge."
+   },
+   "en": {
+    "testo": "The trivial ratio $n$ for the MCP is obtained by returning what?",
+    "opzioni": [
+     "The vertex of minimum degree with its neighbours",
+     "A single vertex",
+     "All the vertices",
+     "A maximal stable set"
+    ],
+    "spiegazione": "A vertex is always a clique and $\\omega(G)\\le n$: ratio at most $n$. Håstad and Zuckerman show that $n^{1-\\varepsilon}$ cannot be reached."
+   }
+  },
+  {
+   "id": "aa-f-264",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-5-cli-propplanar",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-5-cli-propplanar"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Perché un grafo planare non contiene una clique di $5$ vertici?",
+    "opzioni": [
+     "Perché $K_5$ ha $10>3\\cdot5-6=9$ spigoli",
+     "Perché i grafi planari sono bipartiti",
+     "Perché i grafi planari hanno grado massimo $4$",
+     "Perché $\\chi(G)\\le4$ implica $n\\le4$"
+    ],
+    "spiegazione": "Un sottografo di un grafo planare è planare, e $K_5$ viola $m\\le3n-6$: quindi $\\omega(G)\\le4$."
+   },
+   "en": {
+    "testo": "Why does a planar graph contain no clique of $5$ vertices?",
+    "opzioni": [
+     "Because $K_5$ has $10>3\\cdot5-6=9$ edges",
+     "Because planar graphs are bipartite",
+     "Because planar graphs have maximum degree $4$",
+     "Because $\\chi(G)\\le4$ implies $n\\le4$"
+    ],
+    "spiegazione": "A subgraph of a planar graph is planar, and $K_5$ violates $m\\le3n-6$: hence $\\omega(G)\\le4$."
+   }
+  },
+  {
+   "id": "aa-f-265",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-5-cli-propplanar",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-5-cli-propplanar"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Come si risolve all'ottimo l'MCP su un grafo planare in tempo $O(n^4)$?",
+    "opzioni": [
+     "Con il greedy per grado decrescente",
+     "Con una visita in ampiezza del grafo",
+     "Con l'algoritmo dei cinque colori",
+     "Provando tutti gli insiemi di al più $4$ vertici"
+    ],
+    "spiegazione": "Poiché $\\omega(G)\\le4$, basta enumerare i sottoinsiemi di al più $4$ vertici: sono $O(n^4)$."
+   },
+   "en": {
+    "testo": "How is the MCP solved to optimality on a planar graph in $O(n^4)$ time?",
+    "opzioni": [
+     "By greedy by decreasing degree",
+     "By a breadth-first search of the graph",
+     "By the five color algorithm",
+     "By trying all sets of at most $4$ vertices"
+    ],
+    "spiegazione": "Since $\\omega(G)\\le4$, it is enough to enumerate the subsets of at most $4$ vertices: there are $O(n^4)$ of them."
+   }
+  },
+  {
+   "id": "aa-f-266",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-6-cli-propdeg",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-6-cli-propdeg"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Un grafo ha grado massimo $\\Delta(G)=6$. Quale bound vale per $\\omega(G)$?",
+    "opzioni": [
+     "$\\omega(G)\\le3$",
+     "$\\omega(G)\\le12$",
+     "$\\omega(G)\\le7$",
+     "$\\omega(G)\\le6$"
+    ],
+    "spiegazione": "In una clique ogni vertice è adiacente agli altri $\\omega(G)-1$, quindi $\\omega(G)-1\\le\\Delta(G)$."
+   },
+   "en": {
+    "testo": "A graph has maximum degree $\\Delta(G)=6$. Which bound holds for $\\omega(G)$?",
+    "opzioni": [
+     "$\\omega(G)\\le3$",
+     "$\\omega(G)\\le12$",
+     "$\\omega(G)\\le7$",
+     "$\\omega(G)\\le6$"
+    ],
+    "spiegazione": "In a clique every vertex is adjacent to the other $\\omega(G)-1$, hence $\\omega(G)-1\\le\\Delta(G)$."
+   }
+  },
+  {
+   "id": "aa-f-267",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-6-cli-propdeg",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-6-cli-propdeg"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Perché l'MCP si risolve in tempo $O(n\\,2^{\\Delta}\\Delta^2)$, con $\\Delta=\\Delta(G)$?",
+    "opzioni": [
+     "Perché si usa la programmazione dinamica sui profitti",
+     "Ogni clique sta in un vicinato chiuso",
+     "Perché il greedy è ottimo sui grafi di grado limitato",
+     "Perché $\\omega(G)\\le4$"
+    ],
+    "spiegazione": "Per ogni vertice $v$ ci sono al più $2^{\\Delta}$ sottoinsiemi di vicini, e controllare se uno è una clique costa $O(\\Delta^2)$."
+   },
+   "en": {
+    "testo": "Why is the MCP solved in $O(n\\,2^{\\Delta}\\Delta^2)$ time, with $\\Delta=\\Delta(G)$?",
+    "opzioni": [
+     "Because one uses dynamic programming by profits on the adjacency matrix",
+     "Each clique lies in a closed neighbourhood",
+     "Because greedy by decreasing degree is optimal on graphs of bounded maximum degree",
+     "Because every graph of bounded degree is planar, so that $\\omega(G)\\le4$"
+    ],
+    "spiegazione": "For each vertex $v$ there are at most $2^{\\Delta}$ subsets of neighbours, and checking whether one is a clique costs $O(\\Delta^2)$."
+   }
+  },
+  {
+   "id": "aa-f-268",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-7-cli-cormssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-7-cli-cormssp"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Perché i risultati negativi sull'MCP valgono anche per il problema dell'insieme stabile massimo (MSSP)?",
+    "opzioni": [
+     "Perché $\\alpha(G)=\\omega(\\overline G)$, con lo stesso $n$",
+     "Perché ogni clique di $G$ è anche un insieme stabile di $G$",
+     "Perché l'MSSP è più facile dell'MCP su ogni grafo",
+     "Perché $\\alpha(G)=\\omega(G)$ vale per ogni grafo $G$"
+    ],
+    "spiegazione": "$\\alpha(G)=\\omega(\\overline G)$ e il complementare si costruisce in $O(n^2)$: un algoritmo per un problema dà lo stesso rapporto per l'altro."
+   },
+   "en": {
+    "testo": "Why do the negative results on the MCP also hold for the maximum stable set problem (MSSP)?",
+    "opzioni": [
+     "Because $\\alpha(G)=\\omega(\\overline G)$, with the same $n$",
+     "Because every clique of $G$ is also a stable set of $G$",
+     "Because the MSSP is easier than the MCP on every graph",
+     "Because $\\alpha(G)=\\omega(G)$ holds for every graph $G$"
+    ],
+    "spiegazione": "$\\alpha(G)=\\omega(\\overline G)$ and the complement is built in $O(n^2)$: an algorithm for one problem gives the same ratio for the other."
+   }
+  },
+  {
+   "id": "aa-f-269",
+   "livello": "facile",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-8-cli-propmssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-8-cli-propmssp"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un grafo ha $n=20$ vertici e $\\Delta(G)=4$. Quanti vertici ha almeno ogni insieme stabile massimale?",
+    "opzioni": [
+     "$5$",
+     "$20$",
+     "$1$",
+     "$4$"
+    ],
+    "spiegazione": "Ogni vertice di $S$ esclude al più $\\Delta(G)$ vicini: $n\\le|S|(\\Delta(G)+1)$, quindi $|S|\\ge20/5=4$."
+   },
+   "en": {
+    "testo": "A graph has $n=20$ vertices and $\\Delta(G)=4$. At least how many vertices does every maximal stable set have?",
+    "opzioni": [
+     "$5$",
+     "$20$",
+     "$1$",
+     "$4$"
+    ],
+    "spiegazione": "Every vertex of $S$ excludes at most $\\Delta(G)$ neighbours: $n\\le|S|(\\Delta(G)+1)$, hence $|S|\\ge20/5=4$."
+   }
+  },
+  {
+   "id": "aa-f-270",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-2-cli-propprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-2-cli-propprod"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale uguaglianza vale per il numero di clique del prodotto forte di due grafi qualunque $G$ e $H$?",
+    "opzioni": [
+     "$\\omega(G\\boxtimes H)=\\max\\{\\omega(G),\\omega(H)\\}$",
+     "$\\omega(G\\boxtimes H)=\\omega(G)^{\\omega(H)}$",
+     "$\\omega(G\\boxtimes H)=\\omega(G)\\,\\omega(H)$",
+     "$\\omega(G\\boxtimes H)=\\omega(G)+\\omega(H)$"
+    ],
+    "spiegazione": "Il prodotto di due clique è una clique ($\\ge$), e ogni clique $K$ ha $|K|\\le|p(K)|\\max_u|K_u|\\le\\omega(G)\\omega(H)$ ($\\le$)."
+   },
+   "en": {
+    "testo": "Which equality holds for the clique number of the strong product of any two graphs $G$ and $H$?",
+    "opzioni": [
+     "$\\omega(G\\boxtimes H)=\\max\\{\\omega(G),\\omega(H)\\}$",
+     "$\\omega(G\\boxtimes H)=\\omega(G)^{\\omega(H)}$",
+     "$\\omega(G\\boxtimes H)=\\omega(G)\\,\\omega(H)$",
+     "$\\omega(G\\boxtimes H)=\\omega(G)+\\omega(H)$"
+    ],
+    "spiegazione": "The product of two cliques is a clique ($\\ge$), and every clique $K$ has $|K|\\le|p(K)|\\max_u|K_u|\\le\\omega(G)\\omega(H)$ ($\\le$)."
+   }
+  },
+  {
+   "id": "aa-f-271",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-3-cli-thmamp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-3-cli-thmamp"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa afferma il teorema di amplificazione sull'MCP?",
+    "opzioni": [
+     "Ogni algoritmo polinomiale per l'MCP ha rapporto almeno $\\frac43$",
+     "Un $\\alpha$ costante dà ogni costante $\\beta>1$",
+     "L'MCP ha una $2$-approssimazione polinomiale su ogni grafo",
+     "Se l'MCP ha un PTAS allora necessariamente $P=NP$"
+    ],
+    "spiegazione": "Con la potenza forte $G^{\\boxtimes k}$ il rapporto scende ad $\\alpha^{1/k}$, che per $k$ grande è $\\le\\beta$."
+   },
+   "en": {
+    "testo": "What does the amplification theorem on the MCP state?",
+    "opzioni": [
+     "Every polynomial algorithm for the MCP has ratio at least $\\frac43$",
+     "A constant $\\alpha$ gives every constant $\\beta>1$",
+     "The MCP has a polynomial $2$-approximation on every graph",
+     "If the MCP has a PTAS then necessarily $P=NP$"
+    ],
+    "spiegazione": "With the strong power $G^{\\boxtimes k}$ the ratio drops to $\\alpha^{1/k}$, which for large $k$ is $\\le\\beta$."
+   }
+  },
+  {
+   "id": "aa-f-272",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-4-cli-thmHZ",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-4-cli-thmHZ"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Che cosa dicono i risultati di Håstad (1999) e Zuckerman (2007) sull'MCP, se $P\\neq NP$?",
+    "opzioni": [
+     "Nessun rapporto $n^{1-\\varepsilon}$, per ogni $\\varepsilon>0$",
+     "L'MCP ha un FPTAS, ma non un algoritmo esatto polinomiale",
+     "L'MCP ha una $2$-approssimazione polinomiale ma nessun PTAS",
+     "Nessun rapporto $\\le\\log n$ è possibile, ma $\\sqrt n$ sì"
+    ],
+    "spiegazione": "Il rapporto banale è $n$: non si scende nemmeno a $n^{1-\\varepsilon}$, quindi niente rapporto costante."
+   },
+   "en": {
+    "testo": "What do the results of Håstad (1999) and Zuckerman (2007) state on the MCP, if $P\\neq NP$?",
+    "opzioni": [
+     "No ratio $n^{1-\\varepsilon}$, for every $\\varepsilon>0$",
+     "The MCP has an FPTAS, but no polynomial exact algorithm",
+     "The MCP has a polynomial $2$-approximation but no PTAS",
+     "No ratio $\\le\\log n$ is possible, but $\\sqrt n$ is"
+    ],
+    "spiegazione": "The trivial ratio is $n$: one cannot go down even to $n^{1-\\varepsilon}$, hence no constant ratio."
+   }
+  },
+  {
+   "id": "aa-f-273",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-5-cli-propplanar",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-5-cli-propplanar"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa vale per l'MCP sui grafi planari?",
+    "opzioni": [
+     "L'MCP resta non approssimabile entro $n^{1-\\varepsilon}$",
+     "$\\omega(G)\\le5$ e serve un algoritmo esponenziale",
+     "L'MCP ha soltanto una $2$-approssimazione",
+     "$\\omega(G)\\le4$ e l'MCP si risolve all'ottimo in $O(n^4)$"
+    ],
+    "spiegazione": "Una clique di un grafo planare ha al più $4$ vertici: l'enumerazione dei sottoinsiemi di al più $4$ vertici è polinomiale."
+   },
+   "en": {
+    "testo": "What holds for the MCP on planar graphs?",
+    "opzioni": [
+     "The MCP stays non-approximable within $n^{1-\\varepsilon}$",
+     "$\\omega(G)\\le5$ and an exponential algorithm is needed",
+     "The MCP only has a polynomial $2$-approximation",
+     "$\\omega(G)\\le4$ and the MCP is solved to optimality in $O(n^4)$"
+    ],
+    "spiegazione": "A clique of a planar graph has at most $4$ vertices: enumerating the subsets of at most $4$ vertices is polynomial."
+   }
+  },
+  {
+   "id": "aa-f-274",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-8-cli-propmssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-8-cli-propmssp"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale garanzia ha il greedy che costruisce un insieme stabile massimale $S$, su ogni grafo?",
+    "opzioni": [
+     "$\\alpha(G)-|S|\\le1$",
+     "$\\alpha(G)/|S|\\le\\omega(G)$",
+     "$\\alpha(G)/|S|\\le\\Delta(G)+1$",
+     "$\\alpha(G)/|S|\\le2$"
+    ],
+    "spiegazione": "$|S|\\ge\\frac{n}{\\Delta(G)+1}$ e $\\alpha(G)\\le n$: il rapporto è al più $\\Delta(G)+1$, costante sui grafi di grado limitato."
+   },
+   "en": {
+    "testo": "Which guarantee does the greedy that builds a maximal stable set $S$ have, on every graph?",
+    "opzioni": [
+     "$\\alpha(G)-|S|\\le1$",
+     "$\\alpha(G)/|S|\\le\\omega(G)$",
+     "$\\alpha(G)/|S|\\le\\Delta(G)+1$",
+     "$\\alpha(G)/|S|\\le2$"
+    ],
+    "spiegazione": "$|S|\\ge\\frac{n}{\\Delta(G)+1}$ and $\\alpha(G)\\le n$: the ratio is at most $\\Delta(G)+1$, constant on graphs of bounded degree."
+   }
+  },
+  {
+   "id": "aa-f-275",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-7-cli-cormssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-7-cli-cormssp"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa vale per l'approssimazione del problema dell'insieme stabile massimo (MSSP), se $P\\neq NP$?",
+    "opzioni": [
+     "È risolvibile all'ottimo in tempo polinomiale",
+     "Nessun rapporto costante",
+     "Ha una $2$-approssimazione polinomiale su ogni grafo",
+     "Ha un PTAS, anche se non un FPTAS"
+    ],
+    "spiegazione": "Per il passaggio al complementare l'MSSP eredita i limiti dell'MCP."
+   },
+   "en": {
+    "testo": "What holds for the approximation of the maximum stable set problem (MSSP), if $P\\neq NP$?",
+    "opzioni": [
+     "It is solvable to optimality in polynomial time",
+     "No constant ratio",
+     "It has a polynomial $2$-approximation on every graph",
+     "It has a PTAS, although not an FPTAS"
+    ],
+    "spiegazione": "Through the complement the MSSP inherits the limits of the MCP."
+   }
+  },
+  {
+   "id": "aa-f-276",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-6-cli-propdeg",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-6-cli-propdeg"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Sui grafi di grado massimo $\\Delta(G)\\le\\Delta$ costante, che cosa vale per l'MCP?",
+    "opzioni": [
+     "Si risolve all'ottimo in tempo polinomiale",
+     "Resta non approssimabile entro $n^{1-\\varepsilon}$",
+     "Ha solo una $(\\Delta+1)$-approssimazione",
+     "È NP-difficile anche per $\\Delta=3$"
+    ],
+    "spiegazione": "Con $\\Delta$ costante, $2^{\\Delta}\\Delta^2$ è una costante: il tempo è lineare in $n$."
+   },
+   "en": {
+    "testo": "On graphs of maximum degree $\\Delta(G)\\le\\Delta$ constant, what holds for the MCP?",
+    "opzioni": [
+     "It is solved to optimality in polynomial time",
+     "It stays non-approximable within $n^{1-\\varepsilon}$",
+     "It only has a $(\\Delta+1)$-approximation",
+     "It is NP-hard even for $\\Delta=3$"
+    ],
+    "spiegazione": "With constant $\\Delta$, $2^{\\Delta}\\Delta^2$ is a constant: the time is linear in $n$."
+   }
+  },
+  {
+   "id": "aa-f-277",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-3-cli-thmamp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-3-cli-thmamp"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il teorema di amplificazione usa $G^{\\boxtimes k}$ con $k$ fissato. Perché $k$ deve essere costante?",
+    "opzioni": [
+     "Perché per $k$ grande $\\omega(G)^k$ non è intero",
+     "Perché il prodotto forte non è associativo",
+     "Perché per $k\\ge3$ il grafo non è più semplice",
+     "Perché $G^{\\boxtimes k}$ ha $n^k$ vertici"
+    ],
+    "spiegazione": "Con $k$ che cresce con $n$ la taglia $n^k$ sarebbe superpolinomiale e l'algoritmo non sarebbe più polinomiale."
+   },
+   "en": {
+    "testo": "The amplification theorem uses $G^{\\boxtimes k}$ with fixed $k$. Why must $k$ be constant?",
+    "opzioni": [
+     "Because for large $k$, $\\omega(G)^k$ is not an integer",
+     "Because the strong product is not associative",
+     "Because for $k\\ge3$ the graph is no longer simple",
+     "Because $G^{\\boxtimes k}$ has $n^k$ vertices"
+    ],
+    "spiegazione": "With $k$ growing with $n$ the size $n^k$ would be superpolynomial and the algorithm would no longer be polynomial."
+   }
+  },
+  {
+   "id": "aa-f-278",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-3-cli-thmamp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-3-cli-thmamp"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Il teorema di amplificazione parte da una $\\alpha$-approssimazione: quale ipotesi su $\\alpha$ serve?",
+    "opzioni": [
+     "$\\alpha=n^{1-\\varepsilon}$",
+     "Nessuna: vale per ogni rapporto $\\alpha(n)$",
+     "$\\alpha$ è una costante",
+     "$\\alpha<2$"
+    ],
+    "spiegazione": "L'argomento fissa $k$ con $\\alpha^{1/k}\\le\\beta$, possibile solo se $\\alpha$ non cresce con $n$."
+   },
+   "en": {
+    "testo": "The amplification theorem starts from an $\\alpha$-approximation: which assumption on $\\alpha$ is needed?",
+    "opzioni": [
+     "$\\alpha=n^{1-\\varepsilon}$",
+     "None: it holds for every ratio $\\alpha(n)$",
+     "$\\alpha$ is a constant",
+     "$\\alpha<2$"
+    ],
+    "spiegazione": "The argument fixes $k$ with $\\alpha^{1/k}\\le\\beta$, possible only if $\\alpha$ does not grow with $n$."
+   }
+  },
+  {
+   "id": "aa-f-279",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-4-cli-thmHZ",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-4-cli-thmHZ"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Il risultato di Håstad e Zuckerman sull'MCP vale sotto quale ipotesi?",
+    "opzioni": [
+     "Che l'algoritmo sia greedy",
+     "$P\\neq NP$",
+     "Che il grafo sia planare",
+     "Che $\\Delta(G)$ sia limitato"
+    ],
+    "spiegazione": "Senza $P\\neq NP$ l'MCP potrebbe essere risolto in tempo polinomiale; sui planari e sui grafi di grado limitato è facile."
+   },
+   "en": {
+    "testo": "Under which assumption does the result of Håstad and Zuckerman on the MCP hold?",
+    "opzioni": [
+     "That the algorithm is greedy",
+     "$P\\neq NP$",
+     "That the graph is planar",
+     "That $\\Delta(G)$ is bounded"
+    ],
+    "spiegazione": "Without $P\\neq NP$ the MCP could be solved in polynomial time; on planar graphs and graphs of bounded degree it is easy."
+   }
+  },
+  {
+   "id": "aa-f-280",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-5-cli-propplanar",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-5-cli-propplanar"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Il bound $\\omega(G)\\le4$ vale per quali grafi?",
+    "opzioni": [
+     "Per i grafi planari",
+     "Per tutti i grafi con $\\Delta(G)\\le4$",
+     "Per tutti i grafi",
+     "Per i grafi bipartiti soltanto"
+    ],
+    "spiegazione": "Viene da $K_5$ non planare; un grafo non planare può contenere clique grandi quanto si vuole."
+   },
+   "en": {
+    "testo": "For which graphs does the bound $\\omega(G)\\le4$ hold?",
+    "opzioni": [
+     "For planar graphs",
+     "For all graphs with $\\Delta(G)\\le4$",
+     "For all graphs",
+     "For bipartite graphs only"
+    ],
+    "spiegazione": "It comes from $K_5$ not being planar; a non-planar graph may contain arbitrarily large cliques."
+   }
+  },
+  {
+   "id": "aa-f-281",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-8-cli-propmssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-8-cli-propmssp"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il bound $|S|\\ge\\frac{n}{\\Delta(G)+1}$ vale per quale tipo di insieme stabile $S$?",
+    "opzioni": [
+     "Per ogni insieme stabile",
+     "Solo per un insieme stabile massimo",
+     "Solo per un insieme stabile trovato con la visita in ampiezza",
+     "Per ogni insieme stabile massimale"
+    ],
+    "spiegazione": "La massimalità serve: ogni vertice fuori da $S$ ha un vicino in $S$. Un insieme stabile qualunque, per esempio vuoto, non rispetta il bound."
+   },
+   "en": {
+    "testo": "For which kind of stable set $S$ does the bound $|S|\\ge\\frac{n}{\\Delta(G)+1}$ hold?",
+    "opzioni": [
+     "For every stable set",
+     "Only for a maximum stable set",
+     "Only for a stable set found by breadth-first search",
+     "For every maximal stable set"
+    ],
+    "spiegazione": "Maximality is needed: every vertex outside $S$ has a neighbour in $S$. An arbitrary stable set, for instance the empty one, does not satisfy the bound."
+   }
+  },
+  {
+   "id": "aa-f-282",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-6-cli-propdeg",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-6-cli-propdeg"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "L'algoritmo esatto $O(n\\,2^{\\Delta}\\Delta^2)$ per l'MCP è polinomiale sotto quale ipotesi?",
+    "opzioni": [
+     "Che valga $\\omega(G)\\le4$ per il grafo",
+     "Che il grafo sia bipartito e connesso",
+     "Che $\\Delta(G)$ sia una costante",
+     "Che il grafo sia planare e connesso"
+    ],
+    "spiegazione": "Se $\\Delta$ cresce con $n$ il fattore $2^{\\Delta}$ diventa esponenziale."
+   },
+   "en": {
+    "testo": "Under which assumption is the exact $O(n\\,2^{\\Delta}\\Delta^2)$ algorithm for the MCP polynomial?",
+    "opzioni": [
+     "That $\\omega(G)\\le4$ holds for the graph",
+     "That the graph is bipartite and connected",
+     "That $\\Delta(G)$ is a constant",
+     "That the graph is planar and connected"
+    ],
+    "spiegazione": "If $\\Delta$ grows with $n$ the factor $2^{\\Delta}$ becomes exponential."
+   }
+  },
+  {
+   "id": "aa-f-283",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-7-cli-cormssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-7-cli-cormssp"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Perché il passaggio al complementare trasferisce un rapporto $n^{1-\\varepsilon}$ dall'MCP all'MSSP?",
+    "opzioni": [
+     "Perché $\\Delta(\\overline G)=\\Delta(G)$",
+     "Perché $\\overline G$ ha gli stessi $n$ vertici",
+     "Perché $\\overline G$ ha meno spigoli",
+     "Perché $\\overline G$ è planare"
+    ],
+    "spiegazione": "Il rapporto è espresso in funzione di $n$, che non cambia, e il complementare costa $O(n^2)$."
+   },
+   "en": {
+    "testo": "Why does passing to the complement transfer a ratio $n^{1-\\varepsilon}$ from the MCP to the MSSP?",
+    "opzioni": [
+     "Because $\\Delta(\\overline G)=\\Delta(G)$",
+     "Because $\\overline G$ has the same $n$ vertices",
+     "Because $\\overline G$ has fewer edges",
+     "Because $\\overline G$ is planar"
+    ],
+    "spiegazione": "The ratio is expressed as a function of $n$, which does not change, and the complement costs $O(n^2)$."
+   }
+  },
+  {
+   "id": "aa-f-284",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-2-cli-propprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-2-cli-propprod"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "L'uguaglianza $\\omega(G\\boxtimes H)=\\omega(G)\\,\\omega(H)$ richiede ipotesi su $G$ e $H$?",
+    "opzioni": [
+     "No: vale per ogni coppia di grafi",
+     "Sì: $G$ e $H$ devono essere planari",
+     "Sì: $G=H$",
+     "Sì: $G$ e $H$ devono avere lo stesso numero di vertici"
+    ],
+    "spiegazione": "La proposizione vale per due grafi qualunque; il caso $G=H$ (le potenze forti) è quello usato nell'amplificazione."
+   },
+   "en": {
+    "testo": "Does the equality $\\omega(G\\boxtimes H)=\\omega(G)\\,\\omega(H)$ require assumptions on $G$ and $H$?",
+    "opzioni": [
+     "No: it holds for every pair of graphs",
+     "Yes: $G$ and $H$ must be planar",
+     "Yes: $G=H$",
+     "Yes: $G$ and $H$ must have the same number of vertices"
+    ],
+    "spiegazione": "The proposition holds for any two graphs; the case $G=H$ (strong powers) is the one used in the amplification."
+   }
+  },
+  {
+   "id": "aa-f-285",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-1-prop-TSPinapx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-1-prop-TSPinapx"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Da quale problema NP-completo si riduce per mostrare che il TSP generale non ha rapporto costante (se $P\\neq NP$)?",
+    "opzioni": [
+     "Il ciclo hamiltoniano",
+     "Il bin packing",
+     "La $2$-colorabilità",
+     "L'albero ricoprente minimo"
+    ],
+    "spiegazione": "Si dà distanza $1$ agli spigoli del grafo e una distanza molto grande alle altre coppie: un rapporto $\\alpha$ distinguerebbe i grafi hamiltoniani."
+   },
+   "en": {
+    "testo": "From which NP-complete problem does one reduce to show that the general TSP has no constant ratio (if $P\\neq NP$)?",
+    "opzioni": [
+     "Hamiltonian cycle",
+     "Bin packing",
+     "$2$-colorability",
+     "Minimum spanning tree"
+    ],
+    "spiegazione": "Edges of the graph get distance $1$ and the other pairs a very large distance: a ratio $\\alpha$ would tell Hamiltonian graphs apart."
+   }
+  },
+  {
+   "id": "aa-f-286",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-2-def-metricTSP",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-2-def-metricTSP"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quale proprietà delle distanze rende metrica un'istanza del TSP?",
+    "opzioni": [
+     "$d_{ij}\\le d_{ik}\\cdot d_{kj}$ per ogni terna",
+     "$d_{ij}=d_{ik}+d_{kj}$ per ogni terna",
+     "$d_{ij}\\ge d_{ik}+d_{kj}$ per ogni terna",
+     "$d_{ij}\\le d_{ik}+d_{kj}$ per ogni terna"
+    ],
+    "spiegazione": "È la disuguaglianza triangolare: andare direttamente da $i$ a $j$ non costa più che passare per $k$."
+   },
+   "en": {
+    "testo": "Which property of the distances makes a TSP instance metric?",
+    "opzioni": [
+     "$d_{ij}\\le d_{ik}\\cdot d_{kj}$ for every triple",
+     "$d_{ij}=d_{ik}+d_{kj}$ for every triple",
+     "$d_{ij}\\ge d_{ik}+d_{kj}$ for every triple",
+     "$d_{ij}\\le d_{ik}+d_{kj}$ for every triple"
+    ],
+    "spiegazione": "It is the triangle inequality: going directly from $i$ to $j$ costs no more than passing through $k$."
+   }
+  },
+  {
+   "id": "aa-f-287",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-6-obs-mst",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-6-obs-mst"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Perché il costo di un albero ricoprente minimo $T$ è un lower bound per il TSP?",
+    "opzioni": [
+     "Perché vale la disuguaglianza triangolare",
+     "Perché $T$ ha sempre esattamente $n$ archi",
+     "Un giro ottimo meno un arco è un albero",
+     "Perché ogni albero ricoprente è un giro"
+    ],
+    "spiegazione": "Un giro ottimo meno un arco è un cammino hamiltoniano, cioè un albero ricoprente: $d(T)\\le z(I)$, anche senza metrica."
+   },
+   "en": {
+    "testo": "Why is the cost of a minimum spanning tree $T$ a lower bound for the TSP?",
+    "opzioni": [
+     "Because the triangle inequality holds",
+     "Because $T$ always has exactly $n$ edges",
+     "An optimal tour minus an edge is a tree",
+     "Because every spanning tree is a tour"
+    ],
+    "spiegazione": "An optimal tour minus an edge is a Hamiltonian path, i.e. a spanning tree: $d(T)\\le z(I)$, even without the metric."
+   }
+  },
+  {
+   "id": "aa-f-288",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#sez-sec-DT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#sez-sec-DT"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nell'algoritmo double tree, che cosa si fa con gli archi dell'albero ricoprente minimo?",
+    "opzioni": [
+     "Si ordinano per costo decrescente e si scartano",
+     "Si raddoppiano, ottenendo un multigrafo euleriano",
+     "Si tolgono quelli più lunghi dell'albero",
+     "Si accoppiano i vertici di grado dispari"
+    ],
+    "spiegazione": "Raddoppiando gli archi ogni vertice ha grado pari: c'è un circuito euleriano di costo $2d(T)$, poi si fanno le scorciatoie."
+   },
+   "en": {
+    "testo": "In the double tree algorithm, what is done with the edges of the minimum spanning tree?",
+    "opzioni": [
+     "They are sorted by decreasing cost and dropped",
+     "They are doubled, giving an Eulerian multigraph",
+     "The longest ones of the tree are removed",
+     "The vertices of odd degree are matched"
+    ],
+    "spiegazione": "Doubling the edges every vertex gets even degree: there is an Eulerian circuit of cost $2d(T)$, then shortcuts are taken."
+   }
+  },
+  {
+   "id": "aa-f-289",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-5-obs-shortcut",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-5-obs-shortcut"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Che cosa sono le «scorciatoie» applicate al circuito euleriano?",
+    "opzioni": [
+     "Si saltano le città già visitate",
+     "Si tolgono gli archi più lunghi del circuito",
+     "Si scambiano due archi incrociati (2-opt)",
+     "Si aggiunge un accoppiamento perfetto"
+    ],
+    "spiegazione": "Dal cammino chiuso si tiene solo la prima visita di ogni città; con la metrica il costo non aumenta."
+   },
+   "en": {
+    "testo": "What are the «shortcuts» applied to the Eulerian circuit?",
+    "opzioni": [
+     "Already visited cities are skipped",
+     "The longest edges of the circuit are removed",
+     "Two crossing edges are swapped (2-opt)",
+     "A perfect matching is added"
+    ],
+    "spiegazione": "From the closed walk only the first visit of every city is kept; with the metric the cost does not increase."
+   }
+  },
+  {
+   "id": "aa-f-290",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-6-obs-mst",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-6-obs-mst"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un'istanza metrica ha un albero ricoprente minimo di costo $d(T)=30$. Quanto costa al più il giro del double tree?",
+    "opzioni": [
+     "$45$",
+     "$30$",
+     "$90$",
+     "$60$"
+    ],
+    "spiegazione": "Il circuito euleriano costa $2d(T)=60$ e le scorciatoie non lo allungano: $DT(I)\\le60$."
+   },
+   "en": {
+    "testo": "A metric instance has a minimum spanning tree of cost $d(T)=30$. At most how much does the double tree tour cost?",
+    "opzioni": [
+     "$45$",
+     "$30$",
+     "$90$",
+     "$60$"
+    ],
+    "spiegazione": "The Eulerian circuit costs $2d(T)=60$ and shortcuts do not lengthen it: $DT(I)\\le60$."
+   }
+  },
+  {
+   "id": "aa-f-291",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#sez-sec-CH",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#sez-sec-CH"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nell'algoritmo di Christofides, quali vertici si accoppiano con un accoppiamento perfetto di costo minimo?",
+    "opzioni": [
+     "Le foglie dell'albero soltanto",
+     "I vertici di grado pari dell'albero",
+     "I vertici di grado dispari dell'albero",
+     "Tutti i vertici dell'albero"
+    ],
+    "spiegazione": "Aggiungendo l'accoppiamento dei vertici dispari di $T$ ogni grado diventa pari e il multigrafo è euleriano."
+   },
+   "en": {
+    "testo": "In the Christofides algorithm, which vertices are matched by a minimum weight perfect matching?",
+    "opzioni": [
+     "Only the leaves of the tree",
+     "The vertices of even degree of the tree",
+     "The vertices of odd degree of the tree",
+     "All the vertices of the tree"
+    ],
+    "spiegazione": "Adding the matching of the odd vertices of $T$ every degree becomes even and the multigraph is Eulerian."
+   }
+  },
+  {
+   "id": "aa-f-292",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-7-obs-matching",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-7-obs-matching"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Perché il numero di vertici di grado dispari di un albero è pari?",
+    "opzioni": [
+     "Perché un albero ha esattamente due foglie",
+     "Perché la somma dei gradi è pari",
+     "Perché un albero ha sempre $n-1$ archi",
+     "Perché ogni albero è un grafo bipartito"
+    ],
+    "spiegazione": "In ogni grafo $\\sum_v\\deg(v)=2m$ è pari, quindi i gradi dispari sono in numero pari: l'accoppiamento perfetto esiste."
+   },
+   "en": {
+    "testo": "Why is the number of vertices of odd degree of a tree even?",
+    "opzioni": [
+     "Because a tree has exactly two leaves",
+     "Because the degree sum is even",
+     "Because a tree always has $n-1$ edges",
+     "Because every tree is a bipartite graph"
+    ],
+    "spiegazione": "In every graph $\\sum_v\\deg(v)=2m$ is even, hence odd degrees come in even number: the perfect matching exists."
+   }
+  },
+  {
+   "id": "aa-f-293",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-7-obs-matching",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-7-obs-matching"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Un'istanza metrica ha $z(I)=40$. Quanto costa al più un accoppiamento perfetto minimo di un insieme pari $O$ di città?",
+    "opzioni": [
+     "$20$",
+     "$40$",
+     "$\\frac{40}{3}$",
+     "$80$"
+    ],
+    "spiegazione": "Il giro ottimo, ristretto a $O$ con scorciatoie, si divide in due accoppiamenti perfetti; il migliore costa al più $z(I)/2=20$."
+   },
+   "en": {
+    "testo": "A metric instance has $z(I)=40$. At most how much does a minimum perfect matching of an even set $O$ of cities cost?",
+    "opzioni": [
+     "$20$",
+     "$40$",
+     "$\\frac{40}{3}$",
+     "$80$"
+    ],
+    "spiegazione": "The optimal tour, restricted to $O$ with shortcuts, splits into two perfect matchings; the better one costs at most $z(I)/2=20$."
+   }
+  },
+  {
+   "id": "aa-f-294",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-10-prop-CH",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-10-prop-CH"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Su un'istanza metrica con $z(I)=24$, quanto costa al più il giro di Christofides?",
+    "opzioni": [
+     "$48$",
+     "$30$",
+     "$24$",
+     "$36$"
+    ],
+    "spiegazione": "$CH(I)\\le d(T)+d(M)\\le z(I)+\\frac{z(I)}{2}=36$."
+   },
+   "en": {
+    "testo": "On a metric instance with $z(I)=24$, at most how much does the Christofides tour cost?",
+    "opzioni": [
+     "$48$",
+     "$30$",
+     "$24$",
+     "$36$"
+    ],
+    "spiegazione": "$CH(I)\\le d(T)+d(M)\\le z(I)+\\frac{z(I)}{2}=36$."
+   }
+  },
+  {
+   "id": "aa-f-295",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-9-prop-DTtight",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-9-prop-DTtight"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Le istanze tight del double tree hanno rapporto $\\frac{2n}{n+2}$. Quanto vale per $n=7$?",
+    "opzioni": [
+     "$\\frac{16}{9}$",
+     "$\\frac{9}{7}$",
+     "$\\frac{14}{9}$",
+     "$\\frac{7}{9}$"
+    ],
+    "spiegazione": "$\\frac{2\\cdot7}{7+2}=\\frac{14}{9}\\approx1{,}56$; al crescere di $n$ il rapporto tende a $2$."
+   },
+   "en": {
+    "testo": "The tight instances of double tree have ratio $\\frac{2n}{n+2}$. What is it for $n=7$?",
+    "opzioni": [
+     "$\\frac{16}{9}$",
+     "$\\frac{9}{7}$",
+     "$\\frac{14}{9}$",
+     "$\\frac{7}{9}$"
+    ],
+    "spiegazione": "$\\frac{2\\cdot7}{7+2}=\\frac{14}{9}\\approx1.56$; as $n$ grows the ratio tends to $2$."
+   }
+  },
+  {
+   "id": "aa-f-296",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#63-lalgoritmo-del-doppio-albero-e-lalgoritmo-di-christofides",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#63-the-double-tree-and-the-christofides-algorithms"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che cosa hanno in comune double tree e Christofides?",
+    "opzioni": [
+     "Entrambi accoppiano i vertici dispari",
+     "Albero ricoprente minimo, circuito euleriano",
+     "Entrambi usano il 2-opt",
+     "Entrambi sono esatti sulle istanze metriche"
+    ],
+    "spiegazione": "Differiscono solo nel modo di rendere euleriano l'albero: archi raddoppiati (DT) o accoppiamento dei vertici dispari (CH)."
+   },
+   "en": {
+    "testo": "What do double tree and Christofides have in common?",
+    "opzioni": [
+     "Both match the odd vertices",
+     "Minimum spanning tree",
+     "Both use 2-opt",
+     "Both are exact on metric instances"
+    ],
+    "spiegazione": "They differ only in how the tree is made Eulerian: doubled edges (DT) or matching of the odd vertices (CH)."
+   }
+  },
+  {
+   "id": "aa-f-297",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-11-prop-CHtight",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-11-prop-CHtight"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Le istanze tight di Christofides mostrano che cosa?",
+    "opzioni": [
+     "Che il rapporto $\\frac32$ non si può migliorare",
+     "Che Christofides è un algoritmo ottimo",
+     "Che il double tree è sempre migliore",
+     "Che il TSP metrico ha un PTAS"
+    ],
+    "spiegazione": "Su una famiglia di istanze metriche il rapporto tende a $\\frac32$: la garanzia è stretta."
+   },
+   "en": {
+    "testo": "What do the tight instances of Christofides show?",
+    "opzioni": [
+     "That the ratio $\\frac32$ cannot be improved",
+     "That Christofides is an optimal algorithm",
+     "That double tree is always better",
+     "That the metric TSP has a PTAS"
+    ],
+    "spiegazione": "On a family of metric instances the ratio tends to $\\frac32$: the guarantee is tight."
+   }
+  },
+  {
+   "id": "aa-f-298",
+   "livello": "facile",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#64-proprieta-strutturali",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#64-structural-properties"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Un multigrafo connesso ha un circuito euleriano se e solo se:",
+    "opzioni": [
+     "ogni vertice ha grado dispari",
+     "è un albero",
+     "ha un numero pari di vertici",
+     "ogni vertice ha grado pari"
+    ],
+    "spiegazione": "È il teorema di Eulero: è proprio ciò che raddoppio degli archi e accoppiamento dei dispari garantiscono."
+   },
+   "en": {
+    "testo": "A connected multigraph has an Eulerian circuit if and only if:",
+    "opzioni": [
+     "every vertex has odd degree",
+     "it is a tree",
+     "it has an even number of vertices",
+     "every vertex has even degree"
+    ],
+    "spiegazione": "It is Euler's theorem: exactly what doubling the edges and matching the odd vertices guarantee."
+   }
+  },
+  {
+   "id": "aa-f-299",
+   "livello": "teorema",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-8-prop-DT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-8-prop-DT"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale garanzia ha il double tree sulle istanze metriche?",
+    "opzioni": [
+     "$DT(I)\\le z(I)+2$",
+     "$DT(I)\\le\\frac43z(I)$",
+     "$DT(I)\\le2z(I)$",
+     "$DT(I)\\le\\frac32z(I)$"
+    ],
+    "spiegazione": "$DT(I)\\le2d(T)\\le2z(I)$: scorciatoie (metrica) e lower bound dell'albero."
+   },
+   "en": {
+    "testo": "Which guarantee does double tree have on metric instances?",
+    "opzioni": [
+     "$DT(I)\\le z(I)+2$",
+     "$DT(I)\\le\\frac43z(I)$",
+     "$DT(I)\\le2z(I)$",
+     "$DT(I)\\le\\frac32z(I)$"
+    ],
+    "spiegazione": "$DT(I)\\le2d(T)\\le2z(I)$: shortcuts (metric) and the tree lower bound."
+   }
+  },
+  {
+   "id": "aa-f-300",
+   "livello": "ipotesi",
+   "capitolo": "tsp-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/tsp-approximation/#box-5-obs-shortcut",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/tsp-approximation/#box-5-obs-shortcut"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Le scorciatoie non allungano il cammino: quale ipotesi serve?",
+    "opzioni": [
+     "Un albero ricoprente unico",
+     "La disuguaglianza triangolare",
+     "Distanze tutte uguali",
+     "Un numero dispari di città"
+    ],
+    "spiegazione": "Saltare una città sostituisce due archi con uno, che per la triangolare non costa di più."
+   },
+   "en": {
+    "testo": "Shortcuts do not lengthen the walk: which assumption is needed?",
+    "opzioni": [
+     "A unique spanning tree",
+     "The triangle inequality",
+     "All distances equal",
+     "An odd number of cities"
+    ],
+    "spiegazione": "Skipping a city replaces two edges by one, which by the triangle inequality costs no more."
+   }
+  },
+  {
+   "id": "aa-f-301",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#sez-sec-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#sez-sec-LIST"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Come assegna i lavori l'algoritmo $LIST$?",
+    "opzioni": [
+     "Per durata decrescente, a turno",
+     "Risolvendo un modello PLI",
+     "In ordine di lista, alla meno carica",
+     "Ciascuno alla macchina più carica"
+    ],
+    "spiegazione": "$LIST$ prende i lavori nell'ordine dato e mette ognuno sulla macchina che si libera per prima."
+   },
+   "en": {
+    "testo": "How does the algorithm $LIST$ assign the jobs?",
+    "opzioni": [
+     "By decreasing duration, in round robin",
+     "By solving an ILP model of the instance",
+     "In list order, each to the least loaded machine",
+     "Each job to the most loaded machine"
+    ],
+    "spiegazione": "$LIST$ takes the jobs in the given order and puts each on the machine that becomes free first."
+   }
+  },
+  {
+   "id": "aa-f-302",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#sez-sec-LPT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#sez-sec-LPT"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "In che cosa $LPT$ differisce da $LIST$?",
+    "opzioni": [
+     "Sposta i lavori dopo l'assegnamento iniziale",
+     "Ordina prima i lavori per durata non crescente",
+     "Assegna ogni lavoro alla macchina più carica",
+     "Usa una sola macchina per tutti i lavori"
+    ],
+    "spiegazione": "$LPT$ è $LIST$ con la lista dei lavori per durata decrescente: i lavori lunghi vanno per primi."
+   },
+   "en": {
+    "testo": "How does $LPT$ differ from $LIST$?",
+    "opzioni": [
+     "It moves jobs after the initial assignment",
+     "It first sorts the jobs by non-increasing duration",
+     "It assigns every job to the most loaded machine",
+     "It uses a single machine for all the jobs"
+    ],
+    "spiegazione": "$LPT$ is $LIST$ with the list of jobs by decreasing duration: long jobs go first."
+   }
+  },
+  {
+   "id": "aa-f-303",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#71-notazione",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#71-notation"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quale lower bound elementare vale per $z(I)$ in $P\\,||\\,C_{\\max}$?",
+    "opzioni": [
+     "$\\max\\{\\max_j t_j,\\ \\sum_j t_j/m\\}$",
+     "$\\min_j t_j$, il lavoro più corto",
+     "$\\sum_j t_j$, la somma delle durate",
+     "$\\max_j t_j/m$"
+    ],
+    "spiegazione": "Il makespan è almeno il lavoro più lungo e almeno il carico medio delle macchine."
+   },
+   "en": {
+    "testo": "Which elementary lower bound holds for $z(I)$ in $P\\,||\\,C_{\\max}$?",
+    "opzioni": [
+     "$\\max\\{\\max_j t_j,\\ \\sum_j t_j/m\\}$",
+     "$\\min_j t_j$, the shortest job",
+     "$\\sum_j t_j$, the sum of the durations",
+     "$\\max_j t_j/m$"
+    ],
+    "spiegazione": "The makespan is at least the longest job and at least the average machine load."
+   }
+  },
+  {
+   "id": "aa-f-304",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#71-notazione",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#71-notation"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Durate $t=(5,4,3,3,3)$ su $m=2$ macchine. Quanto vale il lower bound $\\max\\{\\max_j t_j,\\lceil\\sum_j t_j/m\\rceil\\}$?",
+    "opzioni": [
+     "$5$",
+     "$18$",
+     "$8$",
+     "$9$"
+    ],
+    "spiegazione": "$\\sum_j t_j=18$, $18/2=9$, $\\max_j t_j=5$: il bound è $9$ (ed è raggiunto, $\\{5,4\\},\\{3,3,3\\}$)."
+   },
+   "en": {
+    "testo": "Durations $t=(5,4,3,3,3)$ on $m=2$ machines. What is the lower bound $\\max\\{\\max_j t_j,\\lceil\\sum_j t_j/m\\rceil\\}$?",
+    "opzioni": [
+     "$5$",
+     "$18$",
+     "$8$",
+     "$9$"
+    ],
+    "spiegazione": "$\\sum_j t_j=18$, $18/2=9$, $\\max_j t_j=5$: the bound is $9$ (and it is attained, $\\{5,4\\},\\{3,3,3\\}$)."
+   }
+  },
+  {
+   "id": "aa-f-305",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-4-prop-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-4-prop-LIST"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Con $m=4$ macchine, quale garanzia ha $LIST$?",
+    "opzioni": [
+     "$2$",
+     "$\\frac{5}{4}$",
+     "$\\frac74$",
+     "$\\frac43$"
+    ],
+    "spiegazione": "$LIST(I)/z(I)\\le2-\\frac1m=2-\\frac14=\\frac74$."
+   },
+   "en": {
+    "testo": "With $m=4$ machines, which guarantee does $LIST$ have?",
+    "opzioni": [
+     "$2$",
+     "$\\frac{5}{4}$",
+     "$\\frac74$",
+     "$\\frac43$"
+    ],
+    "spiegazione": "$LIST(I)/z(I)\\le2-\\frac1m=2-\\frac14=\\frac74$."
+   }
+  },
+  {
+   "id": "aa-f-306",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-6-prop-LPT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-6-prop-LPT"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quale rapporto nel caso peggiore garantisce l'algoritmo $LPT$ su tre macchine parallele identiche?",
+    "opzioni": [
+     "$\\frac{10}{9}$",
+     "$\\frac{11}{9}$",
+     "$\\frac43$",
+     "$\\frac53$"
+    ],
+    "spiegazione": "$\\frac43-\\frac{1}{3m}=\\frac43-\\frac19=\\frac{11}{9}$."
+   },
+   "en": {
+    "testo": "Which worst-case ratio does the algorithm $LPT$ guarantee on three identical parallel machines?",
+    "opzioni": [
+     "$\\frac{10}{9}$",
+     "$\\frac{11}{9}$",
+     "$\\frac43$",
+     "$\\frac53$"
+    ],
+    "spiegazione": "$\\frac43-\\frac{1}{3m}=\\frac43-\\frac19=\\frac{11}{9}$."
+   }
+  },
+  {
+   "id": "aa-f-307",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-3-obs-start",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-3-obs-start"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Perché il lavoro $\\ell$ che finisce per ultimo con $LIST$ inizia al più al carico medio degli altri lavori?",
+    "opzioni": [
+     "Va sulla macchina meno carica",
+     "Perché è il lavoro più corto",
+     "Perché $LIST$ ordina i lavori",
+     "Perché tutte le macchine hanno lo stesso carico"
+    ],
+    "spiegazione": "Al momento dell'assegnamento la macchina scelta ha il carico minimo, e il minimo non supera la media $\\frac1m\\sum_{j\\neq\\ell}t_j$."
+   },
+   "en": {
+    "testo": "Why does the job $\\ell$ that ends last with $LIST$ start at most at the average load of the other jobs?",
+    "opzioni": [
+     "It goes to the least loaded machine",
+     "Because it is the shortest job",
+     "Because $LIST$ sorts the jobs",
+     "Because all machines have the same load"
+    ],
+    "spiegazione": "At assignment time the chosen machine has the minimum load, and the minimum does not exceed the average $\\frac1m\\sum_{j\\neq\\ell}t_j$."
+   }
+  },
+  {
+   "id": "aa-f-308",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-5-prop-LISTtight",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-5-prop-LISTtight"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "La garanzia $2-\\frac1m$ di $LIST$ è tight: che cosa significa?",
+    "opzioni": [
+     "$LIST$ ha sempre rapporto esattamente $2-\\frac1m$",
+     "$LIST$ è ottimo su ogni istanza con $m=2$",
+     "Esiste un'istanza con rapporto uguale a $2$",
+     "Per ogni $m$ un'istanza raggiunge $2-\\frac1m$"
+    ],
+    "spiegazione": "La proposizione 7.3 dà, per ogni $m\\ge2$, un'istanza e una lista che raggiungono il bound."
+   },
+   "en": {
+    "testo": "The guarantee $2-\\frac1m$ of $LIST$ is tight: what does it mean?",
+    "opzioni": [
+     "$LIST$ always has ratio exactly $2-\\frac1m$",
+     "$LIST$ is optimal on every instance with $m=2$",
+     "There is an instance with ratio equal to $2$",
+     "For every $m$ an instance attains $2-\\frac1m$"
+    ],
+    "spiegazione": "Proposition 7.3 gives, for every $m\\ge2$, an instance and a list that attain the bound."
+   }
+  },
+  {
+   "id": "aa-f-309",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-7-prop-LPTtight",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-7-prop-LPTtight"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Per $m=2$ l'istanza tight di $LPT$ ha rapporto pari a quanto?",
+    "opzioni": [
+     "$\\frac32$",
+     "$\\frac65$",
+     "$\\frac76$",
+     "$\\frac43$"
+    ],
+    "spiegazione": "$\\frac43-\\frac16=\\frac76$; per esempio durate $(3,3,2,2,2)$: $LPT=7$, ottimo $6$."
+   },
+   "en": {
+    "testo": "For $m=2$ the tight instance of $LPT$ has ratio equal to what?",
+    "opzioni": [
+     "$\\frac32$",
+     "$\\frac65$",
+     "$\\frac76$",
+     "$\\frac43$"
+    ],
+    "spiegazione": "$\\frac43-\\frac16=\\frac76$; for instance durations $(3,3,2,2,2)$: $LPT=7$, optimum $6$."
+   }
+  },
+  {
+   "id": "aa-f-310",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#sez-sec-LPT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#sez-sec-LPT"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Durate $(3,3,2,2,2)$ su $m=2$ macchine. Quanto vale il makespan di $LPT$?",
+    "opzioni": [
+     "$12$",
+     "$7$",
+     "$6$",
+     "$8$"
+    ],
+    "spiegazione": "$LPT$: $3\\to M_1$, $3\\to M_2$, $2\\to M_1$ ($5$), $2\\to M_2$ ($5$), $2\\to M_1$ ($7$). L'ottimo è $6$: $\\{3,3\\},\\{2,2,2\\}$."
+   },
+   "en": {
+    "testo": "Durations $(3,3,2,2,2)$ on $m=2$ machines. What is the makespan of $LPT$?",
+    "opzioni": [
+     "$12$",
+     "$7$",
+     "$6$",
+     "$8$"
+    ],
+    "spiegazione": "$LPT$: $3\\to M_1$, $3\\to M_2$, $2\\to M_1$ ($5$), $2\\to M_2$ ($5$), $2\\to M_1$ ($7$). The optimum is $6$: $\\{3,3\\},\\{2,2,2\\}$."
+   }
+  },
+  {
+   "id": "aa-f-311",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#sez-sec-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#sez-sec-LIST"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Due macchine e la lista di lavori di durate $2,2,2,2,4$, in quest'ordine: che makespan produce $LIST$?",
+    "opzioni": [
+     "$8$",
+     "$6$",
+     "$12$",
+     "$4$"
+    ],
+    "spiegazione": "$LIST$ mette i quattro lavori da $2$ a coppie ($4$ e $4$), poi il $4$ su una macchina: $8$. L'ottimo è $6$."
+   },
+   "en": {
+    "testo": "Two machines and the list of jobs of durations $2,2,2,2,4$, in this order: which makespan does $LIST$ produce?",
+    "opzioni": [
+     "$8$",
+     "$6$",
+     "$12$",
+     "$4$"
+    ],
+    "spiegazione": "$LIST$ puts the four jobs of length $2$ in pairs ($4$ and $4$), then the $4$ on one machine: $8$. The optimum is $6$."
+   }
+  },
+  {
+   "id": "aa-f-312",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#742-il-rapporto-di-prestazione-nel-caso-peggiore-di-lpt",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#742-the-worst-case-performance-ratio-of-lpt"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Perché $LPT$ ha una garanzia migliore di $LIST$?",
+    "opzioni": [
+     "Perché $LPT$ è esatto",
+     "Perché $LPT$ usa più macchine",
+     "Perché $LPT$ ignora i lavori corti",
+     "L'ultimo lavoro è corto"
+    ],
+    "spiegazione": "Con i lavori per durata decrescente, se il lavoro critico è lungo l'ottimo ne mette pochi per macchina e $LPT$ è ottimo; altrimenti è corto."
+   },
+   "en": {
+    "testo": "Why does $LPT$ have a better guarantee than $LIST$?",
+    "opzioni": [
+     "Because $LPT$ is exact",
+     "Because $LPT$ uses more machines",
+     "Because $LPT$ ignores short jobs",
+     "The last job is short"
+    ],
+    "spiegazione": "With jobs by decreasing duration, if the critical job is long the optimum puts few jobs per machine and $LPT$ is optimal; otherwise it is short."
+   }
+  },
+  {
+   "id": "aa-f-313",
+   "livello": "teorema",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-4-prop-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-4-prop-LIST"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Quale garanzia ha $LIST$ per ogni istanza e ogni lista?",
+    "opzioni": [
+     "$LIST(I)\\le z(I)+\\max_jt_j$, non relativa",
+     "$LIST(I)\\le\\frac32z(I)$",
+     "$LIST(I)\\le\\left(2-\\frac1m\\right)z(I)$",
+     "$LIST(I)\\le\\frac43z(I)$"
+    ],
+    "spiegazione": "$C_{\\max}=S_\\ell+t_\\ell\\le\\frac1m\\sum_{j\\neq\\ell}t_j+t_\\ell\\le z(I)+(1-\\frac1m)t_\\ell\\le(2-\\frac1m)z(I)$."
+   },
+   "en": {
+    "testo": "Which guarantee does $LIST$ have for every instance and every list?",
+    "opzioni": [
+     "$LIST(I)\\le z(I)+\\max_jt_j$, not relative",
+     "$LIST(I)\\le\\frac32z(I)$",
+     "$LIST(I)\\le\\left(2-\\frac1m\\right)z(I)$",
+     "$LIST(I)\\le\\frac43z(I)$"
+    ],
+    "spiegazione": "$C_{\\max}=S_\\ell+t_\\ell\\le\\frac1m\\sum_{j\\neq\\ell}t_j+t_\\ell\\le z(I)+(1-\\frac1m)t_\\ell\\le(2-\\frac1m)z(I)$."
+   }
+  },
+  {
+   "id": "aa-f-314",
+   "livello": "ipotesi",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-4-prop-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-4-prop-LIST"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "La garanzia $2-\\frac1m$ di $LIST$ dipende dall'ordine della lista?",
+    "opzioni": [
+     "Sì: solo per $m=2$",
+     "No: vale per ogni lista",
+     "Sì: solo per durate decrescenti",
+     "Sì: solo per durate crescenti"
+    ],
+    "spiegazione": "La dimostrazione usa solo che ogni lavoro va sulla macchina meno carica; l'ordine decrescente dà la garanzia migliore di $LPT$."
+   },
+   "en": {
+    "testo": "Does the guarantee $2-\\frac1m$ of $LIST$ depend on the order of the list?",
+    "opzioni": [
+     "Yes: only for $m=2$",
+     "No: it holds for every list",
+     "Yes: only for decreasing durations",
+     "Yes: only for increasing durations"
+    ],
+    "spiegazione": "The proof only uses that every job goes to the least loaded machine; the decreasing order gives the better guarantee of $LPT$."
+   }
+  },
+  {
+   "id": "aa-f-315",
+   "livello": "ipotesi",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-5-prop-LISTtight",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-5-prop-LISTtight"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "La tightness di $2-\\frac1m$ per $LIST$ è dimostrata per quali $m$?",
+    "opzioni": [
+     "Per ogni $m\\ge2$",
+     "Solo per $m=2$",
+     "Solo per $m$ pari",
+     "Solo per $m\\le3$"
+    ],
+    "spiegazione": "Per ogni $m\\ge2$ la proposizione 7.3 costruisce un'istanza $I_m$ con rapporto esattamente $2-\\frac1m$."
+   },
+   "en": {
+    "testo": "For which $m$ is the tightness of $2-\\frac1m$ for $LIST$ proved?",
+    "opzioni": [
+     "For every $m\\ge2$",
+     "Only for $m=2$",
+     "Only for even $m$",
+     "Only for $m\\le3$"
+    ],
+    "spiegazione": "For every $m\\ge2$ Proposition 7.3 builds an instance $I_m$ with ratio exactly $2-\\frac1m$."
+   }
+  },
+  {
+   "id": "aa-f-316",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#112-garanzia-di-prestazione-additiva",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#112-additive-performance-guarantee"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per un problema di minimo, che relazione c'è fra errore relativo $\\varepsilon(I)$ e rapporto di prestazione $R(I)$?",
+    "opzioni": [
+     "$R(I)=\\varepsilon(I)$",
+     "$R(I)=1+\\varepsilon(I)$",
+     "$R(I)=1-\\varepsilon(I)$",
+     "$R(I)=\\frac{1}{1-\\varepsilon(I)}$"
+    ],
+    "spiegazione": "$\\frac{\\mathscr{A}(I)}{z(I)}=1+\\frac{\\mathscr{A}(I)-z(I)}{z(I)}$; per un problema di massimo $R(I)=\\frac{1}{1-\\varepsilon(I)}$."
+   },
+   "en": {
+    "testo": "For a minimization problem, which relation is there between the relative error $\\varepsilon(I)$ and the performance ratio $R(I)$?",
+    "opzioni": [
+     "$R(I)=\\varepsilon(I)$",
+     "$R(I)=1+\\varepsilon(I)$",
+     "$R(I)=1-\\varepsilon(I)$",
+     "$R(I)=\\frac{1}{1-\\varepsilon(I)}$"
+    ],
+    "spiegazione": "$\\frac{\\mathscr{A}(I)}{z(I)}=1+\\frac{\\mathscr{A}(I)-z(I)}{z(I)}$; for a maximization problem $R(I)=\\frac{1}{1-\\varepsilon(I)}$."
+   }
+  },
+  {
+   "id": "aa-f-317",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#112-garanzia-di-prestazione-additiva",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#112-additive-performance-guarantee"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Per un problema di massimo, un errore relativo al più $\\varepsilon$ equivale a quale rapporto?",
+    "opzioni": [
+     "$\\frac{z(I)}{\\mathscr{A}(I)}\\le\\frac{1}{1-\\varepsilon}$",
+     "$\\frac{z(I)}{\\mathscr{A}(I)}\\le1+\\varepsilon$",
+     "$\\frac{\\mathscr{A}(I)}{z(I)}\\le1+\\varepsilon$",
+     "$z(I)-\\mathscr{A}(I)\\le\\varepsilon$"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)\\ge(1-\\varepsilon)z(I)$, cioè $z(I)/\\mathscr{A}(I)\\le\\frac{1}{1-\\varepsilon}$, che è più di $1+\\varepsilon$."
+   },
+   "en": {
+    "testo": "For a maximization problem, a relative error at most $\\varepsilon$ is equivalent to which ratio?",
+    "opzioni": [
+     "$\\frac{z(I)}{\\mathscr{A}(I)}\\le\\frac{1}{1-\\varepsilon}$",
+     "$\\frac{z(I)}{\\mathscr{A}(I)}\\le1+\\varepsilon$",
+     "$\\frac{\\mathscr{A}(I)}{z(I)}\\le1+\\varepsilon$",
+     "$z(I)-\\mathscr{A}(I)\\le\\varepsilon$"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)\\ge(1-\\varepsilon)z(I)$, i.e. $z(I)/\\mathscr{A}(I)\\le\\frac{1}{1-\\varepsilon}$, which is more than $1+\\varepsilon$."
+   }
+  },
+  {
+   "id": "aa-f-318",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-4-def-wcr",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-4-def-wcr"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Che cosa significa $r(\\mathscr{A})=\\infty$?",
+    "opzioni": [
+     "$\\mathscr{A}$ non ha garanzia additiva",
+     "$\\mathscr{A}$ ha tempo esponenziale",
+     "$\\mathscr{A}$ è ottimo su ogni istanza",
+     "$\\mathscr{A}$ non ha garanzia relativa finita"
+    ],
+    "spiegazione": "Il rapporto non è limitato da nessuna costante: $\\mathscr{A}$ non è una $\\alpha$-approssimazione per nessun $\\alpha$."
+   },
+   "en": {
+    "testo": "What does $r(\\mathscr{A})=\\infty$ mean?",
+    "opzioni": [
+     "$\\mathscr{A}$ has no additive guarantee",
+     "$\\mathscr{A}$ has exponential running time",
+     "$\\mathscr{A}$ is optimal on every instance",
+     "$\\mathscr{A}$ has no finite relative guarantee"
+    ],
+    "spiegazione": "The ratio is bounded by no constant: $\\mathscr{A}$ is not an $\\alpha$-approximation for any $\\alpha$."
+   }
+  },
+  {
+   "id": "aa-f-319",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-7-def-as",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-7-def-as"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Uno schema di approssimazione per un problema di minimo dà, scelto $\\varepsilon$, quale garanzia?",
+    "opzioni": [
+     "Una garanzia additiva $\\varepsilon$",
+     "Una $2$-approssimazione",
+     "Una $(1+\\varepsilon)$-approssimazione",
+     "Una $\\varepsilon$-approssimazione"
+    ],
+    "spiegazione": "Errore relativo $\\le\\varepsilon$ significa $\\mathscr{A}_\\varepsilon(I)\\le(1+\\varepsilon)z(I)$."
+   },
+   "en": {
+    "testo": "An approximation scheme for a minimization problem gives, once $\\varepsilon$ is chosen, which guarantee?",
+    "opzioni": [
+     "An additive guarantee $\\varepsilon$",
+     "A $2$-approximation",
+     "A $(1+\\varepsilon)$-approximation",
+     "An $\\varepsilon$-approximation"
+    ],
+    "spiegazione": "Relative error $\\le\\varepsilon$ means $\\mathscr{A}_\\varepsilon(I)\\le(1+\\varepsilon)z(I)$."
+   }
+  },
+  {
+   "id": "aa-f-320",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-9-def-fptas",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-9-def-fptas"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Per un FPTAS il tempo deve essere polinomiale in quali quantità?",
+    "opzioni": [
+     "Nel valore ottimo $z(I)$ e in $n$",
+     "Nella taglia e in $\\frac1\\varepsilon$",
+     "Solo nella taglia dell'istanza",
+     "Solo nell'accuratezza $\\frac1\\varepsilon$"
+    ],
+    "spiegazione": "Polinomiale in entrambe; solo nella taglia (per $\\varepsilon$ fisso) basta per un PTAS."
+   },
+   "en": {
+    "testo": "For an FPTAS the running time must be polynomial in which quantities?",
+    "opzioni": [
+     "In the optimal value $z(I)$ and in $n$",
+     "In the size and in $\\frac1\\varepsilon$",
+     "Only in the instance size",
+     "Only in the accuracy $\\frac1\\varepsilon$"
+    ],
+    "spiegazione": "Polynomial in both; only in the size (for fixed $\\varepsilon$) is enough for a PTAS."
+   }
+  },
+  {
+   "id": "aa-f-321",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-7-def-as",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-7-def-as"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Uno schema di approssimazione richiede errore relativo al più $\\varepsilon$: per quali $\\varepsilon$?",
+    "opzioni": [
+     "Per ogni $\\varepsilon\\in(0,1)$",
+     "Per un solo $\\varepsilon$ fissato",
+     "Solo per $\\varepsilon\\ge\\frac12$",
+     "Per $\\varepsilon=0$"
+    ],
+    "spiegazione": "La famiglia contiene un algoritmo per ogni $\\varepsilon\\in(0,1)$: la precisione si sceglie a piacere."
+   },
+   "en": {
+    "testo": "An approximation scheme requires relative error at most $\\varepsilon$: for which $\\varepsilon$?",
+    "opzioni": [
+     "For every $\\varepsilon\\in(0,1)$",
+     "For a single fixed $\\varepsilon$",
+     "Only for $\\varepsilon\\ge\\frac12$",
+     "For $\\varepsilon=0$"
+    ],
+    "spiegazione": "The family contains an algorithm for every $\\varepsilon\\in(0,1)$: the precision is chosen at will."
+   }
+  },
+  {
+   "id": "aa-f-322",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#112-garanzia-di-prestazione-additiva",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#112-additive-performance-guarantee"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "La garanzia additiva, a differenza di quella relativa, richiede $z(I)>0$?",
+    "opzioni": [
+     "Sì, sempre",
+     "Sì, solo per i problemi di massimo",
+     "Sì, e anche $\\mathscr{A}(I)>0$",
+     "No: confronta una differenza"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)-z(I)\\le\\beta$ ha senso anche con valori nulli o negativi; la positività serve ai rapporti."
+   },
+   "en": {
+    "testo": "Does the additive guarantee, unlike the relative one, require $z(I)>0$?",
+    "opzioni": [
+     "Yes, always",
+     "Yes, only for maximization problems",
+     "Yes, and also $\\mathscr{A}(I)>0$",
+     "No: it compares a difference"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)-z(I)\\le\\beta$ makes sense also with zero or negative values; positivity is needed for ratios."
+   }
+  },
+  {
+   "id": "aa-f-323",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-4-def-wcr",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-4-def-wcr"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "$r(\\mathscr{A})=\\frac32$ basta per dire che $\\mathscr{A}$ è una $\\frac32$-approssimazione?",
+    "opzioni": [
+     "No: serve $r(\\mathscr{A})<\\frac32$",
+     "Solo per i problemi di minimo",
+     "Sì: ogni rapporto è al più l'estremo superiore",
+     "No: serve anche un'istanza con rapporto $\\frac32$"
+    ],
+    "spiegazione": "Ogni rapporto è $\\le\\sup=\\frac32$, anche se nessuna istanza lo raggiunge esattamente."
+   },
+   "en": {
+    "testo": "Is $r(\\mathscr{A})=\\frac32$ enough to say that $\\mathscr{A}$ is a $\\frac32$-approximation?",
+    "opzioni": [
+     "No: $r(\\mathscr{A})<\\frac32$ is needed",
+     "Only for minimization problems",
+     "Yes: every ratio is at most the supremum",
+     "No: an instance with ratio $\\frac32$ is also needed"
+    ],
+    "spiegazione": "Every ratio is $\\le\\sup=\\frac32$, even if no instance attains it exactly."
+   }
+  },
+  {
+   "id": "aa-f-324",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-10-vci-defint",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-10-vci-defint"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Su un grafo di intervalli, quanto vale $\\omega(G)$?",
+    "opzioni": [
+     "Il grado massimo del grafo più uno",
+     "Il numero di intervalli a due a due disgiunti",
+     "Il massimo di intervalli con un punto comune",
+     "Il numero totale degli intervalli"
+    ],
+    "spiegazione": "Intervalli a due a due intersecanti hanno un punto in comune (proprietà di Helly sulla retta): le clique sono gli intervalli che contengono un punto."
+   },
+   "en": {
+    "testo": "On an interval graph, what is $\\omega(G)$?",
+    "opzioni": [
+     "The maximum degree of the graph plus one",
+     "The number of pairwise disjoint intervals",
+     "The most intervals sharing a point",
+     "The total number of intervals"
+    ],
+    "spiegazione": "Pairwise intersecting intervals share a common point (Helly property on the line): cliques are the intervals containing a point."
+   }
+  },
+  {
+   "id": "aa-f-325",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#421-nessun-rapporto-inferiore-a-quattro-terzi",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#421-no-ratio-below-four-thirds"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nella dimostrazione del bound $\\frac43$, che cosa farebbe un algoritmo con rapporto sempre $<\\frac43$ su un grafo con $\\chi(G)=3$?",
+    "opzioni": [
+     "Non terminerebbe",
+     "Userebbe al più $3$ colori",
+     "Userebbe almeno $4$ colori",
+     "Userebbe $2$ colori"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)<\\frac43\\cdot3=4$, quindi $\\mathscr{A}(I)\\le3$: così si deciderebbe la $3$-colorabilità."
+   },
+   "en": {
+    "testo": "In the proof of the $\\frac43$ bound, what would an algorithm with ratio always $<\\frac43$ do on a graph with $\\chi(G)=3$?",
+    "opzioni": [
+     "It would not terminate",
+     "It would use at most $3$ colors",
+     "It would use at least $4$ colors",
+     "It would use $2$ colors"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)<\\frac43\\cdot3=4$, hence $\\mathscr{A}(I)\\le3$: this way $3$-colorability would be decided."
+   }
+  },
+  {
+   "id": "aa-f-326",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-3-vci-corNoConst",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-3-vci-corNoConst"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Il VCP ha uno schema di approssimazione (PTAS), se $P\\neq NP$?",
+    "opzioni": [
+     "No: nemmeno un rapporto costante",
+     "Sì, un PTAS ma non un FPTAS",
+     "Sì, ha anche un FPTAS",
+     "Sì, sui grafi generali"
+    ],
+    "spiegazione": "Un PTAS darebbe un rapporto $1+\\varepsilon$ costante, escluso dal corollario."
+   },
+   "en": {
+    "testo": "Does the VCP have an approximation scheme (PTAS), if $P\\neq NP$?",
+    "opzioni": [
+     "No: not even a constant ratio",
+     "Yes, a PTAS but no FPTAS",
+     "Yes, it even has an FPTAS",
+     "Yes, on general graphs"
+    ],
+    "spiegazione": "A PTAS would give a constant ratio $1+\\varepsilon$, ruled out by the corollary."
+   }
+  },
+  {
+   "id": "aa-f-327",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-3-vci-corNoConst",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-3-vci-corNoConst"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il corollario «niente rapporto costante per il VCP» vale per quali grafi?",
+    "opzioni": [
+     "Per i grafi planari",
+     "Per i grafi di intervalli",
+     "Per i grafi bipartiti",
+     "Per i grafi generali"
+    ],
+    "spiegazione": "Sui planari $PL$ è $2$-additivo e sugli intervalli e i bipartiti si colora all'ottimo: il limite riguarda i grafi qualunque."
+   },
+   "en": {
+    "testo": "For which graphs does the corollary «no constant ratio for the VCP» hold?",
+    "opzioni": [
+     "For planar graphs",
+     "For interval graphs",
+     "For bipartite graphs",
+     "For general graphs"
+    ],
+    "spiegazione": "On planar graphs $PL$ is $2$-additive and interval and bipartite graphs are colored optimally: the limit concerns arbitrary graphs."
+   }
+  },
+  {
+   "id": "aa-f-328",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-8-vci-thm5",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-8-vci-thm5"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "L'algoritmo dei cinque colori si applica sotto quale ipotesi?",
+    "opzioni": [
+     "Che $\\omega(G)\\le5$",
+     "Che il grafo sia di intervalli",
+     "Che il grafo sia planare",
+     "Che $\\Delta(G)\\le5$"
+    ],
+    "spiegazione": "Usa il vertice di grado al più $5$, che esiste in ogni grafo planare ma non in un grafo qualunque."
+   },
+   "en": {
+    "testo": "Under which assumption does the five color algorithm apply?",
+    "opzioni": [
+     "That $\\omega(G)\\le5$",
+     "That the graph is an interval graph",
+     "That the graph is planar",
+     "That $\\Delta(G)\\le5$"
+    ],
+    "spiegazione": "It uses the vertex of degree at most $5$, which exists in every planar graph but not in an arbitrary graph."
+   }
+  },
+  {
+   "id": "aa-f-329",
+   "livello": "ipotesi",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#box-5-vci-propBFS",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#box-5-vci-propBFS"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "La visita in ampiezza colora all'ottimo con $2$ colori: sotto quale ipotesi?",
+    "opzioni": [
+     "Che $\\Delta(G)\\le2$",
+     "Che il grafo sia bipartito",
+     "Che il grafo sia planare",
+     "Che il grafo sia connesso e completo"
+    ],
+    "spiegazione": "Se il grafo non è bipartito la visita trova uno spigolo fra vertici dello stesso colore e $\\chi(G)\\ge3$."
+   },
+   "en": {
+    "testo": "Breadth-first search colors optimally with $2$ colors: under which assumption?",
+    "opzioni": [
+     "That $\\Delta(G)\\le2$",
+     "That the graph is bipartite",
+     "That the graph is planar",
+     "That the graph is connected and complete"
+    ],
+    "spiegazione": "If the graph is not bipartite the search finds an edge between same-colored vertices and $\\chi(G)\\ge3$."
+   }
+  },
+  {
+   "id": "aa-f-330",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#522-un-rapporto-costante-darebbe-ogni-rapporto-costante",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#522-a-constant-ratio-would-give-every-constant-ratio"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Nell'amplificazione, da una clique di $G^{\\boxtimes k}$ di taglia $\\ge\\omega(G)^k/\\alpha$ si ricava una clique di $G$ di taglia almeno:",
+    "opzioni": [
+     "$\\omega(G)^k/\\alpha$",
+     "$\\omega(G)-\\alpha$",
+     "$\\omega(G)/\\alpha^{1/k}$",
+     "$\\omega(G)/\\alpha$"
+    ],
+    "spiegazione": "Una clique $K$ del prodotto ha una proiezione o una fibra di taglia $\\ge|K|^{1/k}$: il rapporto diventa $\\alpha^{1/k}$."
+   },
+   "en": {
+    "testo": "In the amplification, from a clique of $G^{\\boxtimes k}$ of size $\\ge\\omega(G)^k/\\alpha$ one gets a clique of $G$ of size at least:",
+    "opzioni": [
+     "$\\omega(G)^k/\\alpha$",
+     "$\\omega(G)-\\alpha$",
+     "$\\omega(G)/\\alpha^{1/k}$",
+     "$\\omega(G)/\\alpha$"
+    ],
+    "spiegazione": "A clique $K$ of the product has a projection or a fibre of size $\\ge|K|^{1/k}$: the ratio becomes $\\alpha^{1/k}$."
+   }
+  },
+  {
+   "id": "aa-f-331",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-3-cli-thmamp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-3-cli-thmamp"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Combinando l'amplificazione con i risultati di Håstad e Zuckerman, che cosa si conclude per l'MCP?",
+    "opzioni": [
+     "Un FPTAS",
+     "Nessun rapporto costante",
+     "Un PTAS ma non un FPTAS",
+     "Una $2$-approssimazione"
+    ],
+    "spiegazione": "Un rapporto costante darebbe ogni rapporto $\\beta>1$, cioè un PTAS; ma nemmeno $n^{1-\\varepsilon}$ è raggiungibile."
+   },
+   "en": {
+    "testo": "Combining the amplification with the results of Håstad and Zuckerman, what is concluded for the MCP?",
+    "opzioni": [
+     "An FPTAS",
+     "No constant ratio",
+     "A PTAS but no FPTAS",
+     "A $2$-approximation"
+    ],
+    "spiegazione": "A constant ratio would give every ratio $\\beta>1$, i.e. a PTAS; but not even $n^{1-\\varepsilon}$ is achievable."
+   }
+  },
+  {
+   "id": "aa-f-332",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-6-cli-propdeg",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-6-cli-propdeg"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Quale disuguaglianza vale per ogni grafo $G$ fra numero di clique e grado massimo?",
+    "opzioni": [
+     "$\\omega(G)\\le\\Delta(G)+1$",
+     "$\\omega(G)\\le\\Delta(G)$",
+     "$\\omega(G)\\ge\\Delta(G)$",
+     "$\\omega(G)\\le\\frac{\\Delta(G)}{2}$"
+    ],
+    "spiegazione": "Un vertice di una clique ha almeno $\\omega(G)-1$ vicini; $K_n$ mostra che $\\omega(G)\\le\\Delta(G)$ è falso."
+   },
+   "en": {
+    "testo": "Which inequality holds for every graph $G$ between clique number and maximum degree?",
+    "opzioni": [
+     "$\\omega(G)\\le\\Delta(G)+1$",
+     "$\\omega(G)\\le\\Delta(G)$",
+     "$\\omega(G)\\ge\\Delta(G)$",
+     "$\\omega(G)\\le\\frac{\\Delta(G)}{2}$"
+    ],
+    "spiegazione": "A vertex of a clique has at least $\\omega(G)-1$ neighbours; $K_n$ shows that $\\omega(G)\\le\\Delta(G)$ is false."
+   }
+  },
+  {
+   "id": "aa-f-333",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-4-cli-thmHZ",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-4-cli-thmHZ"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Il limite $n^{1-\\varepsilon}$ per l'MCP riguarda algoritmi con quale proprietà?",
+    "opzioni": [
+     "Esatti",
+     "Greedy",
+     "Con garanzia additiva",
+     "Polinomiali"
+    ],
+    "spiegazione": "Un algoritmo esponenziale trova $\\omega(G)$ esattamente; il limite vale per quelli polinomiali, se $P\\neq NP$."
+   },
+   "en": {
+    "testo": "The $n^{1-\\varepsilon}$ limit for the MCP concerns algorithms with which property?",
+    "opzioni": [
+     "Exact",
+     "Greedy",
+     "With an additive guarantee",
+     "Polynomial"
+    ],
+    "spiegazione": "An exponential algorithm finds $\\omega(G)$ exactly; the limit holds for polynomial ones, if $P\\neq NP$."
+   }
+  },
+  {
+   "id": "aa-f-334",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-8-cli-propmssp",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-8-cli-propmssp"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "La garanzia $\\alpha(G)/|S|\\le\\Delta(G)+1$ del greedy è un rapporto costante sotto quale ipotesi?",
+    "opzioni": [
+     "Che valga $\\omega(G)\\le4$",
+     "Nessuna: è sempre costante",
+     "Che $\\Delta(G)$ sia costante",
+     "Che il grafo sia planare"
+    ],
+    "spiegazione": "Sui grafi generali $\\Delta(G)$ può essere $n-1$ e la garanzia diventa $n$, coerente con i risultati negativi."
+   },
+   "en": {
+    "testo": "The guarantee $\\alpha(G)/|S|\\le\\Delta(G)+1$ of greedy is a constant ratio under which assumption?",
+    "opzioni": [
+     "That $\\omega(G)\\le4$ holds",
+     "None: it is always constant",
+     "That $\\Delta(G)$ is constant",
+     "That the graph is planar"
+    ],
+    "spiegazione": "On general graphs $\\Delta(G)$ can be $n-1$ and the guarantee becomes $n$, consistent with the negative results."
+   }
+  },
+  {
+   "id": "aa-f-335",
+   "livello": "ipotesi",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-1-cli-defprod",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-1-cli-defprod"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Nel prodotto forte, due vertici $(u,x)$ e $(u,y)$ con la stessa prima coordinata sono adiacenti quando?",
+    "opzioni": [
+     "Quando $u$ ha grado $>0$",
+     "Quando $\\{x,y\\}\\in F$",
+     "Sempre, per ogni $x,y$",
+     "Mai, perché $u=u$"
+    ],
+    "spiegazione": "Con $u=v$ la prima condizione è soddisfatta; resta la seconda, $x=y$ (escluso, vertici distinti) o $\\{x,y\\}\\in F$."
+   },
+   "en": {
+    "testo": "In the strong product, when are two vertices $(u,x)$ and $(u,y)$ with the same first coordinate adjacent?",
+    "opzioni": [
+     "When $u$ has degree $>0$",
+     "When $\\{x,y\\}\\in F$",
+     "Always, for all $x,y$",
+     "Never, since $u=u$"
+    ],
+    "spiegazione": "With $u=v$ the first condition holds; the second remains, $x=y$ (excluded, distinct vertices) or $\\{x,y\\}\\in F$."
+   }
+  },
+  {
+   "id": "aa-f-336",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-2-def-pratio",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-2-def-pratio"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Quanto vale $z(I)/\\mathscr{A}(I)$ se, in un problema di massimo, $z(I)=45$ e la soluzione euristica vale $36$?",
+    "opzioni": [
+     "$\\frac15$",
+     "$\\frac54$",
+     "$\\frac45$",
+     "$9$"
+    ],
+    "spiegazione": "Per un problema di massimo il rapporto è $z(I)/\\mathscr{A}(I)=45/36=\\frac54$."
+   },
+   "en": {
+    "testo": "What is $z(I)/\\mathscr{A}(I)$ if, in a maximization problem, $z(I)=45$ and the heuristic solution is worth $36$?",
+    "opzioni": [
+     "$\\frac15$",
+     "$\\frac54$",
+     "$\\frac45$",
+     "$9$"
+    ],
+    "spiegazione": "For a maximization problem the ratio is $z(I)/\\mathscr{A}(I)=45/36=\\frac54$."
+   }
+  },
+  {
+   "id": "aa-f-337",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Un algoritmo di $3$-approssimazione per un problema di minimo, su un'istanza con $z(I)=12$, che valori può restituire?",
+    "opzioni": [
+     "Da $12$ a $36$",
+     "Da $4$ a $12$",
+     "Da $12$ a $15$",
+     "Solo $36$"
+    ],
+    "spiegazione": "$z(I)\\le\\mathscr{A}(I)\\le3z(I)$: fra $12$ e $36$."
+   },
+   "en": {
+    "testo": "A $3$-approximation algorithm for a minimization problem, on an instance with $z(I)=12$, which values can it return?",
+    "opzioni": [
+     "From $12$ to $36$",
+     "From $4$ to $12$",
+     "From $12$ to $15$",
+     "Only $36$"
+    ],
+    "spiegazione": "$z(I)\\le\\mathscr{A}(I)\\le3z(I)$: between $12$ and $36$."
+   }
+  },
+  {
+   "id": "aa-f-338",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Massimizzazione, ottimo $18$: entro quale intervallo sta il valore trovato da una $2$-approssimazione?",
+    "opzioni": [
+     "Da $18$ a $36$",
+     "Da $16$ a $18$",
+     "Solo $9$",
+     "Da $9$ a $18$"
+    ],
+    "spiegazione": "$z(I)/\\mathscr{A}(I)\\le2$ e $\\mathscr{A}(I)\\le z(I)$: fra $9$ e $18$."
+   },
+   "en": {
+    "testo": "Maximization, optimum $18$: within which interval is the value found by a $2$-approximation?",
+    "opzioni": [
+     "From $18$ to $36$",
+     "From $16$ to $18$",
+     "Only $9$",
+     "From $9$ to $18$"
+    ],
+    "spiegazione": "$z(I)/\\mathscr{A}(I)\\le2$ and $\\mathscr{A}(I)\\le z(I)$: between $9$ and $18$."
+   }
+  },
+  {
+   "id": "aa-f-339",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-4-def-wcr",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-4-def-wcr"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Su tre istanze un algoritmo per un problema di minimo ha rapporti $1$, $\\frac32$ e $\\frac43$, e nessuna istanza fa peggio di $\\frac32$. Quanto vale $r(\\mathscr{A})$?",
+    "opzioni": [
+     "$1$",
+     "$\\frac{23}{18}$",
+     "$\\frac32$",
+     "$\\frac43$"
+    ],
+    "spiegazione": "$r(\\mathscr{A})$ è l'estremo superiore dei rapporti su tutte le istanze, non la media: $\\frac32$."
+   },
+   "en": {
+    "testo": "On three instances an algorithm for a minimization problem has ratios $1$, $\\frac32$ and $\\frac43$, and no instance does worse than $\\frac32$. What is $r(\\mathscr{A})$?",
+    "opzioni": [
+     "$1$",
+     "$\\frac{23}{18}$",
+     "$\\frac32$",
+     "$\\frac43$"
+    ],
+    "spiegazione": "$r(\\mathscr{A})$ is the supremum of the ratios over all instances, not the average: $\\frac32$."
+   }
+  },
+  {
+   "id": "aa-f-340",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-6-def-wcae",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-6-def-wcae"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Un algoritmo sbaglia sempre di al più $3$ unità e su un'istanza sbaglia proprio di $3$. Quanto vale $e(\\mathscr{A})$?",
+    "opzioni": [
+     "$0$",
+     "$3$",
+     "$4$",
+     "$\\frac13$"
+    ],
+    "spiegazione": "La garanzia additiva $3$ è raggiunta: è la più piccola possibile, quindi $e(\\mathscr{A})=3$."
+   },
+   "en": {
+    "testo": "An algorithm always errs by at most $3$ units and on one instance errs by exactly $3$. What is $e(\\mathscr{A})$?",
+    "opzioni": [
+     "$0$",
+     "$3$",
+     "$4$",
+     "$\\frac13$"
+    ],
+    "spiegazione": "The additive guarantee $3$ is attained: it is the smallest possible, hence $e(\\mathscr{A})=3$."
+   }
+  },
+  {
+   "id": "aa-f-341",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-7-def-as",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-7-def-as"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Uno schema per un problema di minimo con $\\varepsilon=0{,}1$ garantisce quale valore su un'istanza con $z(I)=50$?",
+    "opzioni": [
+     "Al più $55$",
+     "Al più $50{,}1$",
+     "Almeno $45$",
+     "Esattamente $50$"
+    ],
+    "spiegazione": "Errore relativo $\\le0{,}1$: $\\mathscr{A}_\\varepsilon(I)\\le1{,}1\\cdot50=55$."
+   },
+   "en": {
+    "testo": "A scheme for a minimization problem with $\\varepsilon=0.1$ guarantees which value on an instance with $z(I)=50$?",
+    "opzioni": [
+     "At most $55$",
+     "At most $50.1$",
+     "At least $45$",
+     "Exactly $50$"
+    ],
+    "spiegazione": "Relative error $\\le0.1$: $\\mathscr{A}_\\varepsilon(I)\\le1.1\\cdot50=55$."
+   }
+  },
+  {
+   "id": "aa-f-342",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-8-def-ptas",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-8-def-ptas"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Uno schema ha tempo $O(2^{1/\\varepsilon}n^2)$. Che cos'è?",
+    "opzioni": [
+     "Un FPTAS, e quindi un PTAS",
+     "Né un PTAS né un FPTAS",
+     "Un algoritmo esatto polinomiale",
+     "Un PTAS, non un FPTAS"
+    ],
+    "spiegazione": "Per $\\varepsilon$ fisso il tempo è polinomiale in $n$; la dipendenza da $\\frac1\\varepsilon$ è esponenziale, quindi non è un FPTAS."
+   },
+   "en": {
+    "testo": "A scheme runs in time $O(2^{1/\\varepsilon}n^2)$. What is it?",
+    "opzioni": [
+     "An FPTAS, hence a PTAS",
+     "Neither a PTAS nor an FPTAS",
+     "A polynomial exact algorithm",
+     "A PTAS, not an FPTAS"
+    ],
+    "spiegazione": "For fixed $\\varepsilon$ the time is polynomial in $n$; the dependence on $\\frac1\\varepsilon$ is exponential, hence not an FPTAS."
+   }
+  },
+  {
+   "id": "aa-f-343",
+   "livello": "facile",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#13-errori-tipici",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#13-typical-mistakes"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che cosa confonde chi chiama «$\\varepsilon$-approssimazione» uno schema con errore relativo $\\varepsilon$?",
+    "opzioni": [
+     "Il minimo con il massimo",
+     "Il tempo di calcolo con lo spazio",
+     "L'errore con il rapporto",
+     "Il PTAS con l'FPTAS"
+    ],
+    "spiegazione": "Un errore relativo $\\varepsilon$ dà rapporto $1+\\varepsilon$ (minimo) o $\\frac{1}{1-\\varepsilon}$ (massimo), mai $\\varepsilon<1$."
+   },
+   "en": {
+    "testo": "What does one confuse when calling «$\\varepsilon$-approximation» a scheme with relative error $\\varepsilon$?",
+    "opzioni": [
+     "Minimization with maximization",
+     "Running time with space",
+     "The error with the ratio",
+     "The PTAS with the FPTAS"
+    ],
+    "spiegazione": "A relative error $\\varepsilon$ gives ratio $1+\\varepsilon$ (minimization) or $\\frac{1}{1-\\varepsilon}$ (maximization), never $\\varepsilon<1$."
+   }
+  },
+  {
+   "id": "aa-f-344",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-3-def-alpha-approx",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-3-def-alpha-approx"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Se $\\mathscr{A}$ è una $\\alpha$-approssimazione e $\\alpha'>\\alpha$, che cosa si può dire?",
+    "opzioni": [
+     "$\\mathscr{A}$ è esatto",
+     "È anche una $\\alpha'$-approssimazione",
+     "$\\mathscr{A}$ non è una $\\alpha'$-approssimazione",
+     "$r(\\mathscr{A})=\\alpha'$"
+    ],
+    "spiegazione": "Se il rapporto è sempre $\\le\\alpha$, è anche $\\le\\alpha'$: le garanzie più deboli valgono tutte."
+   },
+   "en": {
+    "testo": "If $\\mathscr{A}$ is an $\\alpha$-approximation and $\\alpha'>\\alpha$, what can be said?",
+    "opzioni": [
+     "$\\mathscr{A}$ is exact",
+     "It is also an $\\alpha'$-approximation",
+     "$\\mathscr{A}$ is not an $\\alpha'$-approximation",
+     "$r(\\mathscr{A})=\\alpha'$"
+    ],
+    "spiegazione": "If the ratio is always $\\le\\alpha$, it is also $\\le\\alpha'$: all weaker guarantees hold."
+   }
+  },
+  {
+   "id": "aa-f-345",
+   "livello": "teorema",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-5-def-beta-add",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-5-def-beta-add"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Un algoritmo $\\beta$-additivo per un problema di minimo con $z(I)\\ge1$ su ogni istanza è anche relativo?",
+    "opzioni": [
+     "Sì, una $(1+\\beta)$-approssimazione",
+     "No, mai, per nessun $\\beta$",
+     "Sì, una $\\beta$-approssimazione",
+     "Solo se $\\beta=0$, cioè esatto"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)\\le z(I)+\\beta\\le z(I)+\\beta z(I)=(1+\\beta)z(I)$ se $z(I)\\ge1$."
+   },
+   "en": {
+    "testo": "Is a $\\beta$-additive algorithm for a minimization problem with $z(I)\\ge1$ on every instance also relative?",
+    "opzioni": [
+     "Yes, a $(1+\\beta)$-approximation",
+     "No, never, for no $\\beta$",
+     "Yes, a $\\beta$-approximation",
+     "Only if $\\beta=0$, i.e. exact"
+    ],
+    "spiegazione": "$\\mathscr{A}(I)\\le z(I)+\\beta\\le z(I)+\\beta z(I)=(1+\\beta)z(I)$ if $z(I)\\ge1$."
+   }
+  },
+  {
+   "id": "aa-f-346",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-5-def-beta-add",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-5-def-beta-add"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Per dedurre da una garanzia additiva $\\beta$ la garanzia relativa $1+\\beta$ (minimo), quale ipotesi serve?",
+    "opzioni": [
+     "$\\beta<1$ e $\\beta>0$",
+     "Che $\\mathscr{A}$ sia polinomiale",
+     "Nessuna ipotesi",
+     "$z(I)\\ge1$ su ogni istanza"
+    ],
+    "spiegazione": "Serve $\\beta\\le\\beta z(I)$, cioè $z(I)\\ge1$; con ottimi piccolissimi l'errore relativo può essere enorme."
+   },
+   "en": {
+    "testo": "To derive from an additive guarantee $\\beta$ the relative guarantee $1+\\beta$ (minimization), which assumption is needed?",
+    "opzioni": [
+     "$\\beta<1$ and $\\beta>0$",
+     "That $\\mathscr{A}$ is polynomial",
+     "No assumption",
+     "$z(I)\\ge1$ on every instance"
+    ],
+    "spiegazione": "One needs $\\beta\\le\\beta z(I)$, i.e. $z(I)\\ge1$; with tiny optima the relative error can be huge."
+   }
+  },
+  {
+   "id": "aa-f-347",
+   "livello": "ipotesi",
+   "capitolo": "approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/approximation/#box-4-def-wcr",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/approximation/#box-4-def-wcr"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Il rapporto nel caso peggiore $r(\\mathscr{A})$ si calcola su quali istanze?",
+    "opzioni": [
+     "Su quelle con $n$ grande",
+     "Su una sola istanza",
+     "Su tutte le istanze del problema",
+     "Sulle istanze di riferimento"
+    ],
+    "spiegazione": "È un estremo superiore su tutte le istanze: è una misura di caso peggiore, non di caso medio."
+   },
+   "en": {
+    "testo": "Over which instances is the worst-case ratio $r(\\mathscr{A})$ computed?",
+    "opzioni": [
+     "Over those with large $n$",
+     "Over a single instance",
+     "Over all instances of the problem",
+     "Over the reference instances"
+    ],
+    "spiegazione": "It is a supremum over all instances: a worst-case measure, not an average one."
+   }
+  },
+  {
+   "id": "aa-f-348",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-6-prop-LPT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-6-prop-LPT"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quanto vale la garanzia di $LPT$ con $m=2$ macchine?",
+    "opzioni": [
+     "$\\frac32$",
+     "$\\frac43$",
+     "$\\frac54$",
+     "$\\frac76$"
+    ],
+    "spiegazione": "$\\frac43-\\frac{1}{3\\cdot2}=\\frac76$."
+   },
+   "en": {
+    "testo": "What is the guarantee of $LPT$ with $m=2$ machines?",
+    "opzioni": [
+     "$\\frac32$",
+     "$\\frac43$",
+     "$\\frac54$",
+     "$\\frac76$"
+    ],
+    "spiegazione": "$\\frac43-\\frac{1}{3\\cdot2}=\\frac76$."
+   }
+  },
+  {
+   "id": "aa-f-349",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-4-prop-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-4-prop-LIST"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Su due macchine, quale rapporto nel caso peggiore ha la regola $LIST$?",
+    "opzioni": [
+     "$\\frac76$",
+     "$\\frac43$",
+     "$\\frac32$",
+     "$2$"
+    ],
+    "spiegazione": "$2-\\frac12=\\frac32$."
+   },
+   "en": {
+    "testo": "On two machines, which worst-case ratio does the rule $LIST$ have?",
+    "opzioni": [
+     "$\\frac76$",
+     "$\\frac43$",
+     "$\\frac32$",
+     "$2$"
+    ],
+    "spiegazione": "$2-\\frac12=\\frac32$."
+   }
+  },
+  {
+   "id": "aa-f-350",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-4-prop-LIST",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-4-prop-LIST"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "A che valore tende la garanzia di $LIST$ quando il numero di macchine $m$ cresce?",
+    "opzioni": [
+     "$\\frac32$",
+     "$2$",
+     "$\\frac43$",
+     "$1$"
+    ],
+    "spiegazione": "$2-\\frac1m\\to2$; quella di $LPT$, $\\frac43-\\frac{1}{3m}$, tende a $\\frac43$."
+   },
+   "en": {
+    "testo": "Which value does the guarantee of $LIST$ tend to as the number of machines $m$ grows?",
+    "opzioni": [
+     "$\\frac32$",
+     "$2$",
+     "$\\frac43$",
+     "$1$"
+    ],
+    "spiegazione": "$2-\\frac1m\\to2$; that of $LPT$, $\\frac43-\\frac{1}{3m}$, tends to $\\frac43$."
+   }
+  },
+  {
+   "id": "aa-f-351",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#71-notazione",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#71-notation"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Tre macchine e lavori lunghi $7,2,2,2$: quale lower bound elementare si ottiene per il makespan ottimo?",
+    "opzioni": [
+     "$7$",
+     "$5$",
+     "$13$",
+     "$4$"
+    ],
+    "spiegazione": "$\\sum_jt_j=13$, $\\lceil13/3\\rceil=5$, $\\max_jt_j=7$: il bound è $7$, ed è l'ottimo."
+   },
+   "en": {
+    "testo": "Three machines and jobs of length $7,2,2,2$: which elementary lower bound is obtained for the optimal makespan?",
+    "opzioni": [
+     "$7$",
+     "$5$",
+     "$13$",
+     "$4$"
+    ],
+    "spiegazione": "$\\sum_jt_j=13$, $\\lceil13/3\\rceil=5$, $\\max_jt_j=7$: the bound is $7$, and it is the optimum."
+   }
+  },
+  {
+   "id": "aa-f-352",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#sez-sec-LPT",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#sez-sec-LPT"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Durate $(5,4,3,3,3)$ su $m=2$ macchine: che makespan dà $LPT$?",
+    "opzioni": [
+     "$9$",
+     "$11$",
+     "$8$",
+     "$10$"
+    ],
+    "spiegazione": "$5\\to M_1$, $4\\to M_2$, $3\\to M_2$ ($7$), $3\\to M_1$ ($8$), $3\\to M_2$ ($10$). L'ottimo è $9$."
+   },
+   "en": {
+    "testo": "Durations $(5,4,3,3,3)$ on $m=2$ machines: which makespan does $LPT$ give?",
+    "opzioni": [
+     "$9$",
+     "$11$",
+     "$8$",
+     "$10$"
+    ],
+    "spiegazione": "$5\\to M_1$, $4\\to M_2$, $3\\to M_2$ ($7$), $3\\to M_1$ ($8$), $3\\to M_2$ ($10$). The optimum is $9$."
+   }
+  },
+  {
+   "id": "aa-f-353",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-3-obs-start",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-3-obs-start"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Con $m=3$ e somma delle durate degli altri lavori pari a $24$, quando inizia al più l'ultimo lavoro $\\ell$ di $LIST$?",
+    "opzioni": [
+     "All'istante $12$",
+     "All'istante $6$",
+     "All'istante $8$",
+     "All'istante $24$"
+    ],
+    "spiegazione": "$S_\\ell\\le\\frac1m\\sum_{j\\neq\\ell}t_j=24/3=8$."
+   },
+   "en": {
+    "testo": "With $m=3$ and the other jobs' durations summing to $24$, at most when does the last job $\\ell$ of $LIST$ start?",
+    "opzioni": [
+     "At time $12$",
+     "At time $6$",
+     "At time $8$",
+     "At time $24$"
+    ],
+    "spiegazione": "$S_\\ell\\le\\frac1m\\sum_{j\\neq\\ell}t_j=24/3=8$."
+   }
+  },
+  {
+   "id": "aa-f-354",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#76-errori-tipici",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#76-typical-mistakes"
+   },
+   "corretta": 1,
+   "it": {
+    "testo": "Che errore fa chi dice che $LPT$ è ottimo perché mette per primi i lavori lunghi?",
+    "opzioni": [
+     "$LPT$ non è polinomiale",
+     "$LPT$ può non essere ottimo",
+     "Nessuno: $LPT$ è ottimo",
+     "$LPT$ ha rapporto $2$"
+    ],
+    "spiegazione": "Le istanze tight mostrano che $LPT$ può sbagliare: $P\\,||\\,C_{\\max}$ è NP-difficile."
+   },
+   "en": {
+    "testo": "What mistake does one make saying that $LPT$ is optimal because it puts long jobs first?",
+    "opzioni": [
+     "$LPT$ is not polynomial",
+     "$LPT$ may be non-optimal",
+     "None: $LPT$ is optimal",
+     "$LPT$ has ratio $2$"
+    ],
+    "spiegazione": "The tight instances show that $LPT$ can err: $P\\,||\\,C_{\\max}$ is NP-hard."
+   }
+  },
+  {
+   "id": "aa-f-355",
+   "livello": "facile",
+   "capitolo": "pcmax-approximation",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/pcmax-approximation/#box-7-prop-LPTtight",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/pcmax-approximation/#box-7-prop-LPTtight"
+   },
+   "corretta": 0,
+   "it": {
+    "testo": "Le istanze tight di $LPT$ hanno $2m+1$ lavori. Quanti lavori hanno con $m=3$?",
+    "opzioni": [
+     "$7$",
+     "$6$",
+     "$9$",
+     "$4$"
+    ],
+    "spiegazione": "$2\\cdot3+1=7$: due per ogni durata da $2m-1$ a $m+1$ e tre di durata $m$."
+   },
+   "en": {
+    "testo": "The tight instances of $LPT$ have $2m+1$ jobs. How many jobs do they have with $m=3$?",
+    "opzioni": [
+     "$7$",
+     "$6$",
+     "$9$",
+     "$4$"
+    ],
+    "spiegazione": "$2\\cdot3+1=7$: two for each duration from $2m-1$ to $m+1$ and three of duration $m$."
+   }
+  },
+  {
+   "id": "aa-f-356",
+   "livello": "teorema",
+   "capitolo": "coloring-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/coloring-inapproximability/#433-grafi-planari",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/#433-planar-graphs"
+   },
+   "corretta": 2,
+   "it": {
+    "testo": "Che cosa fa l'algoritmo $PL$ su un grafo planare?",
+    "opzioni": [
+     "Usa il greedy per grado",
+     "Prova tutte le colorazioni",
+     "Ottimo sui bipartiti, se no $5$",
+     "Usa sempre $4$ colori"
+    ],
+    "spiegazione": "Prima la visita in ampiezza (bipartito?), altrimenti l'algoritmo dei cinque colori: errore al più $2$."
+   },
+   "en": {
+    "testo": "What does the algorithm $PL$ do on a planar graph?",
+    "opzioni": [
+     "It uses greedy by degree",
+     "It tries all colorings",
+     "Optimal on bipartite, else $5$",
+     "It always uses $4$ colors"
+    ],
+    "spiegazione": "First breadth-first search (bipartite?), otherwise the five color algorithm: error at most $2$."
+   }
+  },
+  {
+   "id": "aa-f-357",
+   "livello": "teorema",
+   "capitolo": "clique-inapproximability",
+   "link": {
+    "it": "https://fabiofurini.github.io/algoritmi-di-approssimazione/clique-inapproximability/#box-5-cli-propplanar",
+    "en": "https://fabiofurini.github.io/approximation-algorithms/clique-inapproximability/#box-5-cli-propplanar"
+   },
+   "corretta": 3,
+   "it": {
+    "testo": "Quale grafo completo è il più grande contenuto in un grafo planare?",
+    "opzioni": [
+     "$K_5$",
+     "$K_3$",
+     "$K_6$",
+     "$K_4$"
+    ],
+    "spiegazione": "$K_5$ non è planare, $K_4$ sì: quindi $\\omega(G)\\le4$ sui grafi planari."
+   },
+   "en": {
+    "testo": "Which complete graph is the largest one contained in a planar graph?",
+    "opzioni": [
+     "$K_5$",
+     "$K_3$",
+     "$K_6$",
+     "$K_4$"
+    ],
+    "spiegazione": "$K_5$ is not planar, $K_4$ is: hence $\\omega(G)\\le4$ on planar graphs."
+   }
   }
  ]
 }

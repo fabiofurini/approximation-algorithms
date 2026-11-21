@@ -236,8 +236,6 @@ Ten courses built the same way: lecture notes online and in PDF, exercises with 
 </div>
 <!-- /collana -->
 
----
-
 Teaching material by **[Fabio Furini](https://fabiofurini.github.io/)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
 

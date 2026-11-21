@@ -470,4 +470,111 @@ window.QUIZ_GEN = window.QUIZ_GEN || {};
       };
     }
   });
+
+  // ================================================================ 21/11/2026: generatori dei capitoli 4 e 5 (prima
+  // non ne avevano: le loro domande fisse uscivano quasi in ogni facsimile)
+  function grafoCasuale(rng, n, p) { var E = []; for (var i = 1; i <= n; i++) for (var j = i + 1; j <= n; j++) if (rng() < p) E.push([i, j]); return E; }
+  function testoArchi(E) { return "$E=\\{" + E.map(function (e) { return "\\{" + e[0] + "," + e[1] + "\\}"; }).join(",") + "\\}$"; }
+  function adiacenze(n, E) { var A = []; for (var i = 0; i <= n; i++) A.push({}); E.forEach(function (e) { A[e[0]][e[1]] = 1; A[e[1]][e[0]] = 1; }); return A; }
+  function omega(n, E) { // clique massima per enumerazione (n piccolo)
+    var A = adiacenze(n, E), best = 0;
+    for (var m = 1; m < (1 << n); m++) {
+      var S = []; for (var i = 0; i < n; i++) if (m & (1 << i)) S.push(i + 1);
+      if (S.length <= best) continue;
+      var ok = true; for (var a = 0; a < S.length && ok; a++) for (var b = a + 1; b < S.length; b++) if (!A[S[a]][S[b]]) { ok = false; break; }
+      if (ok) best = S.length;
+    }
+    return best;
+  }
+
+  // ---- intervalli: greedy per estremo sinistro (cap. 4, proposizione 4.11)
+  add({
+    id: "aa-g-vci-interval", livello: "facile", capitolo: "coloring-inapproximability",
+    link: L2("coloring-inapproximability", "coloring-inapproximability", "box-11-vci-propInt"),
+    genera: function (rng, lingua) {
+      var n = 6, I = [];
+      for (var v = 0; v < n; v++) { var a = ri(rng, 0, 9); I.push([a, a + ri(rng, 1, 4)]); }
+      I.sort(function (x, y) { return x[0] - y[0] || x[1] - y[1]; });
+      var w = 0; // massimo numero di intervalli con un punto in comune (basta guardare gli estremi sinistri)
+      I.forEach(function (x) { var c = 0; I.forEach(function (y) { if (y[0] <= x[0] && x[0] <= y[1]) c++; }); if (c > w) w = c; });
+      var d = 0; I.forEach(function (x, i) { var c = 0; I.forEach(function (y, j) { if (i !== j && x[0] <= y[1] && y[0] <= x[1]) c++; }); if (c > d) d = c; });
+      var b = build(rng, num(w), [num(w + 1), num(w - 1), num(d + 1), num(n), num(Math.ceil(n / 2))]);
+      if (!b || w < 2) return null;
+      var tI = I.map(function (x, i) { return "$I_{" + (i + 1) + "}=[" + x[0] + "," + x[1] + "]$"; }).join(", ");
+      return {
+        testo: T(lingua, "Grafo di intervalli con i vertici $1,\\dots,6$ e gli intervalli chiusi " + tI + " (due vertici sono adiacenti se i loro intervalli si intersecano). Quanti colori usa la colorazione greedy con i vertici in ordine di estremo sinistro non decrescente?",
+          "Interval graph with vertices $1,\\dots,6$ and closed intervals " + tI + " (two vertices are adjacent if their intervals intersect). How many colors does the greedy coloring use with the vertices in order of non-decreasing left endpoint?"),
+        opzioni: b.opzioni, corretta: b.corretta,
+        spiegazione: T(lingua, "Su un grafo di intervalli quell'ordine dà $\\omega(G)$ colori, il massimo numero di intervalli con un punto in comune: qui $" + w + "$, ed è ottimo perché $\\chi(G)\\ge\\omega(G)$. Il bound $\\Delta(G)+1=" + (d + 1) + "$ vale per ogni ordine ma è più debole.",
+          "On an interval graph that order gives $\\omega(G)$ colors, the largest number of intervals with a common point: here $" + w + "$, and it is optimal since $\\chi(G)\\ge\\omega(G)$. The bound $\\Delta(G)+1=" + (d + 1) + "$ holds for every order but is weaker."),
+        _v: { dati: { I: I }, valori: b.valori }
+      };
+    }
+  });
+
+  // ---- prodotto forte: omega(G ⊠ H) = omega(G) omega(H) (cap. 5, proposizione 5.2)
+  add({
+    id: "aa-g-cli-product", livello: "facile", capitolo: "clique-inapproximability",
+    link: L2("clique-inapproximability", "clique-inapproximability", "box-2-cli-propprod"),
+    genera: function (rng, lingua) {
+      var E1 = grafoCasuale(rng, 4, 0.55), E2 = grafoCasuale(rng, 4, 0.55);
+      if (!E1.length || !E2.length) return null;
+      var a = omega(4, E1), c = omega(4, E2);
+      var key = function (nv, w) { return { k: nv + "|" + w, t: "$" + nv + "$ " + T(lingua, "vertici e", "vertices and") + " $\\omega=" + w + "$" }; };
+      var b = build(rng, key(16, a * c), [key(16, a + c), key(8, a * c), key(16, Math.max(a, c)), key(8, a + c), key(16, a * c + 1)]);
+      if (!b) return null;
+      return {
+        testo: T(lingua, "Due grafi sui vertici $\\{1,2,3,4\\}$: $G$ con " + testoArchi(E1) + " e $H$ con " + testoArchi(E2).replace("E=", "F=") + ". Quanti vertici ha il prodotto forte $G\\boxtimes H$ e quanto vale il suo numero di clique?",
+          "Two graphs on the vertices $\\{1,2,3,4\\}$: $G$ with " + testoArchi(E1) + " and $H$ with " + testoArchi(E2).replace("E=", "F=") + ". How many vertices does the strong product $G\\boxtimes H$ have, and what is its clique number?"),
+        opzioni: b.opzioni, corretta: b.corretta,
+        spiegazione: T(lingua, "$G\\boxtimes H$ ha $4\\cdot4=16$ vertici e $\\omega(G\\boxtimes H)=\\omega(G)\\,\\omega(H)=" + a + "\\cdot" + c + "=" + (a * c) + "$: il prodotto di due clique è una clique, e ogni clique del prodotto sta in un tale prodotto.",
+          "$G\\boxtimes H$ has $4\\cdot4=16$ vertices and $\\omega(G\\boxtimes H)=\\omega(G)\\,\\omega(H)=" + a + "\\cdot" + c + "=" + (a * c) + "$: the product of two cliques is a clique, and every clique of the product lies in such a product."),
+        _v: { dati: { E1: E1, E2: E2 }, valori: b.valori }
+      };
+    }
+  });
+
+  // ---- insieme stabile massimale greedy e il bound n/(Delta+1) (cap. 5, proposizione 5.8)
+  add({
+    id: "aa-g-cli-maximal", livello: "facile", capitolo: "clique-inapproximability",
+    link: L2("clique-inapproximability", "clique-inapproximability", "box-8-cli-propmssp"),
+    genera: function (rng, lingua) {
+      var n = 8, E = grafoCasuale(rng, n, 0.35), A = adiacenze(n, E), S = [];
+      for (var v = 1; v <= n; v++) { var ok = true; S.forEach(function (u) { if (A[u][v]) ok = false; }); if (ok) S.push(v); }
+      var d = 0; for (v = 1; v <= n; v++) d = Math.max(d, Object.keys(A[v]).length);
+      if (d < 2) return null;
+      var lb = Math.ceil(n / (d + 1));
+      var key = function (s, l) { return { k: s + "|" + l, t: "$|S|=" + s + "$, " + T(lingua, "bound", "bound") + " $" + l + "$" }; };
+      var b = build(rng, key(S.length, lb), [key(S.length, Math.ceil(n / d)), key(S.length + 1, lb), key(S.length - 1, lb), key(S.length, Math.floor(n / (d + 1)) + 1 === lb ? lb + 1 : Math.floor(n / (d + 1)) + 1), key(lb, S.length)]);
+      if (!b) return null;
+      return {
+        testo: T(lingua, "Grafo con i vertici $1,\\dots,8$ e " + testoArchi(E) + ". L'algoritmo greedy esamina i vertici in ordine $1,2,\\dots,8$ e aggiunge un vertice a $S$ se non è adiacente a nessun vertice già in $S$. Quanto vale $|S|$, e qual è il lower bound $\\lceil n/(\\Delta(G)+1)\\rceil$ che vale per ogni insieme stabile massimale?",
+          "Graph with vertices $1,\\dots,8$ and " + testoArchi(E) + ". The greedy algorithm examines the vertices in the order $1,2,\\dots,8$ and adds a vertex to $S$ if it is adjacent to no vertex already in $S$. What is $|S|$, and what is the lower bound $\\lceil n/(\\Delta(G)+1)\\rceil$ valid for every maximal stable set?"),
+        opzioni: b.opzioni, corretta: b.corretta,
+        spiegazione: T(lingua, "Il greedy trova $S=\\{" + S.join(",") + "\\}$, massimale. Con $\\Delta(G)=" + d + "$ ogni vertice di $S$ esclude al più $\\Delta(G)$ vicini, quindi $|S|\\ge\\lceil 8/" + (d + 1) + "\\rceil=" + lb + "$ e $\\alpha(G)/|S|\\le\\Delta(G)+1$.",
+          "The greedy finds $S=\\{" + S.join(",") + "\\}$, maximal. With $\\Delta(G)=" + d + "$ every vertex of $S$ excludes at most $\\Delta(G)$ neighbours, hence $|S|\\ge\\lceil 8/" + (d + 1) + "\\rceil=" + lb + "$ and $\\alpha(G)/|S|\\le\\Delta(G)+1$."),
+        _v: { dati: { E: E, n: n }, valori: b.valori }
+      };
+    }
+  });
+
+  // ---- grafi planari: il bound m <= 3n - 6 (cap. 4, lemma 4.7)
+  add({
+    id: "aa-g-vci-planar", livello: "facile", capitolo: "coloring-inapproximability",
+    link: L2("coloring-inapproximability", "coloring-inapproximability", "box-7-vci-lemDeg5"),
+    genera: function (rng, lingua) {
+      var n = ri(rng, 5, 30), m = ri(rng, 2 * n, 4 * n), mx = 3 * n - 6, pl = m <= mx;
+      var key = function (b2, x) { return { k: b2 + "|" + x, t: "$3n-6=" + x + "$: " + (b2 ? T(lingua, "può essere planare", "it can be planar") : T(lingua, "non è planare", "it is not planar")) }; };
+      var b = build(rng, key(pl, mx), [key(!pl, mx), key(pl, 3 * n - 3), key(!pl, 3 * n - 3), key(pl, 2 * n - 4), key(!pl, 2 * n - 4)]);
+      if (!b) return null;
+      return {
+        testo: T(lingua, "Un grafo semplice ha $n=" + n + "$ vertici e $m=" + m + "$ spigoli. Usando il lemma sul numero di spigoli dei grafi planari, che cosa si può dire?",
+          "A simple graph has $n=" + n + "$ vertices and $m=" + m + "$ edges. Using the lemma on the number of edges of planar graphs, what can be said?"),
+        opzioni: b.opzioni, corretta: b.corretta,
+        spiegazione: T(lingua, "Ogni grafo planare con $n\\ge3$ vertici ha $m\\le3n-6=" + mx + "$. " + (pl ? "Qui $m\\le" + mx + "$: il lemma non esclude la planarità (non la dimostra)." : "Qui $m>" + mx + "$: il grafo non è planare."),
+          "Every planar graph with $n\\ge3$ vertices has $m\\le3n-6=" + mx + "$. " + (pl ? "Here $m\\le" + mx + "$: the lemma does not rule out planarity (it does not prove it)." : "Here $m>" + mx + "$: the graph is not planar.")),
+        _v: { dati: { n: n, m: m }, valori: b.valori }
+      };
+    }
+  });
 })();
