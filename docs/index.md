@@ -213,6 +213,10 @@ Ten courses built the same way: lecture notes online and in PDF, exercises with 
 
     knapsack, bin packing, coloring, TSP, scheduling and lot sizing, solved in every way
 
+-   :material-table-large: **[Dynamic Programming](https://fabiofurini.github.io/dynamic-programming/)**
+
+    principles and DP algorithms for knapsack, lot sizing, coin change and rod cutting
+
 -   :material-map-marker-path: **[Heuristic Algorithms](https://fabiofurini.github.io/heuristic-algorithms/)**
 
     constructive heuristics, local search, metaheuristics and MIP heuristics for combinatorial optimization problems
