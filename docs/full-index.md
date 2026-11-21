@@ -1,0 +1,90 @@
+# Full index
+
+All the pages of the website, in the order of the menu: the chapters with their sections and the other pages.
+
+## Chapters
+
+- **[1. Principles of approximation algorithms](approximation.md)** · [Exercises](exercises/approximation.md)
+    - [1.1 Approximation algorithms](approximation.md#11-approximation-algorithms)
+    - [1.2 Approximation schemes](approximation.md#12-approximation-schemes)
+    - [1.3 Typical mistakes](approximation.md#13-typical-mistakes)
+    - [1.4 In summary](approximation.md#14-in-summary)
+
+### Knapsack problems
+
+- **[2. Approximation algorithms for the knapsack problem](knapsack-approximation.md)** · [Exercises](exercises/knapsack-approximation.md)
+    - [2.1 Notation](knapsack-approximation.md#21-notation)
+    - [2.2 Split item and residual capacity](knapsack-approximation.md#22-split-item-and-residual-capacity)
+    - [2.3 The greedy algorithm](knapsack-approximation.md#23-the-greedy-algorithm)
+    - [2.4 The Ext-Greedy algorithm](knapsack-approximation.md#24-the-ext-greedy-algorithm)
+    - [2.5 The $H^2$ algorithm](knapsack-approximation.md#sez-sec-H2)
+    - [2.6 The $H^{\ell}$ algorithm](knapsack-approximation.md#26-the-hell-algorithm)
+    - [2.7 The Basic-FPTAS algorithm](knapsack-approximation.md#27-the-basic-fptas-algorithm)
+    - [2.8 Performance guarantees](knapsack-approximation.md#28-performance-guarantees)
+    - [2.9 Absolute performance guarantee](knapsack-approximation.md#29-absolute-performance-guarantee)
+    - [2.10 Typical mistakes](knapsack-approximation.md#210-typical-mistakes)
+    - [2.11 In summary](knapsack-approximation.md#211-in-summary)
+
+### Packing problems
+
+- **[3. Approximation algorithms for bin packing](bin-packing-approximation.md)** · [Exercises](exercises/bin-packing-approximation.md)
+    - [3.1 Notation](bin-packing-approximation.md#31-notation)
+    - [3.2 The Next Fit](bin-packing-approximation.md#sez-sec-NF)
+    - [3.3 The Any Fit class](bin-packing-approximation.md#sez-sec-AF)
+    - [3.4 Half-full property](bin-packing-approximation.md#34-half-full-property)
+    - [3.5 Performance guarantees](bin-packing-approximation.md#35-performance-guarantees)
+    - [3.6 Typical mistakes](bin-packing-approximation.md#36-typical-mistakes)
+    - [3.7 In summary](bin-packing-approximation.md#37-in-summary)
+
+### Coloring problems
+
+- **[4. Vertex coloring: limits of approximation](coloring-inapproximability.md)** · [Exercises](exercises/coloring-inapproximability.md)
+    - [4.1 Notation](coloring-inapproximability.md#41-notation)
+    - [4.2 The VCP is not approximable](coloring-inapproximability.md#42-the-vcp-is-not-approximable)
+    - [4.3 Special cases](coloring-inapproximability.md#43-special-cases)
+    - [4.4 Examples](coloring-inapproximability.md#44-examples)
+    - [4.5 Sources](coloring-inapproximability.md#45-sources)
+    - [4.6 Typical mistakes](coloring-inapproximability.md#46-typical-mistakes)
+    - [4.7 In summary](coloring-inapproximability.md#47-in-summary)
+
+### Clique problems
+
+- **[5. Maximum clique: limits of approximation](clique-inapproximability.md)** · [Exercises](exercises/clique-inapproximability.md)
+    - [5.1 Notation](clique-inapproximability.md#51-notation)
+    - [5.2 The MCP is not approximable](clique-inapproximability.md#52-the-mcp-is-not-approximable)
+    - [5.3 Special cases](clique-inapproximability.md#53-special-cases)
+    - [5.4 Example](clique-inapproximability.md#54-example)
+    - [5.5 Sources](clique-inapproximability.md#55-sources)
+    - [5.6 Typical mistakes](clique-inapproximability.md#56-typical-mistakes)
+    - [5.7 In summary](clique-inapproximability.md#57-in-summary)
+
+### Routing problems
+
+- **[6. The TSP: the general case and the metric case](tsp-approximation.md)** · [Exercises](exercises/tsp-approximation.md)
+    - [6.1 The general TSP is not approximable](tsp-approximation.md#61-the-general-tsp-is-not-approximable)
+    - [6.2 A special case: the metric TSP](tsp-approximation.md#62-a-special-case-the-metric-tsp)
+    - [6.3 The double tree and the Christofides algorithms](tsp-approximation.md#63-the-double-tree-and-the-christofides-algorithms)
+    - [6.4 Structural properties](tsp-approximation.md#64-structural-properties)
+    - [6.5 Performance guarantees](tsp-approximation.md#65-performance-guarantees)
+    - [6.6 Sources](tsp-approximation.md#66-sources)
+    - [6.7 Typical mistakes](tsp-approximation.md#67-typical-mistakes)
+    - [6.8 In summary](tsp-approximation.md#68-in-summary)
+
+### Scheduling problems
+
+- **[7. Approximation for P||Cmax](pcmax-approximation.md)** · [Exercises](exercises/pcmax-approximation.md)
+    - [7.1 Notation](pcmax-approximation.md#71-notation)
+    - [7.2 The algorithms $LIST$ and $LPT$](pcmax-approximation.md#72-the-algorithms-list-and-lpt)
+    - [7.3 A property of list scheduling](pcmax-approximation.md#73-a-property-of-list-scheduling)
+    - [7.4 Performance guarantees](pcmax-approximation.md#74-performance-guarantees)
+    - [7.5 Sources](pcmax-approximation.md#75-sources)
+    - [7.6 Typical mistakes](pcmax-approximation.md#76-typical-mistakes)
+    - [7.7 In summary](pcmax-approximation.md#77-in-summary)
+
+## Other pages
+
+- [Exercises](exercises/index.md)
+- [Lab](lab/index.md)
+- [Downloads](downloads.md)
+- [Colab notebooks](notebooks.md)
+- [Self-assessment](self-assessment.md)
