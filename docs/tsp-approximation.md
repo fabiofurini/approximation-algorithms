@@ -16,7 +16,9 @@ title: "The TSP: the general case and the metric case"
 
     - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Routing problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/tsp/): the definition and the reference instance of the TSP.
 
-    - From the module <em>Algorithms</em> ([module home page](https://fabiofurini.github.io/algorithms/)): minimum spanning trees (Kruskal), Eulerian circuits and the notions of NP-completeness and polynomial time.
+    - From the module <em>Network Optimization</em>, the chapter [«Minimum spanning trees»](https://fabiofurini.github.io/network-optimization/trees-and-paths/minimum-spanning-trees/): Kruskal's algorithm.
+
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Combinatorial optimization: definitions»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/combinatorial-optimization/a-glimpse-of-computational-complexity/): polynomial time, the classes P and NP, NP-completeness.
 
 !!! chiave "Objectives"
 

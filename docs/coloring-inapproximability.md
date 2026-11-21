@@ -16,7 +16,9 @@ title: "Vertex coloring: limits of approximation"
 
     - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Coloring problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/coloring/): the definition of the VCP, the chromatic number $\chi(G)$, the clique bound $\omega(G)\le\chi(G)$ and the Petersen graph.
 
-    - From the module <em>Algorithms</em> ([module home page](https://fabiofurini.github.io/algorithms/)): breadth-first search, polynomial time and NP-completeness.
+    - From the module <em>Network Optimization</em>, the chapter [«Graphs»](https://fabiofurini.github.io/network-optimization/graphs/graphs/graph-search/): the breadth-first search.
+
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Combinatorial optimization: definitions»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/combinatorial-optimization/a-glimpse-of-computational-complexity/): polynomial time, the classes P and NP, NP-completeness.
 
 !!! chiave "Objectives"
 
