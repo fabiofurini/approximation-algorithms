@@ -130,11 +130,11 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraphcore.js
   - javascripts/interattivi.js?v=2687ca69e3
   - javascripts/gi-comune.js?v=40df75e3e5
-  - javascripts/gi-oc-0.js?v=ac7bf39282
+  - javascripts/gi-oc-0.js?v=e762d199ee
   - javascripts/gi-oc-b.js?v=f94d1a1e3f
   - javascripts/gi-oc-c.js?v=e1eaa15ba1
   - javascripts/gi-oc-d.js?v=e10e954f50
-  - javascripts/gi-oc-f.js?v=7b294d228d
+  - javascripts/gi-oc-f.js?v=6658174d09
   - javascripts/quiz.js?v=be7fae2b85
 
 

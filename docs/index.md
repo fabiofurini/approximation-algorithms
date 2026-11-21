@@ -31,9 +31,9 @@ Prerequisites: [Combinatorial Optimization](https://fabiofurini.github.io/combin
 <!-- collana-app -->
 ## Try it now
 
-The metric TSP: the minimum spanning tree, the Eulerian circuit and the shortcuts of double tree and Christofides, with the ratio to the optimum.
+Christofides' algorithm on ten cities: the tour found over the optimal tour, with a ratio below the 3/2 guarantee. Press «Run» to replay the minimum spanning tree, the matching, the Eulerian circuit and the shortcuts, or switch to double tree.
 
-<div class="gi" data-grafico="oc-tsp-approx"></div>
+<div class="gi" data-grafico="oc-tsp-approx" data-vetrina="ch | 7 4 ; 14 8 ; 9 9 ; 19 0 ; 17 5 ; 17 10 ; 6 11 ; 3 4 ; 10 2 ; 20 12"></div>
 
 [:material-gesture-tap: More apps in the lab](lab/index.md){ .md-button }
 <!-- /collana-app -->

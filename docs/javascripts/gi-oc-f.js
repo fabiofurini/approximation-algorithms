@@ -11,7 +11,7 @@
   "use strict";
   const GI = window.GI, M = window.GI_MIP, O = window.GI_OC;
   const T = GI.T;
-  const { PASSO, parPasso, vaiA, nuovoId, osservaDimensioni, nuovaVoce, dim, pix, disegno, daIndirizzo, chiedi, menuIstanze, mostraCursore } = O;
+  const { PASSO, parPasso, vaiA, nuovoId, osservaDimensioni, nuovaVoce, dim, pix, disegno, daIndirizzo, chiedi, menuIstanze, mostraCursore, vetrina, scegliVoce } = O;
   window.GI_RICETTE = window.GI_RICETTE || {};
 
   // =================================================================
@@ -336,6 +336,19 @@
       istanzaDaIndirizzo(st, APX_ES, carica);
       osservaDimensioni(board, st);
       daIndirizzo(st);
+      // home della collana: data-vetrina="voce | x y ; x y ; … | fase" (anche più di 9 città, al più 12)
+      vetrina(st, (v) => {
+        const [voce, xy, fase] = v.split("|").map((x) => x.trim());
+        const P = (xy || "").split(";").map((x) => x.trim().split(/[\s,]+/).map(Number));
+        scegliVoce(st, voce);
+        if (P.length >= 4 && P.length <= 12 && P.every((p) => p.length === 2 && p.every(Number.isFinite))) {
+          const mat = rotonda(P);
+          if (metrica(mat)) carica({ nome: T("vetrina", "showcase"), P, mat }, -1);
+        }
+        if (!fase) return null;
+        const S = apxStato(st), k = S.passi.map((e) => e.fase).lastIndexOf(fase);
+        return k >= 0 ? { passo: k } : null;
+      });
     },
     aggiorna(board, st) {
       const S = apxStato(st), C = M.COL(st), [W, H] = dim(board), { I, R, X, E, k, alg, n } = S, d = I.mat;
