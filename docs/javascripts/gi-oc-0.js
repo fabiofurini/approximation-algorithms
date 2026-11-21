@@ -1,5 +1,5 @@
 /* Laboratorio di «Algoritmi di approssimazione / Approximation Algorithms»: strumenti comuni delle ricette (copiati dal
- * laboratorio di «Ottimizzazione combinatoria», da tenere allineati a mano).
+ * laboratorio di «Problemi di ottimizzazione combinatoria», da tenere allineati a mano).
  *
  * Si carica dopo interattivi.js (window.GI) e gi-comune.js (window.GI_MIP) e prima delle ricette
  * gi-oc-a.js, gi-oc-b.js, che li trovano in window.GI_OC. Vengono dal laboratorio di Modellazione MIP

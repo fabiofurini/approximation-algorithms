@@ -14,7 +14,7 @@ title: "Approximation algorithms for the knapsack problem"
 
     - From this module, the chapter [«Principles of approximation algorithms»](approximation.md): performance ratio, relative and absolute performance guarantees, tightness, approximation schemes, PTAS and FPTAS.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapters [«Knapsack problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/knapsack/the-0-1-knapsack-problem/) and [«Formulations of knapsack problems»](https://fabiofurini.github.io/combinatorial-optimization/formulations/knapsack-formulations/an-ilp-model-for-the-0-1-knapsack-problem/): the KP, the LP relaxation $\mathrm{LP}_{\mathrm{KP}}$ and the bound of Dantzig, which uses the split item.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapters [«Knapsack problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/knapsack/the-0-1-knapsack-problem/) and [«Formulations of knapsack problems»](https://fabiofurini.github.io/combinatorial-optimization/formulations/knapsack-formulations/an-ilp-model-for-the-0-1-knapsack-problem/): the KP, the LP relaxation $\mathrm{LP}_{\mathrm{KP}}$ and the bound of Dantzig, which uses the split item.
 
     - From the module <em>Heuristic Algorithms</em>, the chapter [«Constructive heuristics»](https://fabiofurini.github.io/heuristic-algorithms/constructive-heuristics/the-0-1-knapsack-problem-which-order/): the greedy algorithm.
 

@@ -14,7 +14,7 @@ title: "Approximation algorithms for bin packing"
 
     - From this module, the chapter [«Principles of approximation algorithms»](approximation.md): performance ratio, relative performance guarantee, tight guarantee and worst-case performance ratio $r(\mathscr{A})$.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapter [«Packing problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/bin-packing/the-bin-packing-problem/): the BPP, its instances and the counting lower bound $\left\lceil \frac{\sum_{i\in\mathscr{I}} w_i}{c} \right\rceil$ on the optimal value.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Packing problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/bin-packing/the-bin-packing-problem/): the BPP, its instances and the counting lower bound $\left\lceil \frac{\sum_{i\in\mathscr{I}} w_i}{c} \right\rceil$ on the optimal value.
 
     - From the module <em>Heuristic Algorithms</em>, the chapter [«Constructive heuristics»](https://fabiofurini.github.io/heuristic-algorithms/constructive-heuristics/the-bin-packing-problem-first-sort-then-pack/): heuristic algorithms that build a solution one item at a time.
 

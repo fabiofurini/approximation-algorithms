@@ -1,5 +1,5 @@
 // Autovalutazione — domande generate del modulo «Algoritmi di approssimazione» (approximation-algorithms).
-// Dai generatori di Ottimizzazione combinatoria (21/11/2026): quelli dei capitoli di questo modulo, con id aa-g-….
+// Dai generatori di Problemi di ottimizzazione combinatoria (21/11/2026): quelli dei capitoli di questo modulo, con id aa-g-….
 // Formato: QUIZ_SPEC.md. Ogni generatore riceve rng() in [0,1) e la lingua ("it" | "en") e restituisce
 // { testo, opzioni[4], corretta, spiegazione, _v }. Il campo _v (dati dell'istanza e valori delle opzioni)
 // serve solo al gemello di verifica in Python (quiz/verifica/): il motore lo ignora.

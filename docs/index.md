@@ -18,7 +18,7 @@ professor at [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.
 
 **The course lecture notes, online**: what an approximation algorithm guarantees and how to prove it; algorithms, worst-case analyses and tight instances for knapsack, bin packing, the metric TSP and parallel machine scheduling; approximation schemes; the limits of approximation for vertex coloring, maximum clique and the general TSP. With definitions, results with proofs, worked examples, exercises with solutions, Colab notebooks and interactive apps.
 
-Prerequisites: [Combinatorial Optimization](https://fabiofurini.github.io/combinatorial-optimization/) for the problems and [Heuristic Algorithms](https://fabiofurini.github.io/heuristic-algorithms/) for the algorithms analysed here (greedy, First Fit, LPT, nearest neighbour…).
+Prerequisites: [Combinatorial Optimization Problems](https://fabiofurini.github.io/combinatorial-optimization/) for the problems and [Heuristic Algorithms](https://fabiofurini.github.io/heuristic-algorithms/) for the algorithms analysed here (greedy, First Fit, LPT, nearest neighbour…).
 
 [Start :material-arrow-right:](approximation.md){ .md-button .md-button--primary }
 [:material-pencil: Exercises](exercises/index.md){ .md-button }
@@ -235,8 +235,6 @@ All the courses of the series are built the same way: lecture notes online and i
 
 </div>
 <!-- /collana -->
-
----
 
 Teaching material by **[Fabio Furini](https://fabiofurini.github.io/)** —
 [DIAG](https://www.diag.uniroma1.it/), Sapienza University of Rome.

@@ -14,7 +14,7 @@ title: "Vertex coloring: limits of approximation"
 
     - From this module, the chapter [«Principles of approximation algorithms»](https://fabiofurini.github.io/approximation-algorithms/approximation/): performance ratio, $\alpha$-approximation algorithm, additive performance guarantee.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapter [«Coloring problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/coloring/): the definition of the VCP, the chromatic number $\chi(G)$, the clique bound $\omega(G)\le\chi(G)$ and the Petersen graph.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Coloring problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/coloring/): the definition of the VCP, the chromatic number $\chi(G)$, the clique bound $\omega(G)\le\chi(G)$ and the Petersen graph.
 
     - From the module <em>Algorithms</em> ([module home page](https://fabiofurini.github.io/algorithms/)): breadth-first search, polynomial time and NP-completeness.
 

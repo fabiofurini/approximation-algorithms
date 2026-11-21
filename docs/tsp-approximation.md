@@ -14,7 +14,7 @@ title: "The TSP: the general case and the metric case"
 
     - From this module, the chapter [«Principles of approximation algorithms»](https://fabiofurini.github.io/approximation-algorithms/approximation/): performance ratio, relative performance guarantee, tight guarantee and worst-case performance ratio.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapter [«Routing problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/tsp/): the definition and the reference instance of the TSP.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Routing problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/tsp/): the definition and the reference instance of the TSP.
 
     - From the module <em>Algorithms</em> ([module home page](https://fabiofurini.github.io/algorithms/)): minimum spanning trees (Kruskal), Eulerian circuits and the notions of NP-completeness and polynomial time.
 

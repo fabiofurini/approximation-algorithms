@@ -14,7 +14,7 @@ title: "Approximation for P||Cmax"
 
     - From this module, the chapter [«Principles of approximation algorithms»](https://fabiofurini.github.io/approximation-algorithms/approximation/): performance ratio, relative performance guarantee, tight guarantee and worst-case performance ratio.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapter [«Scheduling problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/pcmax/): the definition and the reference instance of $P\,||\,C_{\max}$, and its elementary lower bound.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Scheduling problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/pcmax/): the definition and the reference instance of $P\,||\,C_{\max}$, and its elementary lower bound.
 
     - From the module <em>Heuristic Algorithms</em>, the chapter [«Constructive heuristics»](https://fabiofurini.github.io/heuristic-algorithms/constructive-heuristics/scheduling-on-parallel-machines-longest-jobs-first/): the algorithms $LIST$ and $LPT$ as constructive rules.
 
@@ -44,7 +44,7 @@ The problem of this chapter is the [scheduling problem on identical parallel mac
 
     for every instance $I$, and the worst case performance ratio is $r(\mathscr{A})=\sup_I \mathscr{A}(I)/z(I)$.
 
-- We use the elementary lower bound of the chapter [«Scheduling problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/pcmax/) of the module <em>Combinatorial Optimization</em>:
+- We use the elementary lower bound of the chapter [«Scheduling problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/pcmax/) of the module <em>Combinatorial Optimization Problems</em>:
 
     \begin{equation*}
     \label{eq:pcmaxlb}

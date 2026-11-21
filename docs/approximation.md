@@ -14,7 +14,7 @@ title: "Principles of approximation algorithms"
 
     - From the module <em>Heuristic Algorithms</em>, the chapter [«Heuristic algorithms: definitions»](https://fabiofurini.github.io/heuristic-algorithms/heuristics/): heuristic algorithms, feasible solutions and the value of the solution returned by a heuristic algorithm.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapters on the [combinatorial optimization problems](https://fabiofurini.github.io/combinatorial-optimization/selected-problems/): instances, optimal solutions and the optimal value $z(I)$ of an instance $I$.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapters on the [combinatorial optimization problems](https://fabiofurini.github.io/combinatorial-optimization/selected-problems/): instances, optimal solutions and the optimal value $z(I)$ of an instance $I$.
 
 !!! chiave "Objectives"
 
@@ -214,7 +214,7 @@ title: "Principles of approximation algorithms"
 
     Under the feasibility assumption, this quantity is non-negative for every instance $I$, and it is equal to $0$ if and only if $\mathscr{A}(I)=z(I)$.
 
-- The relative error divides by the optimal value $z(I)$, and must not be confused with the gap of the chapter [«Combinatorial optimization problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/combinatorial-optimization/primal-bounds-dual-bounds-and-gap/) of the module <em>Combinatorial Optimization</em>, which divides by the lower bound and is never smaller (chapter [«Heuristic algorithms: definitions»](https://fabiofurini.github.io/heuristic-algorithms/heuristics/) of the module <em>Heuristic Algorithms</em>).
+- The relative error divides by the optimal value $z(I)$, and must not be confused with the gap of the chapter [«Combinatorial optimization: definitions»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/combinatorial-optimization/primal-bounds-dual-bounds-and-gap/) of the module <em>Combinatorial Optimization Problems</em>, which divides by the lower bound and is never smaller (chapter [«Heuristic algorithms: definitions»](https://fabiofurini.github.io/heuristic-algorithms/heuristics/) of the module <em>Heuristic Algorithms</em>).
 
 <a id="box-7-def-as"></a>
 

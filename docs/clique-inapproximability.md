@@ -14,7 +14,7 @@ title: "Maximum clique: limits of approximation"
 
     - From this module, the chapter [«Principles of approximation algorithms»](https://fabiofurini.github.io/approximation-algorithms/approximation/): performance ratio for a maximization problem, $\alpha$-approximation algorithm, PTAS.
 
-    - From the module <em>Combinatorial Optimization</em>, the chapter [«Clique problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/clique/): the definitions of the MCP and of the MSSP, the clique number $\omega(G)$, the complement graph and $\omega(G)=\alpha(\overline{G})$.
+    - From the module <em>Combinatorial Optimization Problems</em>, the chapter [«Clique problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/clique/): the definitions of the MCP and of the MSSP, the clique number $\omega(G)$, the complement graph and $\omega(G)=\alpha(\overline{G})$.
 
     - From this module, the chapter [«Vertex coloring: limits of approximation»](https://fabiofurini.github.io/approximation-algorithms/coloring-inapproximability/): planar graphs and the bound $m\le 3n-6$.
 
@@ -166,7 +166,7 @@ The problem of this chapter is the [maximum clique problem (MCP)](https://fabiof
 
 ### 5.3.3 The maximum stable set problem
 
-- By $\omega(G)=\alpha(\overline{G})$ (chapter [«Clique problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/clique/) of the module <em>Combinatorial Optimization</em>), a stable set of $G$ is a clique of $\overline{G}$, which is built in $O(n^2)$ time and has the same $n$.
+- By $\omega(G)=\alpha(\overline{G})$ (chapter [«Clique problems»](https://fabiofurini.github.io/combinatorial-optimization/combinatorial-optimization-problems/clique/) of the module <em>Combinatorial Optimization Problems</em>), a stable set of $G$ is a clique of $\overline{G}$, which is built in $O(n^2)$ time and has the same $n$.
 
 - An algorithm with ratio $\rho(n)$ for one of the two problems, applied to the complement graph, has the same ratio $\rho(n)$ for the other one.
 
