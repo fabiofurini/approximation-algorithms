@@ -112,7 +112,7 @@ extra:
 
 extra_css:
   - stylesheets/collana.css
-  - stylesheets/extra.css?v=ff8e75aca3
+  - stylesheets/extra.css?v=76c997ebec
   - https://cdn.jsdelivr.net/npm/jsxgraph@1.10.1/distrib/jsxgraph.css
   - stylesheets/interattivi.css?v=c51ac2286b
   - stylesheets/quiz.css?v=9e3792b41c
@@ -153,34 +153,33 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Chapters:
+  - "Principles":
+      - principles.md
       - "1. Principles": approximation.md
-      - "Knapsack problems":
-          - "2. 0/1 knapsack (KP)": knapsack-approximation.md
-      - "Packing problems":
-          - "3. Bin packing (BPP)": bin-packing-approximation.md
-      - "Coloring problems":
-          - "4. Vertex coloring (VCP)": coloring-inapproximability.md
-      - "Clique problems":
-          - "5. Maximum clique (MCP)": clique-inapproximability.md
-      - "Routing problems":
-          - "6. Travelling salesman (TSP)": tsp-approximation.md
-      - "Scheduling problems":
-          - "7. Identical parallel machines (P||Cmax)": pcmax-approximation.md
+  - "Packing problems":
+      - packing-problems.md
+      - "2. 0/1 knapsack (KP)": knapsack-approximation.md
+      - "3. Bin packing (BPP)": bin-packing-approximation.md
+  - "Limits of approximation":
+      - limits-of-approximation.md
+      - "4. Vertex coloring (VCP)": coloring-inapproximability.md
+      - "5. Maximum clique (MCP)": clique-inapproximability.md
+  - "Routing and scheduling":
+      - routing-and-scheduling.md
+      - "6. Travelling salesman (TSP)": tsp-approximation.md
+      - "7. Identical parallel machines (P||Cmax)": pcmax-approximation.md
   - Exercises:
       - exercises/index.md
-      - "1. Principles": exercises/approximation.md
-      - "Knapsack problems":
-          - "2. 0/1 knapsack (KP)": exercises/knapsack-approximation.md
+      - "Principles":
+          - "1. Principles": exercises/approximation.md
       - "Packing problems":
+          - "2. 0/1 knapsack (KP)": exercises/knapsack-approximation.md
           - "3. Bin packing (BPP)": exercises/bin-packing-approximation.md
-      - "Coloring problems":
+      - "Limits of approximation":
           - "4. Vertex coloring (VCP)": exercises/coloring-inapproximability.md
-      - "Clique problems":
           - "5. Maximum clique (MCP)": exercises/clique-inapproximability.md
-      - "Routing problems":
+      - "Routing and scheduling":
           - "6. Travelling salesman (TSP)": exercises/tsp-approximation.md
-      - "Scheduling problems":
           - "7. Identical parallel machines (P||Cmax)": exercises/pcmax-approximation.md
   - Quiz: self-assessment.md
   - Lab: lab/index.md

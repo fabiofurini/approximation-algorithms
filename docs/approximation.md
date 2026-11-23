@@ -6,7 +6,7 @@ title: "Principles of approximation algorithms"
 
 <div class="info-capitolo" markdown>
 
-**Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-approximation.pdf) · [:material-pencil: Exercises: Principles](exercises/approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
+**Part 1 · Principles · Chapter 1** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-approximation.pdf) · [:material-pencil: Exercises: Principles](exercises/approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
 
 </div>
 

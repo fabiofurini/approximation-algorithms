@@ -2,7 +2,7 @@
 
 All the pages of the website, in the order of the menu: the chapters with their sections and the other pages.
 
-## Chapters
+## [Principles](principles.md)
 
 - **[1. Principles of approximation algorithms](approximation.md)** · [Exercises](exercises/approximation.md)
     - [1.1 Approximation algorithms](approximation.md#11-approximation-algorithms)
@@ -10,7 +10,7 @@ All the pages of the website, in the order of the menu: the chapters with their 
     - [1.3 Typical mistakes](approximation.md#13-typical-mistakes)
     - [1.4 In summary](approximation.md#14-in-summary)
 
-### Knapsack problems
+## [Packing problems](packing-problems.md)
 
 - **[2. Approximation algorithms for the knapsack problem](knapsack-approximation.md)** · [Exercises](exercises/knapsack-approximation.md)
     - [2.1 Notation](knapsack-approximation.md#21-notation)
@@ -24,9 +24,6 @@ All the pages of the website, in the order of the menu: the chapters with their 
     - [2.9 Absolute performance guarantee](knapsack-approximation.md#29-absolute-performance-guarantee)
     - [2.10 Typical mistakes](knapsack-approximation.md#210-typical-mistakes)
     - [2.11 In summary](knapsack-approximation.md#211-in-summary)
-
-### Packing problems
-
 - **[3. Approximation algorithms for bin packing](bin-packing-approximation.md)** · [Exercises](exercises/bin-packing-approximation.md)
     - [3.1 Notation](bin-packing-approximation.md#31-notation)
     - [3.2 The Next Fit](bin-packing-approximation.md#sez-sec-NF)
@@ -36,7 +33,7 @@ All the pages of the website, in the order of the menu: the chapters with their 
     - [3.6 Typical mistakes](bin-packing-approximation.md#36-typical-mistakes)
     - [3.7 In summary](bin-packing-approximation.md#37-in-summary)
 
-### Coloring problems
+## [Limits of approximation](limits-of-approximation.md)
 
 - **[4. Vertex coloring: limits of approximation](coloring-inapproximability.md)** · [Exercises](exercises/coloring-inapproximability.md)
     - [4.1 Notation](coloring-inapproximability.md#41-notation)
@@ -46,9 +43,6 @@ All the pages of the website, in the order of the menu: the chapters with their 
     - [4.5 Sources](coloring-inapproximability.md#45-sources)
     - [4.6 Typical mistakes](coloring-inapproximability.md#46-typical-mistakes)
     - [4.7 In summary](coloring-inapproximability.md#47-in-summary)
-
-### Clique problems
-
 - **[5. Maximum clique: limits of approximation](clique-inapproximability.md)** · [Exercises](exercises/clique-inapproximability.md)
     - [5.1 Notation](clique-inapproximability.md#51-notation)
     - [5.2 The MCP is not approximable](clique-inapproximability.md#52-the-mcp-is-not-approximable)
@@ -58,7 +52,7 @@ All the pages of the website, in the order of the menu: the chapters with their 
     - [5.6 Typical mistakes](clique-inapproximability.md#56-typical-mistakes)
     - [5.7 In summary](clique-inapproximability.md#57-in-summary)
 
-### Routing problems
+## [Routing and scheduling](routing-and-scheduling.md)
 
 - **[6. The TSP: the general case and the metric case](tsp-approximation.md)** · [Exercises](exercises/tsp-approximation.md)
     - [6.1 The general TSP is not approximable](tsp-approximation.md#61-the-general-tsp-is-not-approximable)
@@ -69,9 +63,6 @@ All the pages of the website, in the order of the menu: the chapters with their 
     - [6.6 Sources](tsp-approximation.md#66-sources)
     - [6.7 Typical mistakes](tsp-approximation.md#67-typical-mistakes)
     - [6.8 In summary](tsp-approximation.md#68-in-summary)
-
-### Scheduling problems
-
 - **[7. Approximation for P||Cmax](pcmax-approximation.md)** · [Exercises](exercises/pcmax-approximation.md)
     - [7.1 Notation](pcmax-approximation.md#71-notation)
     - [7.2 The algorithms $LIST$ and $LPT$](pcmax-approximation.md#72-the-algorithms-list-and-lpt)

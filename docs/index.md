@@ -43,79 +43,49 @@ Christofides' algorithm on ten cities: the tour found over the optimal tour, wit
 
 ## The parts of the course
 
-The chapters, by family of problems as in the menu: each card gives its chapter in the lecture notes.
+The same entries as the menu: each card gives its part and its chapters in the lecture notes.
 
 <div class="grid cards" markdown>
 
--   :material-approximately-equal: **1. Principles of approximation algorithms**
+-   :material-lightbulb-on-outline: **Principles**
 
     ---
 
-    *Principles*
+    *Part 1 · Chapter 1*
 
-    Approximation algorithms · Approximation schemes
+    Principles
 
-    [:octicons-arrow-right-24: Read the chapter](approximation.md) · [Exercises](exercises/approximation.md)
+    [:octicons-arrow-right-24: The chapters](principles.md)
 
--   :material-approximately-equal: **2. Approximation algorithms for the knapsack problem**
-
-    ---
-
-    *Knapsack problems*
-
-    Notation · Split item and residual capacity · The greedy algorithm · The Ext-Greedy algorithm
-
-    [:octicons-arrow-right-24: Read the chapter](knapsack-approximation.md) · [Exercises](exercises/knapsack-approximation.md)
-
--   :material-approximately-equal: **3. Approximation algorithms for bin packing**
+-   :material-package-variant-closed: **Packing problems**
 
     ---
 
-    *Packing problems*
+    *Part 2 · Chapters 2–3*
 
-    Notation · The Next Fit · The Any Fit class · Half-full property
+    0/1 knapsack (KP) · Bin packing (BPP)
 
-    [:octicons-arrow-right-24: Read the chapter](bin-packing-approximation.md) · [Exercises](exercises/bin-packing-approximation.md)
+    [:octicons-arrow-right-24: The chapters](packing-problems.md)
 
--   :material-approximately-equal: **4. Vertex coloring: limits of approximation**
-
-    ---
-
-    *Coloring problems*
-
-    Notation · The VCP is not approximable · Special cases · Examples
-
-    [:octicons-arrow-right-24: Read the chapter](coloring-inapproximability.md) · [Exercises](exercises/coloring-inapproximability.md)
-
--   :material-approximately-equal: **5. Maximum clique: limits of approximation**
+-   :material-close-octagon-outline: **Limits of approximation**
 
     ---
 
-    *Clique problems*
+    *Part 3 · Chapters 4–5*
 
-    Notation · The MCP is not approximable · Special cases · Example
+    Vertex coloring (VCP) · Maximum clique (MCP)
 
-    [:octicons-arrow-right-24: Read the chapter](clique-inapproximability.md) · [Exercises](exercises/clique-inapproximability.md)
+    [:octicons-arrow-right-24: The chapters](limits-of-approximation.md)
 
--   :material-approximately-equal: **6. The TSP: the general case and the metric case**
-
-    ---
-
-    *Routing problems*
-
-    The general TSP is not approximable · A special case: the metric TSP · The double tree and the Christofides algorithms · Structural properties
-
-    [:octicons-arrow-right-24: Read the chapter](tsp-approximation.md) · [Exercises](exercises/tsp-approximation.md)
-
--   :material-approximately-equal: **7. Approximation for P||Cmax**
+-   :material-map-marker-path: **Routing and scheduling**
 
     ---
 
-    *Scheduling problems*
+    *Part 4 · Chapters 6–7*
 
-    Notation · The algorithms $LIST$ and $LPT$ · A property of list scheduling · Performance guarantees
+    Travelling salesman (TSP) · Identical parallel machines (P||Cmax)
 
-    [:octicons-arrow-right-24: Read the chapter](pcmax-approximation.md) · [Exercises](exercises/pcmax-approximation.md)
+    [:octicons-arrow-right-24: The chapters](routing-and-scheduling.md)
 
 </div>
 

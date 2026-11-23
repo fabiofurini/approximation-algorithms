@@ -6,7 +6,7 @@ title: "The TSP: the general case and the metric case"
 
 <div class="info-capitolo" markdown>
 
-**Routing problems · Chapter 6** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-tsp-approximation.pdf) · [:material-pencil: Exercises: Travelling salesman (TSP)](exercises/tsp-approximation.md) · [:material-gesture-tap: App: Metric TSP: double tree and Christofides](lab/metric-tsp-double-tree-christofides.md)
+**Part 4 · Routing and scheduling · Chapter 6** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-tsp-approximation.pdf) · [:material-pencil: Exercises: Travelling salesman (TSP)](exercises/tsp-approximation.md) · [:material-gesture-tap: App: Metric TSP: double tree and Christofides](lab/metric-tsp-double-tree-christofides.md)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Approximation for P||Cmax"
 
 <div class="info-capitolo" markdown>
 
-**Scheduling problems · Chapter 7** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-pcmax-approximation.pdf) · [:material-pencil: Exercises: Identical parallel machines (P||Cmax)](exercises/pcmax-approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
+**Part 4 · Routing and scheduling · Chapter 7** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-pcmax-approximation.pdf) · [:material-pencil: Exercises: Identical parallel machines (P||Cmax)](exercises/pcmax-approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
 
 </div>
 

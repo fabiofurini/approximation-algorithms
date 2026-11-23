@@ -6,7 +6,7 @@ title: "Approximation algorithms for the knapsack problem"
 
 <div class="info-capitolo" markdown>
 
-**Knapsack problems · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides (1/2)](pdf/slides-knapsack-approximation-1.pdf) · [:material-presentation: Slides (2/2)](pdf/slides-knapsack-approximation-2.pdf) · [:material-pencil: Exercises: 0/1 knapsack (KP)](exercises/knapsack-approximation.md) · [:material-gesture-tap: App: 0/1 KP: greedy, Ext-Greedy, H² and FPTAS](lab/kp-approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
+**Part 2 · Packing problems · Chapter 2** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides (1/2)](pdf/slides-knapsack-approximation-1.pdf) · [:material-presentation: Slides (2/2)](pdf/slides-knapsack-approximation-2.pdf) · [:material-pencil: Exercises: 0/1 knapsack (KP)](exercises/knapsack-approximation.md) · [:material-gesture-tap: App: 0/1 KP: greedy, Ext-Greedy, H² and FPTAS](lab/kp-approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
 
 </div>
 

@@ -6,7 +6,7 @@ title: "Approximation algorithms for bin packing"
 
 <div class="info-capitolo" markdown>
 
-**Packing problems · Chapter 3** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-bin-packing-approximation.pdf) · [:material-pencil: Exercises: Bin packing (BPP)](exercises/bin-packing-approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
+**Part 2 · Packing problems · Chapter 3** · [:material-file-pdf-box: Lecture notes, volume 1 (PDF)](pdf/lecture-notes-1-approximation-algorithms.pdf) · [:material-presentation: Slides](pdf/slides-bin-packing-approximation.pdf) · [:material-pencil: Exercises: Bin packing (BPP)](exercises/bin-packing-approximation.md) · [:material-gesture-tap: App: Tight instances](lab/tight-instances.md)
 
 </div>
 
