@@ -21,9 +21,6 @@ worst-case analyses and tight instances for knapsack, bin packing, the metric TS
 scheduling; approximation schemes; the limits of approximation for vertex coloring, maximum clique and
 the general TSP.
 
-Every chapter has definitions, results with proofs, worked examples, exercises with solutions,
-Colab notebooks and interactive apps.
-
 Prerequisites: [Combinatorial Optimization Problems](https://fabiofurini.github.io/combinatorial-optimization/) for the problems and [Heuristic Algorithms](https://fabiofurini.github.io/heuristic-algorithms/) for the algorithms analysed here (greedy, First Fit, LPT, nearest neighbour…).
 
 [Start :material-arrow-right:](approximation.md){ .md-button .md-button--primary }
